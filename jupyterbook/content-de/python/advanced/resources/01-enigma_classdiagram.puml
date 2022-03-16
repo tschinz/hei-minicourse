@@ -1,0 +1,49 @@
+@startuml
+
+class Scrambler {
+  .. Attributes ..
+- alphabet: list
+- configs: dict
+- type_key: str
+- startpos: int
+- transformation: list
+- key: str
+  .. Methods ..
+- geyKey(): str
+- rol(string: str, n: int): string
++ __init__(type_key: str, startpos: int, custom: str)
++ passthrough(idx: int)
++ passthroughRev(idx: elem)
++ rotate()
++ setTransformation(transformation: list)
+}
+
+class EnigmaMachine {
+  .. Attributes ..
+- nb_rotors: int
+- rotor_types: list
+- rotor_startpos: list
+- rotor_custom_configs: list
+- reflector_type: str
+- printspecialchars: bool
+- plugboard_config: list
+- rotors: list[Scrambler]
+- original_rotors: list[Scrambler]
+- reflector: Scrambler
+- plugboard: Scrambler
+  .. Methods ..
++ __init__(nb_rotors: int, rotor_types: list,
+           rotor_startpos: list, rotor_custom_configs: list,
+           reflector_type: str, plugboard_config: list,
+           print_specialchars: bool):
++ setupRotors()
++ sezupReflector()
++ setupPlugboard()
++ printEnigmaSetup()
++ reset()
++ encode(text: str): str
+}
+
+EnigmaMachine -> Scrambler
+
+@enduml

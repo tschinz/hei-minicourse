@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   height="292.95309"
+   preserveAspectRatio="none"
+   version="1.1"
+   viewBox="0 0 372.5 292.95309"
+   width="372.5"
+   zoomAndPan="magnify"
+   id="svg1006"
+   sodipodi:docname="01-enigma_scrambler_classdiagram.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1008"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.52490471"
+     inkscape:cx="301.95957"
+     inkscape:cy="498.18566"
+     inkscape:window-width="1312"
+     inkscape:window-height="941"
+     inkscape:window-x="682"
+     inkscape:window-y="194"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g1004" />
+  <defs
+     id="defs824" />
+  <g
+     id="g1004"
+     transform="translate(-403.25,-72.25)">
+    <!--MD5=[d430991a8f5b7f9cc22b2fb7eeb184ef]
+class Scrambler-->
+    <g
+       id="elem_Scrambler">
+      <rect
+         codeLine="1"
+         fill="#f1f1f1"
+         height="292.45309"
+         id="Scrambler"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#181818;stroke-width:0.5"
+         width="372"
+         x="403.5"
+         y="72.5" />
+      <circle
+         cx="548.25"
+         cy="88.5"
+         fill="#add1b2"
+         style="stroke:#181818;stroke-width:1"
+         id="ellipse827"
+         r="11" />
+      <path
+         d="m 550.5938,84.1719 c -0.9375,-0.4375 -1.5313,-0.5781 -2.4063,-0.5781 -2.625,0 -4.625,2.0781 -4.625,4.7968 v 1.125 c 0,2.5782 2.1094,4.4688 5,4.4688 1.2188,0 2.375,-0.2969 3.125,-0.8438 0.5781,-0.4062 0.9063,-0.8593 0.9063,-1.25 0,-0.4531 -0.3907,-0.8437 -0.8594,-0.8437 -0.2188,0 -0.4219,0.0781 -0.6094,0.2656 -0.4531,0.4844 -0.4531,0.4844 -0.6406,0.5781 -0.4219,0.2657 -1.1094,0.3907 -1.875,0.3907 -2.0469,0 -3.3438,-1.0938 -3.3438,-2.7969 v -1.0938 c 0,-1.7812 1.25,-3.0937 2.9844,-3.0937 0.5781,0 1.1875,0.1562 1.6563,0.4062 0.4843,0.2813 0.6562,0.5 0.75,0.9063 0.0625,0.4062 0.0937,0.5312 0.2343,0.6562 0.1407,0.1407 0.375,0.25 0.5938,0.25 0.2656,0 0.5312,-0.1406 0.7031,-0.3593 0.1094,-0.1563 0.1406,-0.3438 0.1406,-0.7657 v -1.4218 c 0,-0.4375 -0.0156,-0.5625 -0.1093,-0.7188 -0.1563,-0.2656 -0.4375,-0.4062 -0.7344,-0.4062 -0.2969,0 -0.5,0.0937 -0.7188,0.4062 z"
+         fill="#000000"
+         id="path829" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="74"
+         x="568.75"
+         y="93.346703"
+         id="text831">Scrambler</text>
+      <line
+         style="stroke:#181818;stroke-width:0.5"
+         x1="404.5"
+         x2="774.5"
+         y1="104.5"
+         y2="104.5"
+         id="line833" />
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="132.79691"
+         id="rect835" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="96"
+         x="423.5"
+         y="141.79201"
+         id="text837">alphabet: list</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="149.0938"
+         id="rect839" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="89"
+         x="423.5"
+         y="158.0889"
+         id="text841">configs: dict</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="165.39059"
+         id="rect843" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="96"
+         x="423.5"
+         y="174.3857"
+         id="text845">type_key: str</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="181.6875"
+         id="rect847" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="90"
+         x="423.5"
+         y="190.6826"
+         id="text849">startpos: int</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="197.98441"
+         id="rect851" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="140"
+         x="423.5"
+         y="206.97951"
+         id="text853">transformation: list</text>
+      <rect
+         fill="none"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="214.2813"
+         id="rect855" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="55"
+         x="423.5"
+         y="223.2764"
+         id="text857">key: str</text>
+      <line
+         style="stroke:#181818;stroke-width:1;stroke-dasharray:1, 2"
+         x1="404.5"
+         x2="552"
+         y1="120.6484"
+         y2="120.6484"
+         id="line859" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="75"
+         x="552"
+         y="124.9951"
+         id="text861">Attributes</text>
+      <line
+         style="stroke:#181818;stroke-width:1;stroke-dasharray:1, 2"
+         x1="627"
+         x2="774.5"
+         y1="120.6484"
+         y2="120.6484"
+         id="line863" />
+      <rect
+         fill="#f24d5c"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="250.875"
+         id="rect865" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="92"
+         x="423.5"
+         y="259.87009"
+         id="text867">geyKey(): str</text>
+      <rect
+         fill="#f24d5c"
+         height="6"
+         style="stroke:#c82930;stroke-width:1"
+         width="6"
+         x="411.5"
+         y="267.17191"
+         id="rect869" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="197"
+         x="423.5"
+         y="276.16699"
+         id="text871">rol(string: str, n: int): string</text>
+      <circle
+         cx="414.5"
+         cy="286.46881"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1"
+         id="ellipse873"
+         r="3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="346"
+         x="423.5"
+         y="292.4639"
+         id="text875">__init__(type_key: str, startpos: int, custom: str)</text>
+      <circle
+         cx="414.5"
+         cy="302.76559"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1"
+         id="ellipse877"
+         r="3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="149"
+         x="423.5"
+         y="308.76071"
+         id="text879">passthrough(idx: int)</text>
+      <circle
+         cx="414.5"
+         cy="319.0625"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1"
+         id="ellipse881"
+         r="3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="192"
+         x="423.5"
+         y="325.05759"
+         id="text883">passthroughRev(idx: elem)</text>
+      <circle
+         cx="414.5"
+         cy="335.35941"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1"
+         id="ellipse885"
+         r="3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="56"
+         x="423.5"
+         y="341.35449"
+         id="text887">rotate()</text>
+      <circle
+         cx="414.5"
+         cy="351.65631"
+         fill="#84be84"
+         style="stroke:#038048;stroke-width:1"
+         id="ellipse889"
+         r="3" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="284"
+         x="423.5"
+         y="357.6514"
+         id="text891">setTransformation(transformation: list)</text>
+      <line
+         style="stroke:#181818;stroke-width:1;stroke-dasharray:1, 2"
+         x1="404.5"
+         x2="558.5"
+         y1="238.72659"
+         y2="238.72659"
+         id="line893" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14px"
+         lengthAdjust="spacing"
+         textLength="62"
+         x="558.5"
+         y="243.0732"
+         id="text895">Methods</text>
+      <line
+         style="stroke:#181818;stroke-width:1;stroke-dasharray:1, 2"
+         x1="620.5"
+         x2="774.5"
+         y1="238.72659"
+         y2="238.72659"
+         id="line897" />
+    </g>
+    <!--MD5=[b6873cc88691a0f308e7c87ba33da1c8]
+class EnigmaMachine-->
+    <!--MD5=[481814591bb59da9079dbcd1f175d723]
+link EnigmaMachine to Scrambler-->
+    <!--MD5=[3b208adfafa962e407c90bac604cb611]
+@startuml
+class Scrambler {
+  .. Attributes ..
+- alphabet: list
+- configs: dict
+- type_key: str
+- startpos: int
+- transformation: list
+- key: str
+  .. Methods ..
+- geyKey(): str
+- rol(string: str, n: int): string
++ __init__(type_key: str, startpos: int, custom: str)
++ passthrough(idx: int)
++ passthroughRev(idx: elem)
++ rotate()
++ setTransformation(transformation: list)
+}
+
+class EnigmaMachine {
+  .. Attributes ..
+- nb_rotors: int
+- rotor_types: list
+- rotor_startpos: list
+- rotor_custom_configs: list
+- reflector_type: str
+- printspecialchars: bool
+- plugboard_config: list
+- rotors: list[Scrambler]
+- original_rotors: list[Scrambler]
+- reflector: Scrambler
+- plugboard: Scrambler
+  .. Methods ..
++ __init__(nb_rotors: int, rotor_types: list,
+           rotor_startpos: list, rotor_custom_configs: list,
+           reflector_type: str, plugboard_config: list,
+           print_specialchars: bool):
++ setupRotors()
++ sezupReflector()
++ setupPlugboard()
++ printEnigmaSetup()
++ reset()
++ encode(text: str): str
+}
+
+EnigmaMachine -> Scrambler
+@enduml
+
+PlantUML version 1.2022.3beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+-->
+  </g>
+</svg>

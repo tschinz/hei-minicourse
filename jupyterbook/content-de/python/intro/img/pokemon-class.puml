@@ -1,0 +1,16 @@
+@startuml
+class Pokemon {
+  .. Attributes ..
+- name: str { name }
+- type: str { type }
+- health: int { health }
+- attack: int { attack }
+- defense: int { defense }
+- speed: int { speed }
+  .. Methods ..
+- speak(): Type {}
+- attack(): Type {}
+- dodge(): Type {}
+- evolve(): Type {}
+}
+@enduml

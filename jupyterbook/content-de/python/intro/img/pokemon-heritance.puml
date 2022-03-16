@@ -1,0 +1,45 @@
+@startuml
+class Pokemon {
+  .. Attributes ..
+- name: str { name }
+- type: str { type }
+- health: int { health }
+- attack: int { attack }
+- defense: int { defense }
+- speed: int { speed }
+  .. Methods ..
+- speak(): Type {}
+- attack(): Type {}
+- dodge(): Type {}
+- evolve(): Type {}
+}
+
+class ElectricPokemon {
+.. Attributes ..
+- special_attack: int {special_attack}
+.. Methods ..
+- speak(): Type {}
+- electricAttack(): Type {}
+}
+
+class FirePokemon {
+.. Attributes ..
+- special_attack: int {special_attack}
+.. Methods ..
+- speak(): Type {}
+- fireAttack(): Type {}
+}
+
+class WaterPokemon {
+.. Attributes ..
+- special_attack: int {special_attack}
+.. Methods ..
+- speak(): Type {}
+- waterAttack(): Type {}
+}
+
+Pokemon <|-- ElectricPokemon
+Pokemon <|-- FirePokemon
+Pokemon <|-- WaterPokemon
+
+@enduml

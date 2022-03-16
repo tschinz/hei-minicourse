@@ -1,0 +1,80 @@
+format: jb-book
+root: content-de/00-intro
+parts:
+- caption: Einführung
+  chapters:
+  - file: content-de/intro/00-computer
+  - file: content-de/intro/01-programming
+
+- caption: Git
+  chapters:
+  - file: content-de/git/intro/00-intro
+    sections:
+    - file: content-de/git/intro/01-commands
+    - file: content-de/git/intro/02-branch-merge
+    - file: content-de/git/intro/03-gitflow
+  - file: content-de/git/lab/00-intro
+    sections:
+    - file: content-de/git/lab/01-config
+    - file: content-de/git/lab/02-general
+    - file: content-de/git/lab/03-github
+    - file: content-de/git/lab/04-branch-merge
+    - file: content-de/git/lab/05-gitflow
+
+- caption: Python
+  chapters:
+  - file: content-de/python/intro/00-intro
+    sections:
+    - file: content-de/python/intro/01-hello_world
+    - file: content-de/python/intro/02-jupyter
+    - file: content-de/python/intro/03-ipython
+    - file: content-de/python/intro/04-datatypes
+    - file: content-de/python/intro/05-object_oriented
+
+  - file: content-de/python/lab/00-intro
+    sections:
+    - file: content-de/python/lab/ex01-getting_started
+    - file: content-de/python/lab/ex02-variables_and_functions
+    - file: content-de/python/lab/ex03-loops_and_conditionals
+    - file: content-de/python/lab/ex04-guessing_games
+    - file: content-de/python/lab/ex05-lists_etc
+    - file: content-de/python/lab/ex06-more_loops
+    - file: content-de/python/lab/ex07-strings
+    - file: content-de/python/lab/ex08-charles_other_methods
+    - file: content-de/python/lab/ex08-read_write_files
+    - file: content-de/python/lab/ex09-modules
+    - file: content-de/python/lab/ex10-exceptions
+    - file: content-de/python/lab/ex11-numpy
+    - file: content-de/python/lab/ex11a-sudoku
+    - file: content-de/python/lab/ex12-plotting
+    - file: content-de/python/lab/ex13-radioactive_decay
+    - file: content-de/python/lab/ex14-pandas_databases
+    - file: content-de/python/lab/ex15-more_plotting
+    - file: content-de/python/lab/ex16-maps
+    - file: content-de/python/lab/ex17-fourier_analysis
+    - file: content-de/python/lab/ex18-objects
+    - file: content-de/python/lab/ex19-differential_eqs
+    - file: content-de/python/lab/ex20-sorting
+
+  - file: content-de/python/advanced/00-intro
+    sections:
+    - file: content-de/python/advanced/01-enigma-machine
+
+- caption: Java
+  chapters:
+  - file: content-de/java/maze/00-intro
+    sections:
+    - file: content-de/java/maze/01-display_solution
+    - file: content-de/java/maze/02-movement_logic
+
+- caption: Arduino
+  chapters:
+  - file: content-de/arduino/attiny-console/00-intro
+    sections:
+    - file: content-de/arduino/attiny-console/01-soldering
+    - file: content-de/arduino/attiny-console/02-commissioning
+
+- caption: Anhang
+  chapters:
+  - file: content-de/01-bibliography
+  - file: content-de/02-contact

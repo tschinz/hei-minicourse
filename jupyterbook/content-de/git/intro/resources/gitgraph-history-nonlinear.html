@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+</head>
+<body>
+  <div id="graph-container"></div>
+
+  <script>
+    const config = {
+        //template: "blackarrow",
+        //orientation: "vertical", // "horizontal", // "vertical-reverse",
+        author: "Silvan Zahno <silvan.zahno@hevs.ch>",
+      };
+    var graphContainer = document.getElementById("graph-container");
+    var gitgraph = GitgraphJS.createGitgraph(graphContainer, config);
+
+    var master = gitgraph.branch("master");
+    master.commit("initial commit");
+
+    var develop = master.branch("develop");
+
+    master.commit("added milk");
+    master.commit("added eggs");
+    master.commit("added fabric softener");
+
+    develop.commit("prepare for release");
+    var release = master.branch("release");
+
+    release.merge(develop, "Merge branch 'develop' into 'release'");
+    master.merge(release, "Merge branch 'release' into 'master'").tag("v1.0.0");
+
+    master.commit("watter balloons (for the kids)");
+
+    develop.commit("a whole cheese pizza, just for me");
+    release.commit("forgot to heat it up");
+    release.merge(develop, "Merge branch 'develop' into 'release'");
+    master.merge(release, "Merge branch 'release' into 'master'").tag("v1.0.1");
+
+
+
+  </script>
+</body>
+</html>

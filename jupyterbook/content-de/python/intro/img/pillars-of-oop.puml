@@ -1,0 +1,11 @@
+@startmindmap
+* **Pillars of OOP**
+**: **Inheritance**
+(Sharing of information);
+**: **Encapsulation**
+(Grouping of information);
+**: **Abstraction**
+(Hiding of information);
+**: **Polymorphism**
+(Redefining of information;
+@endmindmap
