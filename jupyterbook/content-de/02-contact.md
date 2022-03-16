@@ -4,15 +4,12 @@ Dieser Kurs wird präsentiert von der [Ingenieurschule HEI in Sitten](https://he
 
 Bei Fragen, Anmerkungen oder Korrekturen zu einem der Minikurse könnt Ihr euch gerne melden.
 
-
 ```{figure} img/hei-defr.svg
 ---
 width: 40%
 name: HEI Logo
 ---
 ```
-
-
 
 ````{list-table}
 ---
@@ -26,7 +23,7 @@ align: center
        width: 180px
        ---
        ```
-     - [Cyrille Bezençon Zahno](https://people.hes-so.ch/fr/profile/cyrille.bezencon)
+     - [Cyrille Bezençon](https://people.hes-so.ch/fr/profile/cyrille.bezencon)
 
        Office: ENP.21.N106
 
