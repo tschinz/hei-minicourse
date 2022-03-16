@@ -24,8 +24,9 @@ Dieser Text und die dazugehörigen Beispiele wurden für den promotionellen Prog
 
 ## Credits
 * [David Tagan](https://people.hes-so.ch/fr/profile/david.tagan)
-* [Steve Gallay](https://people.hes-so.ch/fr/profile/steve.gallay?type=direct)
+* [Steve Gallay](https://people.hes-so.ch/fr/profile/steve.gallay)
 * [Dr. Pierre-André Mudry](https://people.hes-so.ch/fr/profile/pierrean.mudry)
+* [Christopher Metrailler](https://people.hes-so.ch/fr/profile/christop.metraill)
 * [Silvan Zahno](https://people.hes-so.ch/fr/profile/silvan.zahno)
 
 ```{figure} img/mini-course.svg
