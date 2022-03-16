@@ -31,30 +31,30 @@ parts:
     - file: content-de/python/intro/04-datatypes
     - file: content-de/python/intro/05-object_oriented
 
-  - file: content-de/python/lab/00-intro
-    sections:
-    - file: content-de/python/lab/ex01-getting_started
-    - file: content-de/python/lab/ex02-variables_and_functions
-    - file: content-de/python/lab/ex03-loops_and_conditionals
-    - file: content-de/python/lab/ex04-guessing_games
-    - file: content-de/python/lab/ex05-lists_etc
-    - file: content-de/python/lab/ex06-more_loops
-    - file: content-de/python/lab/ex07-strings
-    - file: content-de/python/lab/ex08-charles_other_methods
-    - file: content-de/python/lab/ex08-read_write_files
-    - file: content-de/python/lab/ex09-modules
-    - file: content-de/python/lab/ex10-exceptions
-    - file: content-de/python/lab/ex11-numpy
-    - file: content-de/python/lab/ex11a-sudoku
-    - file: content-de/python/lab/ex12-plotting
-    - file: content-de/python/lab/ex13-radioactive_decay
-    - file: content-de/python/lab/ex14-pandas_databases
-    - file: content-de/python/lab/ex15-more_plotting
-    - file: content-de/python/lab/ex16-maps
-    - file: content-de/python/lab/ex17-fourier_analysis
-    - file: content-de/python/lab/ex18-objects
-    - file: content-de/python/lab/ex19-differential_eqs
-    - file: content-de/python/lab/ex20-sorting
+#  - file: content-de/python/lab/00-intro
+#    sections:
+#    - file: content-de/python/lab/ex01-getting_started
+#    - file: content-de/python/lab/ex02-variables_and_functions
+#    - file: content-de/python/lab/ex03-loops_and_conditionals
+#    - file: content-de/python/lab/ex04-guessing_games
+#    - file: content-de/python/lab/ex05-lists_etc
+#    - file: content-de/python/lab/ex06-more_loops
+#    - file: content-de/python/lab/ex07-strings
+#    - file: content-de/python/lab/ex08-charles_other_methods
+#    - file: content-de/python/lab/ex08-read_write_files
+#    - file: content-de/python/lab/ex09-modules
+#    - file: content-de/python/lab/ex10-exceptions
+#    - file: content-de/python/lab/ex11-numpy
+#    - file: content-de/python/lab/ex11a-sudoku
+#    - file: content-de/python/lab/ex12-plotting
+#    - file: content-de/python/lab/ex13-radioactive_decay
+#    - file: content-de/python/lab/ex14-pandas_databases
+#    - file: content-de/python/lab/ex15-more_plotting
+#    - file: content-de/python/lab/ex16-maps
+#    - file: content-de/python/lab/ex17-fourier_analysis
+#    - file: content-de/python/lab/ex18-objects
+#    - file: content-de/python/lab/ex19-differential_eqs
+#    - file: content-de/python/lab/ex20-sorting
 
   - file: content-de/python/advanced/00-intro
     sections:
