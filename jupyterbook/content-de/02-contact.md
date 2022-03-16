@@ -1,6 +1,8 @@
 # Kontakt
 
-Dieser Kurs wird präsentiert von der [Ingenieurschule HEI in Sitten](https://hevs.ch).
+Dieser Kurs wird präsentiert von der [Ingenieurschule HEI in Sitten](https://hevs.ch). Falls Ihr Fragen zu den Studiengängen und Spezialisierungsrichtungen habt die untenstehenden Personen werden euch weiterhelfen können.
+
+Bei Fragen, Anmerkungen oder Korrekturen zu einem der Minikurse könnt Ihr euch gerne melden.
 
 
 ```{figure} img/hei-defr.svg
@@ -10,7 +12,7 @@ name: HEI Logo
 ---
 ```
 
-Bei Fragen, Anmerkungen oder Korrekturen könnt Ihr euch gerne melden.
+
 
 ````{list-table}
 ---
@@ -19,12 +21,25 @@ stub-columns: 0
 widths: 1 2
 align: center
 ---
+   * - ```{figure} img/2021-CyrilleBezencon.*
+       ---
+       width: 180px
+       ---
+       ```
+     - [Cyrille Bezençon Zahno](https://people.hes-so.ch/fr/profile/cyrille.bezencon)
+
+       Office: ENP.21.N106
+
+       cyrille.bezencon@hevs.ch
+
+       +41 58 606 93 16
+
    * - ```{figure} img/2020-SilvanZahno.*
        ---
        width: 180px
        ---
        ```
-     - [Silvan Zahno](https://www.hevs.ch/en/collaborateurs/professeure-hes/zahno-1684/)
+     - [Silvan Zahno](https://people.hes-so.ch/fr/profile/silvan.zahno)
 
        Office: ENP.23.N312
 

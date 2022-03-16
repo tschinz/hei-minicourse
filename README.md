@@ -41,6 +41,8 @@ For this example, you can see the [online version](https://tschinz.github.io/hei
 * [David Tagan](mailto:david.tagan@hevs.ch)
 * [Steve Gallay](mailto:stave.gallay@hevs.ch)
 * [Dr. Pierre-André Mudry](mailto:pierre-andre.mudry@hevs.ch)
+* [Christopher Metrailler](mailto:christopher.metrailler@hevs.ch)
+* Jérome Corre
 * [Silvan Zahno](mailto:silvan.zahno@hevs.ch)
 
 # Find us on
