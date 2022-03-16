@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teil 1 - Anzeigen und aus dem Labyrinth herauskommen &#8212; HEI Mini-Kurse</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Teil 2 - Spielerbewegung und Spiellogik" href="02-movement_logic.html" />
+    <link rel="prev" title="Maze Labor" href="00-intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/hei-en.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HEI Mini-Kurse</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00-intro.html">
+   Ingenieurschule Sitten - Mini-Kurse
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Einführung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/00-computer.html">
+   Computer Entwicklung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/01-programming.html">
+   Moderne Ansätze zur Programmierung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/intro/00-intro.html">
+   Einführung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/01-commands.html">
+     Kommandos
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/02-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/03-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/01-config.html">
+     Konfiguration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/02-general.html">
+     Basis Operationen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/04-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python/intro/00-intro.html">
+   Einführung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/02-jupyter.html">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/04-datatypes.html">
+     Python Datentypen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/05-object_oriented.html">
+     Objektorientierte Programmierung
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python/lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex01-getting_started.html">
+     Exercise 1 - Getting started with Jupyter and Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex02-variables_and_functions.html">
+     Exercise 2 - Variables and functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex03-loops_and_conditionals.html">
+     Exercise 3 - Loops and conditionals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex04-guessing_games.html">
+     Exercise 4 - Guessing Games
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex05-lists_etc.html">
+     Exercise 5 - Lists, tuples and dictionaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex06-more_loops.html">
+     Exercise 6 - More loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex07-strings.html">
+     Exercise 7 - Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex08-charles_other_methods.html">
+     Read and Write Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex08-read_write_files.html">
+     Exercise 8 - Reading and writing files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex09-modules.html">
+     Exercise 9 - Modules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex10-exceptions.html">
+     Exercise 10 - Exception handling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex11-numpy.html">
+     Exercise 11 - NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex11a-sudoku.html">
+     Exercise 11 - Sudoku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex12-plotting.html">
+     Exercise 12 - Plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex13-radioactive_decay.html">
+     Exercise 13 - Radioactive decay
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex14-pandas_databases.html">
+     Exercise 14 - Structured Data in Python (
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     )
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex15-more_plotting.html">
+     Exercise 15 - More plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex16-maps.html">
+     Exercise 16 - Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex17-fourier_analysis.html">
+     Exercise 17 - Fourier analysis and Milankovitch cycles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex18-objects.html">
+     Exercise 18 - Object-oriented programming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex19-differential_eqs.html">
+     Exercise 19 - Differential equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/lab/ex20-sorting.html">
+     Exercise N - Visualising sorting algorithms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python/advanced/00-intro.html">
+   Weiterführende Aufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/advanced/01-enigma-machine.html">
+     Enigma Chiffriergerät
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="00-intro.html">
+   Maze Labor
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Teil 1 - Anzeigen und aus dem Labyrinth herauskommen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="02-movement_logic.html">
+     Teil 2 - Spielerbewegung und Spiellogik
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console/00-intro.html">
+   ATtiny Console (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/01-soldering.html">
+     Löten des PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/02-commissioning.html">
+     In Betrieb nehmen
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Anhang
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02-contact.html">
+   Kontakt
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content-de/java/maze/01-display_solution.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-0-importieren-des-projektes">
+   Aufgabe 0 - Importieren des Projektes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-1-zeichnen-des-labyrinths-in-textform">
+   Aufgabe 1 - Zeichnen des Labyrinths in Textform
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-2-zeichnen-des-labyrinths-als-bild">
+   Aufgabe 2 - Zeichnen des Labyrinths als Bild
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-3-lees-propagierungsalgorithmus">
+   Aufgabe 3 - Lee’s Propagierungsalgorithmus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-4-anzeige-der-losung-im-grafikfenster">
+   Aufgabe 4 - Anzeige der Lösung im Grafikfenster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optionale-aufgaben">
+   Optionale Aufgaben
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Teil 1 - Anzeigen und aus dem Labyrinth herauskommen</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-0-importieren-des-projektes">
+   Aufgabe 0 - Importieren des Projektes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-1-zeichnen-des-labyrinths-in-textform">
+   Aufgabe 1 - Zeichnen des Labyrinths in Textform
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-2-zeichnen-des-labyrinths-als-bild">
+   Aufgabe 2 - Zeichnen des Labyrinths als Bild
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-3-lees-propagierungsalgorithmus">
+   Aufgabe 3 - Lee’s Propagierungsalgorithmus
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aufgabe-4-anzeige-der-losung-im-grafikfenster">
+   Aufgabe 4 - Anzeige der Lösung im Grafikfenster
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#optionale-aufgaben">
+   Optionale Aufgaben
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="teil-1-anzeigen-und-aus-dem-labyrinth-herauskommen">
+<h1>Teil 1 - Anzeigen und aus dem Labyrinth herauskommen<a class="headerlink" href="#teil-1-anzeigen-und-aus-dem-labyrinth-herauskommen" title="Permalink to this headline">¶</a></h1>
+<p>In diesem ersten Teil werden Sie den Quellcode, den wir für Sie vorbereitet haben, sowie die Struktur des Java-Codes kennen lernen. Am Ende dieses Teils werden Sie über die nötigen Mittel verfügen, um ein Labyrinth als Text und Bild darzustellen. Sie werden auch in der Lage sein, den Weg von einem beliebigen Punkt zum Ausgang im Bild darzustellen.</p>
+<div class="section" id="aufgabe-0-importieren-des-projektes">
+<h2>Aufgabe 0 - Importieren des Projektes<a class="headerlink" href="#aufgabe-0-importieren-des-projektes" title="Permalink to this headline">¶</a></h2>
+<p>Wir haben für Sie ein Eclipse-Projekt vorbereitet, das die grundlegenden Elemente des Projekts enthält. Um es zu importieren führen Sie folgende Schritte aus:</p>
+<ol class="simple">
+<li><p>Starten Sie Eclipse und führen Sie dann <em>File-&gt;Import-&gt;General-&gt; Projects from Folder or Archive</em> aus.</p></li>
+<li><p>Klicken Sie auf die Option <em>Archive</em>, wählen Sie die Datei
+<a class="reference external" href="https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/java/maze/resources/mazegame_studentVersion.zip">maze Studentversion</a> aus dem USB-Key und klicken Sie auf <em>Finish</em>. Das Maze-Projekt existiert nun in Ihrer Projektliste.</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Das Zip können Sie hier heruntereladen:</p>
+<p><a class="reference external" href="https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/java/maze/resources/mazegame_studentVersion.zip">maze Studentversion</a></p>
+</div>
+</div>
+<div class="section" id="aufgabe-1-zeichnen-des-labyrinths-in-textform">
+<h2>Aufgabe 1 - Zeichnen des Labyrinths in Textform<a class="headerlink" href="#aufgabe-1-zeichnen-des-labyrinths-in-textform" title="Permalink to this headline">¶</a></h2>
+<p>Diese erste Aufgabe wird Ihnen zeigen, wie das Labyrinth im Projekt codiert ist, indem Sie es als Text in der Konsole anzeigen sollen. Dies wird Ihnen den ganzen Tag über nützlich sein, da wir immer wieder die gleiche Datenstruktur verwenden werden.</p>
+<ol>
+<li><p>Öffnen Sie die Datei <code class="docutils literal notranslate"><span class="pre">TextDisplay.java</span></code>, die sich in <code class="docutils literal notranslate"><span class="pre">maze/display</span></code> befindet, und betrachten Sie die Datei.</p></li>
+<li><p>Beachten Sie, dass es in der Datei eine <code class="docutils literal notranslate"><span class="pre">main</span></code> gibt. Wie in C/C++ stellt <code class="docutils literal notranslate"><span class="pre">main</span></code> einen Einstiegspunkt in das Programm dar.</p></li>
+<li><p>In dem <code class="docutils literal notranslate"><span class="pre">main</span></code> wird ein <code class="docutils literal notranslate"><span class="pre">MazeContainer</span></code> erstellt. Diese Klasse stellt das Labyrinth her und ermöglicht Ihnen den Zugriff darauf in Form eines zweidimensionalen Arrays aus <code class="docutils literal notranslate"><span class="pre">MazeElem</span></code>. In der Klasse befinden sich auch die Informationen über die Dimensionen des Labyrinths (Felder <code class="docutils literal notranslate"><span class="pre">nCellsX</span></code> und <code class="docutils literal notranslate"><span class="pre">nCellsY</span></code>).</p></li>
+<li><p>Öffnen Sie die Klasse <code class="docutils literal notranslate"><span class="pre">MazeElem</span></code> und analysieren Sie sie. Diese letzte Klasse enthält bereits alle Informationen darüber, was sich in einem Feld des Labyrinths befindet (Wände, Spieler, Ausgang …).</p></li>
+<li><p>Das UML-Klassendiagramm, d. h. wie die Klassen organisiert sind, sieht folgendermassen aus:</p>
+<div class="figure align-default" id="maze-class-diagram-1">
+<a class="reference internal image-reference" href="../../../_images/maze-class-diagram-1.svg"><img alt="../../../_images/maze-class-diagram-1.svg" src="../../../_images/maze-class-diagram-1.svg" width="70%" /></a>
+<p class="caption"><span class="caption-number">Fig. 59 </span><span class="caption-text">Maze Klassendiagram <code class="docutils literal notranslate"><span class="pre">MazeContainer</span></code> und <code class="docutils literal notranslate"><span class="pre">MazeElem</span></code></span><a class="headerlink" href="#maze-class-diagram-1" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Starten Sie das entsprechende Programm (Rechtsklick auf die Klasse <code class="docutils literal notranslate"><span class="pre">TextDisplay</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Run</span> <span class="pre">As</span></code> =&gt; <code class="docutils literal notranslate"><span class="pre">Java</span> <span class="pre">Application</span></code>).</p></li>
+<li><p>Ändern Sie das Programm so, dass ein Labyrinth der Grösse 5x5 angezeigt wird.</p></li>
+<li><p>Wie Sie sehen, wird das Labyrinth nicht vollständig angezeigt, sondern nur die Kreuzungen und die Wände ganz unten und ganz rechts. Ergänzen Sie den Code an den mit <code class="docutils literal notranslate"><span class="pre">TODO</span> <span class="pre">Aufgabe</span> <span class="pre">1</span></code> bezeichneten Stellen, damit das Labyrinth korrekt wie unten angezeigt wird (<code class="docutils literal notranslate"><span class="pre">p1</span></code> steht für die Position des ersten Spielers und <code class="docutils literal notranslate"><span class="pre">e</span></code> für den Ausgang). Ihre Anzeige folgendermassen sein:</p></li>
+</ol>
+<div class="highlight-Text notranslate"><div class="highlight"><pre><span></span>*---*---*---*---*---*
+| p1|               |
+*   *   *---*---*   *
+|   |   |       |   |
+*   *---*   *   *   *
+|           |       |
+*---*---*---*---*   *
+|       |           |
+*   *---*   *---*---*
+|         e         |
+*---*---*---*---*---*
+</pre></div>
+</div>
+</div>
+<div class="section" id="aufgabe-2-zeichnen-des-labyrinths-als-bild">
+<h2>Aufgabe 2 - Zeichnen des Labyrinths als Bild<a class="headerlink" href="#aufgabe-2-zeichnen-des-labyrinths-als-bild" title="Permalink to this headline">¶</a></h2>
+<p>Nachdem wir nun in der Lage sind, ein Labyrinth korrekt als Text anzuzeigen, ist es an der Zeit, unserem Programm ein wenig Grafik hinzuzufügen. Eine Klasse, die ähnlich wie <code class="docutils literal notranslate"><span class="pre">TextDisplay</span></code> funktioniert, finden Sie in der Datei <code class="docutils literal notranslate"><span class="pre">GraphicDisplay.java</span></code>.</p>
+<ol>
+<li><p>Öffnen Sie die Datei <code class="docutils literal notranslate"><span class="pre">GraphicDisplay.java</span></code>.</p></li>
+<li><p>Beobachten Sie die Methode <code class="docutils literal notranslate"><span class="pre">main</span></code> dieser Klasse und führen Sie sie aus.</p></li>
+<li><p>Ändern Sie den Code so, dass ein 10x10-Labyrinth angezeigt wird.</p></li>
+<li><p>Sie können die Grösse jedes kleinen Quadrats ändern, indem Sie einen Parameter im Konstruktor von <code class="docutils literal notranslate"><span class="pre">GraphicDisplay</span></code> verändern. Versuchen Sie es mit anderen grösseren und kleineren Werten.</p></li>
+<li><p>Es ist möglich, das Labyrinth ohne die Fensterränder anzuzeigen. Finden Sie heraus, wie das geht, und führen Sie Ihr Programm aus. Sie werden etwas Ähnliches erhalten wie das, was rechts in der nebenstehenden Abbildung zu sehen ist. Sie können entscheiden, ob Sie eher diese oder die andere Methode verwenden möchten, je nachdem, was Ihnen lieber ist. Versuchen Sie auch, das Hintergrundgitter sichtbar zu machen (hierzu können Sie eine Variable ändern).</p>
+<div class="figure align-default" id="mini-maze">
+<a class="reference internal image-reference" href="../../../_images/maze-mini.png"><img alt="../../../_images/maze-mini.png" src="../../../_images/maze-mini.png" style="width: 10%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 60 </span><span class="caption-text">Mini Maze</span><a class="headerlink" href="#mini-maze" title="Permalink to this image">¶</a></p>
+</div>
+</li>
+<li><p>Um sicherzustellen, dass die Anzeige korrekt ist, lassen Sie sich auch eine Textversion desselben Labyrinths aus dem <code class="docutils literal notranslate"><span class="pre">main</span></code> anzeigen.</p></li>
+</ol>
+</div>
+<div class="section" id="aufgabe-3-lees-propagierungsalgorithmus">
+<h2>Aufgabe 3 - Lee’s Propagierungsalgorithmus<a class="headerlink" href="#aufgabe-3-lees-propagierungsalgorithmus" title="Permalink to this headline">¶</a></h2>
+<p>In dieser Phase werden Sie eine Möglichkeit implementieren, den Ausgang des Labyrinths mithilfe eines Routing-Algorithmus automatisch zu finden.</p>
+<ol>
+<li><p>Öffnen Sie die Klasse <code class="docutils literal notranslate"><span class="pre">AStar.java</span></code>, die das Skelett der Solverklasse für das Labyrinth nach der Methode von Lee enthält, die vorgestellt wurde. Die Ausbreitungsphase des Algorithmus (wenn der Pfad vom Startpunkt aus in alle Richtungen wächst) kann formal wie folgt beschrieben werden:</p>
+<div class="highlight-Text notranslate"><div class="highlight"><pre><span></span>Algorithmus 1 - Propagation von Lee (Algorithmus A*)
+Markieren Sie den Startpunkt mit 1
+m &lt;= 1
+// Wellenförmige Ausbreitung
+wiederholen
+  Markiert alle nicht markierten Nachbars Zellen vom den markierten Punkten m mit m+1
+  m &lt;= m+1
+bis zum gefundenen Ziel oder es gibt keine weiteren Punkte die markiert werden können
+</pre></div>
+</div>
+</li>
+<li><p>Um Ihre Methode zu testen, wurde hier auch ein <code class="docutils literal notranslate"><span class="pre">main</span></code> erstellt. Sie können es verwenden, um Ihren Code leichter zu debuggen.</p></li>
+<li><p>Beobachten Sie die Methode <code class="docutils literal notranslate"><span class="pre">solve</span></code>. Sie beginnt damit, eine leere Lösung zu erstellen (die eigentlich ein Array von Ganzzahlen ist). Sie fährt fort, indem sie Lee’s Propagation und dann das Backtracking durchführt. Das Ziel des gesamten Algorithmus ist es, überall dort eine <code class="docutils literal notranslate"><span class="pre">1</span></code> zu setzen, wo sich der Lösungsweg zwischen dem als Argument übergebenen Punkt und der Ausgabe befindet. Zum Beispiel das Labyrinth:</p>
+<div class="highlight-Text notranslate"><div class="highlight"><pre><span></span>*---*---*---*---*
+| p1|           |
+*   *   *---*   *
+|   |   |       |                              1 - 0 - 0 - 0
+*   *---*   *   *     wird am Ende ergeben     1 - 0 - 1 - 1
+|           |   |                              1 - 1 - 1 - 1
+*---*---*---*   *                              0 - 1 - 1 - 1
+|     e         |
+*---*---*---*---*
+</pre></div>
+</div>
+</li>
+<li><p>Wenn wir das Backtracking entfernen (indem wir die Methode <code class="docutils literal notranslate"><span class="pre">backtrace()</span></code> in <code class="docutils literal notranslate"><span class="pre">solve</span></code> auskommentieren), können wir die Schritte der Ausbreitung sehen, was sehr praktisch ist, um den Code zu debuggen. Im obigen Fall sieht das dann so aus:</p>
+<div class="highlight-Text notranslate"><div class="highlight"><pre><span></span>01 - 10 - 09 - 08
+02 - 11 - 06 - 07
+03 - 04 - 05 - 08
+00 - 11 - 10 - 09
+</pre></div>
+</div>
+</li>
+<li><p>Um dieses Ergebnis erzielen zu können, müssen Sie die Methode <code class="docutils literal notranslate"><span class="pre">expansion</span></code> implementieren. Diese wird von <code class="docutils literal notranslate"><span class="pre">solve</span></code> aufgerufen, solange sie nicht <code class="docutils literal notranslate"><span class="pre">true</span></code> zurückgibt (d. h. solange die Ausbreitung der Welle das Ziel noch nicht erreicht hat). Beachten Sie auch, dass die Methode bei jedem Aufruf den Status von <code class="docutils literal notranslate"><span class="pre">m</span></code> erhält, der die Nummer des aktuellen Schritts ist. Es liegt an Ihnen, herauszufinden, wie Sie das machen (mit unserer Hilfe)! Zögern Sie nicht, die Methode <code class="docutils literal notranslate"><span class="pre">access_solution()</span></code> zu verwenden (indem Sie verstehen, wozu sie dient…).</p></li>
+</ol>
+</div>
+<div class="section" id="aufgabe-4-anzeige-der-losung-im-grafikfenster">
+<h2>Aufgabe 4 - Anzeige der Lösung im Grafikfenster<a class="headerlink" href="#aufgabe-4-anzeige-der-losung-im-grafikfenster" title="Permalink to this headline">¶</a></h2>
+<p>Ihre Implementierung des vorherigen Punktes liefert Ihnen eine Tabelle, die eine Lösung ab einem bestimmten Punkt enthält. Sie haben die Möglichkeit, diese direkt in der grafischen Darstellung des Labyrinths anzuzeigen. Dies werden Sie in dieser Aufgabe umsetzen.</p>
+<ol class="simple">
+<li><p>Lassen Sie sich von dem bisherigen Vorgehen inspirieren und zeigen Sie vom <code class="docutils literal notranslate"><span class="pre">main</span></code> Klasse <code class="docutils literal notranslate"><span class="pre">AStar</span></code> die grafische Version des Labyrinths an.</p></li>
+<li><p>Das Objekt der Klasse <code class="docutils literal notranslate"><span class="pre">GraphicDisplay</span></code>, das Sie erstellt haben, verfügt über eine Methode <code class="docutils literal notranslate"><span class="pre">setSolution()</span></code>, die als Argument ein Ganzzahl-Array entgegennimmt, das einer Lösung von einem Punkt aus entspricht. Verwenden Sie diese Methode, um die Lösung anzuzeigen, die mit dem im vorherigen Schritt erstellten Lee’s Algorithmus berechnet wurde. Wenn Sie die Lösung aus der Anzeige entfernen möchten, verwenden Sie die Methode <code class="docutils literal notranslate"><span class="pre">clearSolution()</span></code>.</p></li>
+</ol>
+</div>
+<div class="section" id="optionale-aufgaben">
+<h2>Optionale Aufgaben<a class="headerlink" href="#optionale-aufgaben" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Ändern Sie die Art und Weise, wie der Spieler gezeichnet wird (andere Form wie ein Pfeil, der den letzten Zug zeigt, Farben, …).</p></li>
+<li><p>Zeigen Sie eine andere Zeichnung für den Ausgang an (z. B. einen Pfeil, der nach aussen zeigt).</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content-de/java/maze"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="00-intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Maze Labor</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="02-movement_logic.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Teil 2 - Spielerbewegung und Spiellogik</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs ⓒ Silvan Zahno<br/>
+    
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

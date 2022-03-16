@@ -1,0 +1,894 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jupyter Notebooks &#8212; HEI Mini-Kurse</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="ipython" href="03-ipython.html" />
+    <link rel="prev" title="Hello World" href="01-hello_world.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/hei-en.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HEI Mini-Kurse</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00-intro.html">
+   Ingenieurschule Sitten - Mini-Kurse
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Einführung
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/00-computer.html">
+   Computer Entwicklung
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/01-programming.html">
+   Moderne Ansätze zur Programmierung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/intro/00-intro.html">
+   Einführung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/01-commands.html">
+     Kommandos
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/02-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/03-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/01-config.html">
+     Konfiguration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/02-general.html">
+     Basis Operationen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/04-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="00-intro.html">
+   Einführung
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="04-datatypes.html">
+     Python Datentypen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="05-object_oriented.html">
+     Objektorientierte Programmierung
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex01-getting_started.html">
+     Exercise 1 - Getting started with Jupyter and Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex02-variables_and_functions.html">
+     Exercise 2 - Variables and functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex03-loops_and_conditionals.html">
+     Exercise 3 - Loops and conditionals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex04-guessing_games.html">
+     Exercise 4 - Guessing Games
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex05-lists_etc.html">
+     Exercise 5 - Lists, tuples and dictionaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex06-more_loops.html">
+     Exercise 6 - More loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex07-strings.html">
+     Exercise 7 - Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex08-charles_other_methods.html">
+     Read and Write Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex08-read_write_files.html">
+     Exercise 8 - Reading and writing files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex09-modules.html">
+     Exercise 9 - Modules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex10-exceptions.html">
+     Exercise 10 - Exception handling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex11-numpy.html">
+     Exercise 11 - NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex11a-sudoku.html">
+     Exercise 11 - Sudoku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex12-plotting.html">
+     Exercise 12 - Plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex13-radioactive_decay.html">
+     Exercise 13 - Radioactive decay
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex14-pandas_databases.html">
+     Exercise 14 - Structured Data in Python (
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     )
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex15-more_plotting.html">
+     Exercise 15 - More plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex16-maps.html">
+     Exercise 16 - Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex17-fourier_analysis.html">
+     Exercise 17 - Fourier analysis and Milankovitch cycles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex18-objects.html">
+     Exercise 18 - Object-oriented programming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex19-differential_eqs.html">
+     Exercise 19 - Differential equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/ex20-sorting.html">
+     Exercise N - Visualising sorting algorithms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/00-intro.html">
+   Weiterführende Aufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/01-enigma-machine.html">
+     Enigma Chiffriergerät
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../java/maze/00-intro.html">
+   Maze Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/01-display_solution.html">
+     Teil 1 - Anzeigen und aus dem Labyrinth herauskommen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/02-movement_logic.html">
+     Teil 2 - Spielerbewegung und Spiellogik
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console/00-intro.html">
+   ATtiny Console (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/01-soldering.html">
+     Löten des PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/02-commissioning.html">
+     In Betrieb nehmen
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Anhang
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02-contact.html">
+   Kontakt
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../../../_sources/content-de/python/intro/02-jupyter.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content-de/python/intro/02-jupyter.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/tschinz/hei-minicourse/main?urlpath=tree/content-de/python/intro/02-jupyter.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-zellen">
+   Markdown Zellen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatierter-text">
+     Formatierter Text
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-code">
+   Python-Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beispiel">
+   Beispiel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-benutzten">
+   Jupyter benutzten
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Jupyter Notebooks</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-zellen">
+   Markdown Zellen
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#formatierter-text">
+     Formatierter Text
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-code">
+   Python-Code
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#beispiel">
+   Beispiel
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyter-benutzten">
+   Jupyter benutzten
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="jupyter-notebooks">
+<span id="section-jupyter-notebook"></span><h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>Wir werden in all unseren Beispielen das Notizbuchsystem <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> verwenden und in den Notizbüchern selbst eine Version von Python, bekannt als <code class="docutils literal notranslate"><span class="pre">ipython</span></code>.</p>
+<p>Das Notizbuch ist ein <strong>lebendiges</strong> Dokument, das eine Reihe verschiedener Arten von Inhalten enthalten kann. Dies können Textelemente formatiert in Markdown oder Programfragemente sein welche auch ausgeführt werden können. Aktuell betrachten Sie die statische Webseite worin der Code nicht ausgeührt werden kann. Hierzu müssen die Im Racktensymbol die Seite als interaktives Noritzbuch auf Binder starten.</p>
+<div class="figure align-default" id="rocket-icon">
+<a class="reference internal image-reference" href="../../../_images/rocket-icon.png"><img alt="../../../_images/rocket-icon.png" src="../../../_images/rocket-icon.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 40 </span><span class="caption-text">Starten des Jupyter Notebooks</span><a class="headerlink" href="#rocket-icon" title="Permalink to this image">¶</a></p>
+</div>
+<p>Sie können die Notizbücher als Notizblock verwenden, um Code zu schreiben und diesen gleichzeitig zu dokumentieren.
+Es ist wie ein Labornotizbuch, aber für Datenmanipulation und Programmierung.
+Sie können das erstellte Dokument auch als PDF exportieren, um einen Laborbericht zu erstellen.</p>
+<p>Beachten Sie das das Notizbuch auf Binder nicht gespeichert wird, sobald Sie die Webseite schliessen werden Ihre Modifikationen verloren sein. Vergessen Sie nicht das Dokument auf Ihrem Computer zu speichern falls Sie es behalten möchten.</p>
+<p>Ein Notizbuch besteht aus verschiedenen <strong>Zellen</strong> (Cells), die verschiedene Arten von Inhalten enthalten und die <em>ausgeführt</em> werden können, indem man die Zelle auswählt und sie <em>ausführt</em> durch Betätigen des <em>Run</em> Knopfes oder durch Eingabe von “Shift + Enter”.
+Die Ergebnisse der Ausführung einer Zelle hängen vom Inhalt der Zelle ab. Sie kann eine darunter liegende Ausgabezelle mit Ergebnissen erzeugen oder sich selbst neu formatieren.</p>
+<div class="section" id="markdown-zellen">
+<span id="section-markdowncells"></span><h2>Markdown Zellen<a class="headerlink" href="#markdown-zellen" title="Permalink to this headline">¶</a></h2>
+<p>Eine Markdown Zusammenfassung finden Sie <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">hier</a>. Die Formatierung in Markdown sieht folgendermassen aus:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gu">### Formatierter Text</span>
+
+Hier wird eine fast fertig formatierte Version von Text verwendet, die als &quot;Markdown&quot; bekannt ist, um Inhalte zu erstellen, die so formatiert werden können, dass sie einem Word-Dokument ähneln, aber auch die beabsichtigte Formatierung hervorheben, selbst wenn sie nicht verarbeitet werden. Es ist eine recht nützliche Form, die man lernen kann, um Notizen zu machen.
+
+Wenn Sie sich den Rohinhalt ansehen, werden Sie sehen, wie man
+
+<span class="k">*</span> Aufzählungspunkte
+  <span class="k">*</span> verschachtelte Aufzählungspunkte sowie
+  <span class="k">*</span> Text in <span class="gs">__fett__</span>
+  <span class="k">*</span> Text in <span class="ge">_Kursivschrift_</span> (oder hervorgehoben)
+
+<span class="sb">```sh</span>
+<span class="nb">echo</span> <span class="s2">&quot;Code, der für verschiedene Sprachen hervorgehoben werden kann&quot;</span>
+ls -l
+<span class="sb">```</span>
+
+<span class="sb">```python</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;einschließlich Python, Unix-Shell-Skripte, Fortran&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+<span class="sb">```</span>
+
+Mathematische Symbole und Formeln, können innerhalb eines Textes $2\pi r$ oder als Gleichung erscheinen:
+
+$$
+    A = \pi r^2
+$$
+
+ABER Sie müssen in der Lage sein, die Formeln in der Sprache $\LaTeX$ zu beschreiben.
+
+Sie können Links wie diese hinzufügen: [<span class="nt">siehe auch das Markdown Cheatsheet</span>](<span class="na">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</span>)
+
+Und Bilder wie dieses:
+
+![<span class="nt">Python Course</span>](<span class="na">./../img/python-course.svg</span>)
+</pre></div>
+</div>
+<hr class="docutils" />
+<p>Dies ergibt der folgender Paragraph:</p>
+<div class="section" id="formatierter-text">
+<h3>Formatierter Text<a class="headerlink" href="#formatierter-text" title="Permalink to this headline">¶</a></h3>
+<p>Hier wird eine fast fertig formatierte Version von Text verwendet, die als “Markdown” bekannt ist, um Inhalte zu erstellen, die so formatiert werden können, dass sie einem Word-Dokument ähneln, aber auch die beabsichtigte Formatierung hervorheben, selbst wenn sie nicht verarbeitet werden. Es ist eine recht nützliche Form, die man lernen kann, um Notizen zu machen.</p>
+<p>Wenn Sie sich den Rohinhalt ansehen, werden Sie sehen, wie man</p>
+<ul class="simple">
+<li><p>Aufzählungspunkte</p>
+<ul>
+<li><p>verschachtelte Aufzählungspunkte sowie</p></li>
+<li><p>Text in <strong>fett</strong></p></li>
+<li><p>Text in <em>Kursivschrift</em> (oder hervorgehoben)</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;Code, der für verschiedene Sprachen hervorgehoben werden kann&quot;</span>
+ls -l
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;einschließlich Python, Unix-Shell-Skripte, Fortran&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">100</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Mathematische Symbole und Formeln, können innerhalb eines Textes <span class="math notranslate nohighlight">\(2\pi r\)</span> oder als Gleichung erscheinen:</p>
+<div class="math notranslate nohighlight">
+\[
+    A = \pi r^2
+\]</div>
+<p>ABER Sie müssen in der Lage sein, die Formeln in der Sprache <span class="math notranslate nohighlight">\(\LaTeX\)</span> zu beschreiben.</p>
+<p>Sie können Links wie diese hinzufügen: <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">siehe auch das Markdown Cheatsheet</a></p>
+<p>Und Bilder wie dieses:</p>
+<p><img alt="Python Course" src="../../../_images/python-course.svg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wenn Sie Zellen mit formatiertem Code ausführen, wird die Zelle durch die formatierte Version ersetzt. So können Sie eine gut formatierte Seite mit verschachteltem Code schreiben, der auch ausgeführt werden kann.</p>
+</div>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="python-code">
+<span id="section-pythoncells"></span><h2>Python-Code<a class="headerlink" href="#python-code" title="Permalink to this headline">¶</a></h2>
+<p>Zellen, die als Codezellen definiert sind, enthalten Python-Anweisungen, die ausgeführt werden, wenn die Zelle ausgeführt wird. Wenn mehrere Zellen Code enthalten, werden sie in der von Ihnen gewählten Reihenfolge ausgeführt (oder wenn Sie “run all” oder “run all above” wählen, werden sie in der Reihenfolge ausgeführt, in der sie aufgelistet sind).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Beispiel für eine einfache Python-Code-Zelle</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hallo kleine Welt&quot;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wenn Sie eine Code-Zelle ausführen, ist es dasselbe, als wenn Sie den gesamten Code in den Interpreter eingeben. Wenn Sie eine Zelle zweimal ausführen, ist es dasselbe, als hätten Sie alles zweimal eingegeben … das Notizbuch merkt sich das! Sie können einen Teil des Notizbuchs oder das gesamte Notizbuch ausführen, und Sie können Zellen auch in anderer Reihenfolge ausführen. Das ist großartig, um zu experimentieren, aber seien Sie vorsichtig, das kann auch teilweise verwirrend sein.</p>
+</div>
+<div class="section" id="beispiel">
+<h2>Beispiel<a class="headerlink" href="#beispiel" title="Permalink to this headline">¶</a></h2>
+<p>Hierzu ein kleines Beispiel. Wiso funktioniert die untenstehende Zelle aber die nächste nicht?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zähler </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+<span class="n">a</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Warum funktioniert das nicht?</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zähler </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">b</span><span class="p">))</span>
+<span class="n">b</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>und, was noch wichtiger ist, wie würden Sie das Problem beheben?</p>
+<p>Starten Sie das Notebook und editieren Sie die untenstehende Zelle. Die Zelle kann mit <kbd>Shift</kbd>+<kbd>⏎</kbd> ausgeführt werden.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Versuchen Sie es!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## Weil b noch nicht definiert wurde, a aber in der davorgegangenen Zelle schon.</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zähler </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">c</span><span class="p">))</span>
+<span class="k">except</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Zähler&quot;</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="jupyter-benutzten">
+<h2>Jupyter benutzten<a class="headerlink" href="#jupyter-benutzten" title="Permalink to this headline">¶</a></h2>
+<p>In diesem Kurs werden wir die Aufgaben interaktiv auf einem Jupyter Server lösen. Das starten des Notebookes auf <a class="reference external" href="https://jupyter.org/binder">Binder</a> mit hilfe des Rocket Icons habt Ihr <a class="reference internal" href="#section-jupyter-notebook"><span class="std std-ref">zu beginn der Seite</span></a> bereits gelernt. Dank diesem Server könnt Ihr den Code hinzufügen, löschen und ergänzen um Ihn danach auszuführen.</p>
+<p>Jupyternotebook ist wie beretis erwähnt auf Zellen basiert. Die Zellen können entweder <a class="reference internal" href="#section-markdowncells"><span class="std std-ref">Formatierter Text im Markdown Format</span></a> oder <a class="reference internal" href="#section-pythoncells"><span class="std std-ref">Python Code</span></a> sein. Jede Zelle kann separat ausgeführt werden.</p>
+<p>Der aktuelle Zellentyp kann in der Dropbox ausgewählt werden</p>
+<div class="figure align-default" id="jupyter-celltype">
+<a class="reference internal image-reference" href="../../../_images/jupyter_command_bar_celltype.png"><img alt="../../../_images/jupyter_command_bar_celltype.png" src="../../../_images/jupyter_command_bar_celltype.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 41 </span><span class="caption-text">Auswahl bzw. Änderung eines Zelltyps</span><a class="headerlink" href="#jupyter-celltype" title="Permalink to this image">¶</a></p>
+</div>
+<p>Neue Zellen können über das <code class="docutils literal notranslate"><span class="pre">Insert</span></code> Menü eingefügt werden.</p>
+<div class="figure align-default" id="jupyter-cellinsert">
+<a class="reference internal image-reference" href="../../../_images/jupyter_command_bar_insert.png"><img alt="../../../_images/jupyter_command_bar_insert.png" src="../../../_images/jupyter_command_bar_insert.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 42 </span><span class="caption-text">Hinzufügen einer Zelle</span><a class="headerlink" href="#jupyter-cellinsert" title="Permalink to this image">¶</a></p>
+</div>
+<p>Eine Zelle kann entweder mit dem <code class="docutils literal notranslate"><span class="pre">Run</span></code> Knopf oder mit <kbd>Shift</kbd>+<kbd>⏎</kbd> ausgeführt werden. Alternative können auch über das <code class="docutils literal notranslate"><span class="pre">Cell</span></code> Menu alle obenstehenden oder untenstehenden Zellen ausgeführt werden.</p>
+<div class="figure align-default" id="jupyter-cellrun">
+<a class="reference internal image-reference" href="../../../_images/jupyter_command_bar_run.png"><img alt="../../../_images/jupyter_command_bar_run.png" src="../../../_images/jupyter_command_bar_run.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 43 </span><span class="caption-text">Ausführen einer Zelle</span><a class="headerlink" href="#jupyter-cellrun" title="Permalink to this image">¶</a></p>
+</div>
+<p>Sobald eine Zelle ausgeführt wird ist die über einen gefüllten Kreis oben rechts sichtbar. Dieser Punkt teils mit ob der Python Kernel aktiv ist oder nicht</p>
+<div class="figure align-default" id="jupyter-cellrunning">
+<a class="reference internal image-reference" href="../../../_images/jupyter_command_bar_running.png"><img alt="../../../_images/jupyter_command_bar_running.png" src="../../../_images/jupyter_command_bar_running.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 44 </span><span class="caption-text">Python Kernel ist aktiv</span><a class="headerlink" href="#jupyter-cellrunning" title="Permalink to this image">¶</a></p>
+</div>
+<p>Zusätzlich steht rechts neben der Zelle die eine Bemerkung <code class="docutils literal notranslate"><span class="pre">ln[&lt;x&gt;]</span></code>.</p>
+<p>Diese zeigt an ob eine Zelle aktuell ausgeführt wird <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[*]:</span></code>. Oder wann die Zelle seit dem Python Kernel start ausgeführt wurde <code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">[3]:</span></code>. Die Nummer wird bei jeder aufgeführten Zelle inkrementiert.</p>
+<p>Falls eine Zelle gestoppt werden soll, z.B. falls die Berechnung zuviel Zeit beansprucht kann dies über den <code class="docutils literal notranslate"><span class="pre">Stop</span></code> Knopf geschehen.</p>
+<div class="figure align-default" id="jupyter-cellstop">
+<a class="reference internal image-reference" href="../../../_images/jupyter_command_bar_stop.png"><img alt="../../../_images/jupyter_command_bar_stop.png" src="../../../_images/jupyter_command_bar_stop.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 45 </span><span class="caption-text">Stoppen einer Ausführung</span><a class="headerlink" href="#jupyter-cellstop" title="Permalink to this image">¶</a></p>
+</div>
+<p>Direkt unterhalb der Zelle befindet sich das Fenster der Ausgabe der jeweiligen Zelle.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ihr solltet nun alle benötigten Informationen haben um Jupter Notebooks auszuführen.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content-de/python/intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="01-hello_world.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Hello World</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="03-ipython.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ipython</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs ⓒ Silvan Zahno<br/>
+    
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

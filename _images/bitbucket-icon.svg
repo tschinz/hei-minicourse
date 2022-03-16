@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 173.5322 127.17196"
+   version="1.1"
+   id="svg861"
+   sodipodi:docname="bitbucket-icon.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   width="173.5322"
+   height="127.17196"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview863"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="5.1552669"
+     inkscape:cx="211.72522"
+     inkscape:cy="76.135728"
+     inkscape:window-width="3440"
+     inkscape:window-height="1387"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Blue" />
+  <defs
+     id="defs831">
+    <style
+       id="style824">.cls-1{fill:#253858;}.cls-2{fill:none;}.cls-3{fill:#2684ff;}.cls-4{fill:url(#New_Gradient_Swatch_1);}</style>
+    <linearGradient
+       id="New_Gradient_Swatch_1"
+       x1="64.010002"
+       y1="30.27"
+       x2="32.990002"
+       y2="54.48"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.18"
+         stop-color="#0052cc"
+         id="stop826" />
+      <stop
+         offset="1"
+         stop-color="#2684ff"
+         id="stop828" />
+    </linearGradient>
+  </defs>
+  <title
+     id="title833">Bitbucket-blue</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2"
+     transform="translate(280.24759,54.655701)">
+    <g
+       id="Blue">
+      <g
+         id="g1177"
+         transform="matrix(0.49722691,0,0,0.49722691,-327.20073,41.055054)">
+        <path
+           class="cls-1"
+           d="m 116.87,4.58 c 11.79,0 17.51,5.81 17.51,15.14 0,7 -3.17,11.26 -9.68,12.85 8.54,1.41 12.76,6.07 12.76,14.25 0,9.24 -6.25,15.58 -19.18,15.58 H 94.43 V 4.58 Z m -14.52,7.57 v 17.24 h 13.46 c 7.48,0 10.56,-3.43 10.56,-9 0,-5.57 -3.34,-8.27 -10.56,-8.27 z m 0,24.29 v 18 h 16.19 c 7.57,0 11,-2.73 11,-8.54 0,-6.16 -3.26,-9.5 -11.17,-9.5 z"
+           id="path835" />
+        <path
+           class="cls-1"
+           d="m 150.4,1.5 a 4.94,4.94 0 0 1 5.28,5.28 5.28,5.28 0 0 1 -10.56,0 4.94,4.94 0 0 1 5.28,-5.28 z m -3.87,16.9 h 7.57 v 44 h -7.57 z"
+           id="path837" />
+        <path
+           class="cls-1"
+           d="m 183,55 a 24,24 0 0 0 4.75,-0.62 v 7.3 a 18.19,18.19 0 0 1 -5.1,0.7 c -9.42,0 -14,-5.54 -14,-13.73 V 25.43 h -7.13 v -7 h 7.13 V 9.06 H 176 v 9.33 h 11.7 v 7 H 176 v 23.1 c 0,3.87 2.29,6.51 7,6.51 z"
+           id="path839" />
+        <path
+           class="cls-1"
+           d="m 218.95,63.27 c -6.42,0 -11.35,-2.9 -14,-8.62 v 7.74 h -7.57 V 0 H 205 v 26.31 c 2.82,-5.81 8.1,-8.8 14.87,-8.8 11.7,0 17.6,9.94 17.6,22.88 -0.04,12.41 -6.2,22.88 -18.52,22.88 z M 217.8,24.55 c -6.8,0 -12.8,4.31 -12.8,14.08 v 3.52 c 0,9.77 5.54,14.08 12,14.08 8.54,0 12.94,-5.63 12.94,-15.84 -0.08,-10.56 -4.3,-15.84 -12.14,-15.84 z"
+           id="path841" />
+        <path
+           class="cls-1"
+           d="m 245.35,18.39 h 7.57 V 45 c 0,7.92 3.17,11.44 10.38,11.44 7,0 11.88,-4.66 11.88,-13.55 v -24.5 h 7.57 v 44 h -7.57 v -7.22 a 15.43,15.43 0 0 1 -13.9,8.1 c -10.12,0 -15.93,-7 -15.93,-19.1 z"
+           id="path843" />
+        <path
+           class="cls-1"
+           d="m 325.25,61.25 c -2.64,1.41 -6.69,2 -10.74,2 -15.66,0 -23,-9.5 -23,-23 0,-13.29 7.3,-22.79 23,-22.79 A 23.26,23.26 0 0 1 325,19.62 v 7 a 22.17,22.17 0 0 0 -10,-2.07 c -11.44,0 -16.1,7.21 -16.1,15.75 0,8.54 4.75,15.75 16.28,15.75 a 27.78,27.78 0 0 0 10,-1.58 z"
+           id="path845" />
+        <path
+           class="cls-1"
+           d="M 333.88,62.39 V 0 h 7.57 v 39 l 18.92,-20.59 h 9.86 L 349.54,40 371.1,62.39 H 360.8 L 341.44,41.8 v 20.59 z"
+           id="path847" />
+        <path
+           class="cls-1"
+           d="m 396.18,63.27 c -16.46,0 -23.67,-9.5 -23.67,-23 0,-13.29 7.39,-22.79 20.77,-22.79 13.55,0 19,9.42 19,22.79 v 3.43 h -32.12 c 1.06,7.48 5.9,12.32 16.28,12.32 a 39,39 0 0 0 13.38,-2.37 v 7 c -3.61,1.92 -9.15,2.62 -13.64,2.62 z m -16.1,-26 h 24.55 c -0.44,-8.18 -4.14,-12.85 -11.7,-12.85 -8.02,-0.04 -12.06,5.15 -12.85,12.8 z"
+           id="path849" />
+        <path
+           class="cls-1"
+           d="m 438.68,55 a 24,24 0 0 0 4.75,-0.62 v 7.3 a 18.19,18.19 0 0 1 -5.1,0.7 c -9.42,0 -14,-5.54 -14,-13.73 V 25.43 h -7.13 v -7 h 7.13 V 9.06 h 7.39 v 9.33 h 11.7 v 7 h -11.7 v 23.1 c 0.01,3.87 2.28,6.51 6.96,6.51 z"
+           id="path851" />
+      </g>
+      <g
+         id="g1182"
+         transform="matrix(1.4335653,0,0,1.4862575,-238.18723,-63.959426)">
+        <polygon
+           class="cls-2"
+           points="24.7,43.51 37.75,43.51 40.9,25.12 21.23,25.12 "
+           id="polygon853" />
+        <path
+           class="cls-3"
+           d="M 2,6.26 A 2,2 0 0 0 0,8.58 l 8.49,51.54 a 2.72,2.72 0 0 0 2.66,2.27 h 40.73 a 2,2 0 0 0 2,-1.68 L 62.37,8.59 a 2,2 0 0 0 -2,-2.32 z m 35.75,37.25 h -13 L 21.23,25.12 H 40.9 Z"
+           id="path855" />
+        <path
+           class="cls-4"
+           d="M 59.67,25.12 H 40.9 l -3.15,18.39 h -13 L 9.4,61.73 a 2.71,2.71 0 0 0 1.75,0.66 h 40.74 a 2,2 0 0 0 2,-1.68 z"
+           id="path857"
+           style="fill:url(#New_Gradient_Swatch_1)" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata945">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Bitbucket-blue</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

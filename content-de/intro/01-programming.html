@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moderne Ansätze zur Programmierung &#8212; HEI Mini-Kurse</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Einführung" href="../git/intro/00-intro.html" />
+    <link rel="prev" title="Computer Entwicklung" href="00-computer.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/hei-en.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">HEI Mini-Kurse</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../00-intro.html">
+   Ingenieurschule Sitten - Mini-Kurse
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Einführung
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="00-computer.html">
+   Computer Entwicklung
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Moderne Ansätze zur Programmierung
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../git/intro/00-intro.html">
+   Einführung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/intro/01-commands.html">
+     Kommandos
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/intro/02-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/intro/03-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../git/lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/lab/01-config.html">
+     Konfiguration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/lab/02-general.html">
+     Basis Operationen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/lab/04-branch-merge.html">
+     Branch und Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git/lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python/intro/00-intro.html">
+   Einführung
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/intro/01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/intro/02-jupyter.html">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/intro/03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/intro/04-datatypes.html">
+     Python Datentypen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/intro/05-object_oriented.html">
+     Objektorientierte Programmierung
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python/lab/00-intro.html">
+   Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex01-getting_started.html">
+     Exercise 1 - Getting started with Jupyter and Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex02-variables_and_functions.html">
+     Exercise 2 - Variables and functions
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex03-loops_and_conditionals.html">
+     Exercise 3 - Loops and conditionals
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex04-guessing_games.html">
+     Exercise 4 - Guessing Games
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex05-lists_etc.html">
+     Exercise 5 - Lists, tuples and dictionaries
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex06-more_loops.html">
+     Exercise 6 - More loops
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex07-strings.html">
+     Exercise 7 - Strings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex08-charles_other_methods.html">
+     Read and Write Data
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex08-read_write_files.html">
+     Exercise 8 - Reading and writing files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex09-modules.html">
+     Exercise 9 - Modules
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex10-exceptions.html">
+     Exercise 10 - Exception handling
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex11-numpy.html">
+     Exercise 11 - NumPy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex11a-sudoku.html">
+     Exercise 11 - Sudoku
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex12-plotting.html">
+     Exercise 12 - Plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex13-radioactive_decay.html">
+     Exercise 13 - Radioactive decay
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex14-pandas_databases.html">
+     Exercise 14 - Structured Data in Python (
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       pandas
+      </span>
+     </code>
+     )
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex15-more_plotting.html">
+     Exercise 15 - More plotting
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex16-maps.html">
+     Exercise 16 - Maps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex17-fourier_analysis.html">
+     Exercise 17 - Fourier analysis and Milankovitch cycles
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex18-objects.html">
+     Exercise 18 - Object-oriented programming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex19-differential_eqs.html">
+     Exercise 19 - Differential equations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/lab/ex20-sorting.html">
+     Exercise N - Visualising sorting algorithms
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../python/advanced/00-intro.html">
+   Weiterführende Aufgaben
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../python/advanced/01-enigma-machine.html">
+     Enigma Chiffriergerät
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../java/maze/00-intro.html">
+   Maze Labor
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../java/maze/01-display_solution.html">
+     Teil 1 - Anzeigen und aus dem Labyrinth herauskommen
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../java/maze/02-movement_logic.html">
+     Teil 2 - Spielerbewegung und Spiellogik
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../arduino/attiny-console/00-intro.html">
+   ATtiny Console (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../arduino/attiny-console/01-soldering.html">
+     Löten des PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../arduino/attiny-console/02-commissioning.html">
+     In Betrieb nehmen
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Anhang
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../02-contact.html">
+   Kontakt
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/content-de/intro/01-programming.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#was-ist-ein-computer">
+   Was ist ein Computer?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#was-ist-eine-programmiersprache">
+   Was ist eine Programmiersprache?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wie-sieht-ein-gut-geschriebenes-programm-oder-eine-gut-geschriebene-bibliothek-aus">
+   Wie sieht ein gut geschriebenes Programm oder eine gut geschriebene Bibliothek aus?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wie-arbeiten-wir-in-einer-welt-der-wiederverwendbaren-datenverarbeitung">
+   Wie arbeiten wir in einer Welt der wiederverwendbaren Datenverarbeitung?
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Moderne Ansätze zur Programmierung</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#was-ist-ein-computer">
+   Was ist ein Computer?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#was-ist-eine-programmiersprache">
+   Was ist eine Programmiersprache?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wie-sieht-ein-gut-geschriebenes-programm-oder-eine-gut-geschriebene-bibliothek-aus">
+   Wie sieht ein gut geschriebenes Programm oder eine gut geschriebene Bibliothek aus?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wie-arbeiten-wir-in-einer-welt-der-wiederverwendbaren-datenverarbeitung">
+   Wie arbeiten wir in einer Welt der wiederverwendbaren Datenverarbeitung?
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="moderne-ansatze-zur-programmierung">
+<h1>Moderne Ansätze zur Programmierung<a class="headerlink" href="#moderne-ansatze-zur-programmierung" title="Permalink to this headline">¶</a></h1>
+<p>Die moderne Programmierung hat einen organischen, vielschichtigen Charakter, der Sie vielleicht überraschen wird. In diesem Kurs werden wir lernen, wie man diese Schichten durchschaut, um zu verstehen, wie Programme aufgebaut sind und wie wir unsere eigenen Programme erstellen können. Beginnen wir mit einigen sehr grundlegenden Fragen.</p>
+<div class="section" id="was-ist-ein-computer">
+<h2>Was ist ein Computer?<a class="headerlink" href="#was-ist-ein-computer" title="Permalink to this headline">¶</a></h2>
+<p>Ein klassischer Computer ist eine Art Maschine zur Verarbeitung reiner Informationen. Um dies zu ermöglichen, sind verschiedene Komponenten erforderlich, darunter Mittel zur Initialisierung und Speicherung der Informationen vor und nach ihrer Verarbeitung sowie ein Mechanismus zur Verarbeitung von Informationen (einschliesslich des Falles, dass die Verarbeitung von den Informationen selbst abhängt). Viele verschiedene Maschinen können diese Kriterien erfüllen, aber wir fügen in der Regel mindestens eine weitere Anforderung hinzu: Die Computer, an denen wir interessiert sind, sind <em>programmierbar</em>, d. h. sie können mit verschiedenen Anweisungen versehen werden, die beschreiben, welche Verarbeitung durchgeführt wird.</p>
+<p>Die ursprüngliche <strong>Analytische Maschine</strong>, die von Babbage und Lovelace in den 1830er Jahren entwickelt wurde (siehe <span id="id1">[<a class="reference internal" href="../01-bibliography.html#id4">Bab10</a>]</span>), erfüllt diese Kriterien, ebenso wie die meisten modernen Digitalcomputer. Einer der Pioniere der Informationstheorie, John von Neumann, beschreibt die notwendigen Voraussetzungen für einen echten Computer und stellt in seinem letzten Buch <em>Computing and the Brain</em> viele sehr interessante Vergleiche zwischen den digitalen Computern seiner Zeit (den 1950er Jahren) und dem menschlichen Gehirn an
+<span id="id2">[<a class="reference internal" href="../01-bibliography.html#id2">vNKK12</a>]</span>.</p>
+<div class="figure align-default" id="baggage-s-analytical-engine">
+<a class="reference internal image-reference" href="../../_images/baggages-analytical-engine.jpg"><img alt="../../_images/baggages-analytical-engine.jpg" src="../../_images/baggages-analytical-engine.jpg" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Baggae’s Analytical Engine (Bild quelle: Wikipedia)</span><a class="headerlink" href="#baggage-s-analytical-engine" title="Permalink to this image">¶</a></p>
+</div>
+<p>Es gibt viele Arten von Computern, auf die wir nicht eingehen werden, wie z. B. eingebettete Systeme in Steuerungen, Motoren, Autos, Flugzeugen usw. Einige von ihnen verwenden vielleicht eine vergleichbare Programmierung, aber viele sind stark Optimiert, damit sie schnell, mit geringem Overhead und ohne Gefahr eines Absturzes erledigen Ihre Aufgabe erledigen können, da sie wichtige Informationen in Echtzeit verarbeiten. Diese Systeme haben vielleicht mehr mit den frühen elektronischen Computern gemeinsam, denn Komplexität kann der Feind der Zuverlässigkeit sein.</p>
+<p>Wir gehen auch davon aus, dass wir jeweils nur eine einzige Informationsverarbeitungsmaschine programmieren. Bei den meisten Computern handelt es sich in Wirklichkeit um mehrere Verarbeitungsmaschinen, die gleichzeitig entweder an verschiedenen Aufgaben arbeiten, die nicht miteinander interagieren, oder an Teilmengen der Informationen, die voneinander isoliert sind. Echte Parallelprogrammierung erfordert fast immer, dass wir verstehen und kontrollieren, wie diese Daten- oder Aufgabeninterdependenzen funktionieren, und das ist ein Thema für sich.</p>
+</div>
+<div class="section" id="was-ist-eine-programmiersprache">
+<h2>Was ist eine Programmiersprache?<a class="headerlink" href="#was-ist-eine-programmiersprache" title="Permalink to this headline">¶</a></h2>
+<p>Allgemein gesprochen ist eine Programmiersprache eine Methode, um einem Computer mitzuteilen, wie er Informationen für uns beschaffen und verarbeiten soll. In der Programmierung gibt es zwei verschiedene Paradigmen, die Probleme auf ganz unterschiedliche Weise angehen.</p>
+<p>Das erste ist der <strong>deklarative</strong> Ansatz, der angibt, was getan werden muss, aber nicht viel darüber sagt, wie es getan werden muss. Einige Beispiele dafür sind “Hey Siri …” oder “Hey Google …”, gefolgt von einer Frage wie “Wird es heute heiss?” und wir erwarten darauf eine vernünftige Antwort ohne weitere Erklärung. Ein weiteres Beispiel ist eine Tabellenkalkulation, in der Berechnungen meist einfach durchgeführt werden, ohne dass im Detail erklärt werden muss, wie man eine Spalte summiert oder zwei Spalten multipliziert. Dies ist auch die Art und Weise, wie wir normalerweise mit menschlichen Experten interagieren!</p>
+<p>Das zweite Paradigma ist uns im Alltag meist weniger vertraut. Beim <strong>imperativen</strong> Programmieren legt man dem Computer jeden Schritt im Detail vor, und diese Schritte werden <em>genau</em> befolgt, ganz gleich, welche Fehler man bei der Erteilung der Anweisungen macht. Wir geben Leuten auf dieser Ebene keine Anweisungen, es sei denn, sie haben keinerlei Erfahrung auf einem bestimmten Gebiet. Aus “Würden Sie mir bitte eine Tasse Tee machen?” wird “Gehen Sie von Ihrer jetzigen Position in die Küche und suchen Sie den Wasserkocher, stellen Sie den An/Aus-Schalter auf “An” … ” und so weiter. Jeder dieser Schritte ist anfällig für Fehlinterpretationen und Missverständnisse. Woher wissen Sie also, wann Sie aufhören sollten, weitere Details hinzuzufügen?</p>
+<p>Die meisten wissenschaftlichen Probleme werden wir mit Hilfe der imperativen Programmierung angehen, aber wir werden auch viele Bibliotheken und Module nutzen, die die grundlegenden Anweisungen für die Art von Aufgaben, die wir erledigen wollen, bereits <em>kodiert</em> haben. Unsere Aufgabe besteht oft nur darin, unser Bestes zu geben, um diese Bibliotheken zu finden, sie zu testen und herauszufinden, was sie alles tun können. Die vielen Abstraktionsschichten sind eine Möglichkeit, den angemessenen Detaillierungsgrad bei der Beschreibung einer Aufgabe zu finden.</p>
+<p>Eine Programmiersprache ist lediglich eine Möglichkeit, das Schreiben und Ausführen dieser Anweisungen so einfach und wiederverwendbar zu machen, wie es für die jeweilige Aufgabe sinnvoll ist. Einige sind sehr einfach, um einzelne Chips zu programmieren, und andere sind sehr anspruchsvoll, wenn wir zum Beispiel eine interaktive Website schnell und grösstenteils nach einem bereits vorhandenen Rezept erstellen wollen. Einige Programmiersprachen tauschen Benutzerfreundlichkeit gegen Geschwindigkeit (Sprachen wie <code class="docutils literal notranslate"><span class="pre">C</span></code> und <code class="docutils literal notranslate"><span class="pre">Fortran</span></code> sind so), und andere sind sehr flexibel, müssen aber beim Ausführen eine Menge Prüfungen durchführen, um sicherzustellen, dass alle Ideen konsistent zusammenpassen (<code class="docutils literal notranslate"><span class="pre">Python</span></code> ist so, sowie auch <code class="docutils literal notranslate"><span class="pre">Perl</span></code>). Einige Programmiersprachen sind nur Anordnungen von logischen Blöcken, in denen wir die Operationen und ihre Wechselwirkungen spezifizieren, diese aber nicht in Textform beschreiben (z. B. <code class="docutils literal notranslate"><span class="pre">scratch</span></code>), aber sie erklären immer noch auf einer gewissen Ebene, was zu tun ist, in welcher Reihenfolge und mit welchen Teilen von Daten.</p>
+<p>Wir werden uns auf `Python konzentrieren, eine flexible Sprache, die in der wissenschaftlichen Gemeinschaft weit verbreitet ist. Sie hat mit dem Englischen insofern einiges gemeinsam, als sie Konzepte aus anderen Sprachen sehr gut aufnehmen kann und es immer viele verschiedene Möglichkeiten gibt, etwas zu beschreiben. Python ermöglicht es, Abstraktionsebenen zu schaffen, die unwichtige Details verbergen, aber diese Details sind nicht besonders gut versteckt und es ist immer möglich, tiefer zu graben und mehr herauszufinden.</p>
+</div>
+<div class="section" id="wie-sieht-ein-gut-geschriebenes-programm-oder-eine-gut-geschriebene-bibliothek-aus">
+<h2>Wie sieht ein gut geschriebenes Programm oder eine gut geschriebene Bibliothek aus?<a class="headerlink" href="#wie-sieht-ein-gut-geschriebenes-programm-oder-eine-gut-geschriebene-bibliothek-aus" title="Permalink to this headline">¶</a></h2>
+<p>Eine der ersten Fragen, die man sich stellen sollte, bevor man mit dem Schreiben von Code beginnt, ist: “Hat das schon jemand geschrieben?”, und wenn die Antwort ja lautet, können Sie schnell herausfinden, welche der folgenden Optionen am besten ist:</p>
+<ul class="simple">
+<li><p>Das vorhandene Programm oder die vorhandene Bibliothek verwenden</p></li>
+<li><p>Ändern Sie das vorhandene Programm oder die vorhandene Bibliothek</p></li>
+<li><p>Neu anfangen</p></li>
+</ul>
+<p>Wenn Sie sich dafür entscheiden, den Code eines anderen zu verwenden, müssen Sie verstehen, wie er funktioniert, und überprüfen, ob er auch wirklich so funktioniert, wie er angekündigt wurde. Wenn Sie den Code ändern müssen, sollten Sie überlegen, ob Sie diese Verbesserungen dem Autor oder der Gemeinschaft zur Verfügung stellen wollen.</p>
+<p>Diesen Prozess für den Code eines anderen zu durchlaufen, ist auch eine sehr gute Idee, bevor Sie Ihren eigenen Code schreiben, denn ehrlich gesagt, hilft es Ihnen, Ihre eigene Arbeit genauso kritisch zu sehen wie die anderer. Die folgende Checkliste wirkt viel einschüchternder, wenn Sie sich vorstellen, dass Sie Ihre eigenen Programme prüfen und nicht die von jemand anderem:</p>
+<ul class="simple">
+<li><p>Kann ich den Quellcode finden?</p></li>
+<li><p>Ist der Quellcode klar, lesbar und kommentiert?</p></li>
+<li><p>Gibt es eine Reihe von Tests mit einer guten Abdeckung des Codes?</p></li>
+<li><p>Gibt es Benchmarks oder Überprüfungen von Eingaben und Ausgaben?</p></li>
+<li><p>Gibt es eine klare Dokumentation für einen typischen Benutzer oder einen typischen Entwickler?</p></li>
+<li><p>Ist klar, wie Fehlerbehebungen und Verbesserungen angenommen werden?</p></li>
+<li><p>Ist der Code für die neuesten Betriebssysteme aktuell?</p></li>
+</ul>
+<p>Die bisherige Diskussion hat uns an einen Punkt gebracht, an dem wir wissen, wie wir beschreiben können, was wir von einer Software wollen, auch wenn wir nicht wissen, wie wir sie selbst bauen können! Wir werden Sie ermutigen, jede Aufgabe von dieser hohen Ebene aus anzugehen. Wir werden immer mit der Frage beginnen - hat das schon jemand gemacht?</p>
+</div>
+<div class="section" id="wie-arbeiten-wir-in-einer-welt-der-wiederverwendbaren-datenverarbeitung">
+<h2>Wie arbeiten wir in einer Welt der wiederverwendbaren Datenverarbeitung?<a class="headerlink" href="#wie-arbeiten-wir-in-einer-welt-der-wiederverwendbaren-datenverarbeitung" title="Permalink to this headline">¶</a></h2>
+<p>Unser Ziel ist es, nicht nur zu lernen, wie man einen Computer programmiert, sondern auch, wie man Software schreibt, die funktioniert und mit allen Tests versehen ist, die beweisen, dass sie funktioniert; Dies bedeutet Software, die andere Menschen hilfreich sein kann und diese ermutigt, sie zu benutzen.
+Das heisst, Software, die nach den gerade besprochenen Kriterien “gut geschrieben” ist.</p>
+<p>Wir werden uns mit <em>literatem Programmieren</em> befassen, das eine Möglichkeit darstellt, eine umfangreiche Dokumentation (mit vollständigem Text, Gleichungen, Bildern usw.) in den Code zu integrieren, so dass dieser automatisch gut erklärt und ordnungsgemäss dokumentiert wird, und auch sicherzustellen, dass die Dokumentation und der Code nicht auseinanderdriften, wenn Änderungen vorgenommen werden.</p>
+<p>Wir werden die Vorteile von Open-Source-Codes und deren Bereitstellung in einem öffentlichen Repository erörtern, so dass sie leicht auffindbar sind. Wir werden die Versionskontrolle und das Testen besprechen und die Vorteile der Zusammenführung dieser beiden Dinge in einen Prozess, so dass Sie sicher sein können, dass jede Änderung, die Sie am Code vornehmen, keine Fehler in andere Teile des Codes hervorruft.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content-de/intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="00-computer.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Computer Entwicklung</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../git/intro/00-intro.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Einführung</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs ⓒ Silvan Zahno<br/>
+    
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
