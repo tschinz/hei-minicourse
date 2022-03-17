@@ -5,7 +5,7 @@ Es geht darum auf dem PCB Komponenten zu verlöten.
 ```{figure} resources/pcb.png
 ---
 width: 80%
-name: pcb
+name: pcb 2
 ---
 PCB ATtiny
 ```
