@@ -687,14 +687,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <p>Versuche den Buchstaben <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code> herauszulesen</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alphabet</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 1</span>
 </pre></div>
 </div>
 </div>
@@ -715,7 +708,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="sd">  Returns:</span>
 <span class="sd">      bool: if character is a letter</span>
 <span class="sd">  &quot;&quot;&quot;</span>
-  <span class="c1"># TODO</span>
+  <span class="c1"># TODO 2</span>
 
 
 <span class="c1"># Test the function</span>
@@ -741,7 +734,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="sd">  Returns:</span>
 <span class="sd">      int: index of letter in the alphabet</span>
 <span class="sd">  &quot;&quot;&quot;</span>
-  <span class="c1"># TODO</span>
+  <span class="c1"># TODO 3</span>
 
 
 <span class="c1"># Test</span>
@@ -769,7 +762,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="sd">  Returns:</span>
 <span class="sd">      int: new index of letter</span>
 <span class="sd">  &quot;&quot;&quot;</span>
-  <span class="c1"># TODO</span>
+  <span class="c1"># TODO 4</span>
 
 <span class="c1"># Test the function</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The index </span><span class="si">{}</span><span class="s2"> has shifted by </span><span class="si">{}</span><span class="s2"> = </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">incrementIndex</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
@@ -802,11 +795,11 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 
   <span class="c1"># Loop though every character in the input text</span>
   <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="p">:</span>
+    <span class="c1"># TODO 5</span>
     <span class="c1"># 1. Kontrollieren ob der Character ein Buchstabe ist</span>
     <span class="c1"># 2. Suchen des Index des Buchstaben</span>
     <span class="c1"># 3. Inkrementieren oder dekrementieren des Indexes</span>
     <span class="c1"># 4. Suchen des neuen Buchstaben</span>
-    <span class="c1"># TODO</span>
     <span class="k">pass</span>
   
   <span class="k">return</span> <span class="n">text_encoded</span>
@@ -821,90 +814,6 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Gratulation Sie haben soeben eine Cäsar Chiffriermaschine entwickelt</p>
-</div>
-<div class="cell tag_hide-cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">isLetter</span><span class="p">(</span><span class="n">character</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Checks if the character is a letter in the alphabet</span>
-
-<span class="sd">  Args:</span>
-<span class="sd">      character (str): character to verify</span>
-
-<span class="sd">  Returns:</span>
-<span class="sd">      bool: if character is a letter</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">alphabet</span>
-
-<span class="k">def</span> <span class="nf">idxOfLetter</span><span class="p">(</span><span class="n">letter</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot; Function returns the index of the letter within the alphabet</span>
-
-<span class="sd">  Args:</span>
-<span class="sd">      letter (str): letter to search</span>
-
-<span class="sd">  Returns:</span>
-<span class="sd">      int: index of letter in the alphabet</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="k">return</span> <span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">incrementIndex</span><span class="p">(</span><span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;increments the index according to the k value, the output value stays within the range [0-25]</span>
-
-<span class="sd">  Args:</span>
-<span class="sd">      index (int): index of letter</span>
-<span class="sd">      k (int): index shift</span>
-
-<span class="sd">  Returns:</span>
-<span class="sd">      int: new index of letter</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="n">idx</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="n">k</span>
-  <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
-    <span class="n">idx</span> <span class="o">-=</span> <span class="mi">26</span>
-  <span class="k">elif</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-    <span class="n">idx</span> <span class="o">+=</span> <span class="mi">26</span>
-  <span class="k">return</span> <span class="n">idx</span>
-
-<span class="k">def</span> <span class="nf">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-  <span class="sd">&quot;&quot;&quot;Takes a text and encodes it.</span>
-
-<span class="sd">  Args:</span>
-<span class="sd">      text (str): text to be encoded</span>
-<span class="sd">      k (int): character shift (positive and negative)</span>
-
-<span class="sd">  Returns:</span>
-<span class="sd">      str: encoded text</span>
-<span class="sd">  &quot;&quot;&quot;</span>
-  <span class="n">text_encoded</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
-
-  <span class="c1"># Loop though every character in the input text</span>
-  <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">():</span>
-    <span class="c1"># 1. Kontrollieren ob der Character ein Buchstabe ist</span>
-    <span class="k">if</span> <span class="n">isLetter</span><span class="p">(</span><span class="n">char</span><span class="p">):</span>
-      <span class="c1"># 2. Suchen des Index des Buchstaben</span>
-      <span class="n">index</span> <span class="o">=</span> <span class="n">idxOfLetter</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-      <span class="c1"># 3. Inkrementieren oder dekrementieren des Indexes um k</span>
-      <span class="n">new_index</span> <span class="o">=</span> <span class="n">incrementIndex</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-      <span class="c1"># 4. Suchen des neuen Buchstaben</span>
-      <span class="n">text_encoded</span> <span class="o">+=</span> <span class="n">alphabet</span><span class="p">[</span><span class="n">new_index</span><span class="p">]</span>
-    <span class="k">else</span><span class="p">:</span>
-      <span class="c1"># Append character if not a letter</span>
-      <span class="n">text_encoded</span> <span class="o">+=</span> <span class="n">char</span>
-
-  <span class="k">return</span> <span class="n">text_encoded</span>
-
-
-<span class="c1"># Test of the function</span>
-<span class="n">plain_text</span> <span class="o">=</span> <span class="s2">&quot;Mit ihren Bachelor-Studiengaengen stellt die HES-SO Valais-Wallis in Sitten ein echtes Kompetenz und Innovationszentrum dar&quot;</span>
-<span class="n">encoded_text</span> <span class="o">=</span> <span class="n">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">plain_text</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">decoded_text</span> <span class="o">=</span> <span class="n">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">encoded_text</span><span class="p">,</span> <span class="n">k</span><span class="o">=-</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">plain_text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">encoded_text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">decoded_text</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1098,7 +1007,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <li><p>Kombinationen der obigen Fehler.</p></li>
 </ul>
 <p><code class="docutils literal notranslate"><span class="pre">self.type_key</span></code> sollte ein bereinigter String beinhalten</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 1</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 6</span>
 </pre></div>
 </div>
 </div>
@@ -1112,7 +1021,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="s2">&quot;K&quot;</span><span class="p">,</span><span class="s2">&quot;M&quot;</span><span class="p">,</span><span class="s2">&quot;F&quot;</span><span class="p">,</span><span class="s2">&quot;L&quot;</span><span class="p">,</span><span class="s2">&quot;G&quot;</span><span class="p">,</span><span class="s2">&quot;D&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span><span class="s2">&quot;V&quot;</span><span class="p">,</span><span class="s2">&quot;Z&quot;</span><span class="p">,</span><span class="s2">&quot;N&quot;</span><span class="p">,</span><span class="s2">&quot;T&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">,</span><span class="s2">&quot;W&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;U&quot;</span><span class="p">,</span><span class="s2">&quot;S&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;I&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;R&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;J&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 2</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 7</span>
 </pre></div>
 </div>
 </div>
@@ -1123,7 +1032,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <li><p>Aus <code class="docutils literal notranslate"><span class="pre">&quot;Test&quot;</span></code> wird <code class="docutils literal notranslate"><span class="pre">&quot;estT&quot;</span></code> falls um <code class="docutils literal notranslate"><span class="pre">n=1</span></code> geschoben werden soll.</p></li>
 <li><p>Aus <code class="docutils literal notranslate"><span class="pre">&quot;Test&quot;</span></code> wird <code class="docutils literal notranslate"><span class="pre">&quot;stTe&quot;</span></code> falls um <code class="docutils literal notranslate"><span class="pre">n=2</span></code> geschoben werden soll.</p></li>
 </ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 3</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 8</span>
 </pre></div>
 </div>
 </div>
@@ -1157,7 +1066,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
       <span class="s2">&quot;c&quot;</span>      <span class="p">:</span> <span class="s2">&quot;FVPJIAOYEDRZXWGCTKUQSBNMHL&quot;</span><span class="p">,</span>
     <span class="p">}</span>
 
-    <span class="c1"># TODO 1</span>
+    <span class="c1"># TODO 6</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">type_key</span> <span class="o">=</span> <span class="n">type_key</span>
     
     <span class="bp">self</span><span class="o">.</span><span class="n">startpos</span> <span class="o">=</span> <span class="n">startpos</span>
@@ -1183,7 +1092,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="sd">        list: list of int representing the alphabet positions of the config</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">config</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="c1"># TODO 2</span>
+    <span class="c1"># TODO 7</span>
     <span class="k">return</span> <span class="n">config</span>
 
   <span class="k">def</span> <span class="nf">getKey</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1209,7 +1118,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="sd">    Returns:</span>
 <span class="sd">        str: string rotated shift left by n chars</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="c1"># TODO 3</span>
+    <span class="c1"># TODO 8</span>
     <span class="k">return</span> <span class="n">string</span>
 
   <span class="k">def</span> <span class="nf">passthrough</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -1285,7 +1194,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 </pre></div>
 </div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 4</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 9</span>
 </pre></div>
 </div>
 </div>
@@ -1325,7 +1234,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 <span class="bp">self</span><span class="o">.</span><span class="n">plugboard_config</span>
 </pre></div>
 </div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 5</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 10</span>
 </pre></div>
 </div>
 </div>
@@ -1336,7 +1245,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
 </pre></div>
 </div>
 <p>Es ist zu beachten das es zum durchlaufen in die eine Richtung die Funktion <code class="docutils literal notranslate"><span class="pre">passthrough()</span></code> und in die andere Richtung <code class="docutils literal notranslate"><span class="pre">passthroughRev()</span></code> benötigt.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 6</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 11</span>
 </pre></div>
 </div>
 </div>
@@ -1395,7 +1304,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
     <span class="n">alphabet</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span>
     <span class="n">key</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="mi">26</span>
     <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugboard_config</span><span class="p">:</span>
-      <span class="c1"># TODO 4</span>
+      <span class="c1"># TODO 9</span>
       <span class="k">pass</span>
 
     <span class="bp">self</span><span class="o">.</span><span class="n">plugboard</span> <span class="o">=</span> <span class="n">Scrambler</span><span class="p">(</span><span class="s2">&quot;custom&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span>
@@ -1406,7 +1315,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enigma Setup&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
-    <span class="c1"># TODO 5</span>
+    <span class="c1"># TODO 10</span>
 
   <span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Restart the original rotor start positions</span>
@@ -1436,7 +1345,7 @@ Enigma Chiffriergerät des zweiten Weltkkrieges Quelle: Wikipedia</p>
         <span class="c1"># encodable character</span>
         <span class="n">ln</span> <span class="o">+=</span> <span class="mi">1</span>
 
-        <span class="c1"># TODO 6</span>
+        <span class="c1"># TODO 11</span>
         <span class="c1"># pass through plugboard</span>
         <span class="n">num</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugboard</span><span class="o">.</span><span class="n">passthrough</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
         
@@ -1591,6 +1500,102 @@ xzplxtj hpwh kjuvsmulj
 <p>Kein Schummeln!!</p>
 <div class="cell tag_hide-cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 1</span>
+<span class="n">alphabet</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">isLetter</span><span class="p">(</span><span class="n">character</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Checks if the character is a letter in the alphabet</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">      character (str): character to verify</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">      bool: if character is a letter</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1"># TODO 2</span>
+  <span class="k">return</span> <span class="n">character</span> <span class="ow">in</span> <span class="n">alphabet</span>
+
+<span class="k">def</span> <span class="nf">idxOfLetter</span><span class="p">(</span><span class="n">letter</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; Function returns the index of the letter within the alphabet</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">      letter (str): letter to search</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">      int: index of letter in the alphabet</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1"># TODO 3</span>
+  <span class="k">return</span> <span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">incrementIndex</span><span class="p">(</span><span class="n">index</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;increments the index according to the k value, the output value stays within the range [0-25]</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">      index (int): index of letter</span>
+<span class="sd">      k (int): index shift</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">      int: new index of letter</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1"># TODO 4</span>
+  <span class="n">idx</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="n">k</span>
+  <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
+    <span class="n">idx</span> <span class="o">-=</span> <span class="mi">26</span>
+  <span class="k">elif</span> <span class="n">idx</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="n">idx</span> <span class="o">+=</span> <span class="mi">26</span>
+  <span class="k">return</span> <span class="n">idx</span>
+
+<span class="k">def</span> <span class="nf">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">k</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Takes a text and encodes it.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">      text (str): text to be encoded</span>
+<span class="sd">      k (int): character shift (positive and negative)</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">      str: encoded text</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">text_encoded</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+  <span class="c1"># Loop though every character in the input text</span>
+  <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">text</span><span class="o">.</span><span class="n">upper</span><span class="p">():</span>
+    <span class="c1"># TODO 5</span>
+    <span class="c1"># 1. Kontrollieren ob der Character ein Buchstabe ist</span>
+    <span class="k">if</span> <span class="n">isLetter</span><span class="p">(</span><span class="n">char</span><span class="p">):</span>
+      <span class="c1"># 2. Suchen des Index des Buchstaben</span>
+      <span class="n">index</span> <span class="o">=</span> <span class="n">idxOfLetter</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
+      <span class="c1"># 3. Inkrementieren oder dekrementieren des Indexes um k</span>
+      <span class="n">new_index</span> <span class="o">=</span> <span class="n">incrementIndex</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+      <span class="c1"># 4. Suchen des neuen Buchstaben</span>
+      <span class="n">text_encoded</span> <span class="o">+=</span> <span class="n">alphabet</span><span class="p">[</span><span class="n">new_index</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="c1"># Append character if not a letter</span>
+      <span class="n">text_encoded</span> <span class="o">+=</span> <span class="n">char</span>
+
+  <span class="k">return</span> <span class="n">text_encoded</span>
+
+
+<span class="c1"># Test of the function</span>
+<span class="n">plain_text</span> <span class="o">=</span> <span class="s2">&quot;Mit ihren Bachelor-Studiengaengen stellt die HES-SO Valais-Wallis in Sitten ein echtes Kompetenz und Innovationszentrum dar&quot;</span>
+<span class="n">encoded_text</span> <span class="o">=</span> <span class="n">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">plain_text</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">decoded_text</span> <span class="o">=</span> <span class="n">cesarEncoding</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="n">encoded_text</span><span class="p">,</span> <span class="n">k</span><span class="o">=-</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">plain_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">encoded_text</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">decoded_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Scrambler</span><span class="p">:</span>
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">type_key</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">startpos</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">custom</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create a alphabet shuffle, this represents one rotor or a reflector. The configuration can be choosen from the first ever Enigma, the latest WWII Enigma machine, a Random pattern or a custom setting.</span>
@@ -1619,6 +1624,7 @@ xzplxtj hpwh kjuvsmulj
       <span class="s2">&quot;c&quot;</span>      <span class="p">:</span> <span class="s2">&quot;FVPJIAOYEDRZXWGCTKUQSBNMHL&quot;</span><span class="p">,</span>
     <span class="p">}</span>
 
+    <span class="c1"># TODO 6</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">type_key</span> <span class="o">=</span> <span class="n">type_key</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;_&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;-&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">startpos</span> <span class="o">=</span> <span class="n">startpos</span>
     
@@ -1643,6 +1649,7 @@ xzplxtj hpwh kjuvsmulj
 <span class="sd">        list: list of int representing the alphabet positions of the config</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">config</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># TODO 7</span>
     <span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">str_config</span><span class="p">:</span>
       <span class="n">config</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">char</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">config</span>
@@ -1670,6 +1677,7 @@ xzplxtj hpwh kjuvsmulj
 <span class="sd">    Returns:</span>
 <span class="sd">        str: string rotated shift left by n chars</span>
 <span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># TODO 8</span>
     <span class="k">return</span> <span class="n">string</span><span class="p">[</span><span class="n">n</span><span class="p">:]</span> <span class="o">+</span> <span class="n">string</span><span class="p">[:</span><span class="n">n</span><span class="p">]</span>
 
   <span class="k">def</span> <span class="nf">passthrough</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">idx</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
@@ -1762,6 +1770,7 @@ xzplxtj hpwh kjuvsmulj
     <span class="n">alphabet</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span>
     <span class="n">key</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span> <span class="o">*</span> <span class="mi">26</span>
     <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugboard_config</span><span class="p">:</span>
+      <span class="c1"># TODO 9</span>
       <span class="n">key</span> <span class="o">=</span> <span class="n">key</span><span class="p">[:</span><span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">elem</span><span class="p">[</span><span class="mi">0</span><span class="p">])]</span> <span class="o">+</span> <span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">key</span><span class="p">[</span><span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">elem</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
       <span class="n">key</span> <span class="o">=</span> <span class="n">key</span><span class="p">[:</span><span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span> <span class="o">+</span> <span class="n">elem</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">key</span><span class="p">[</span><span class="n">alphabet</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">elem</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
 
@@ -1773,6 +1782,7 @@ xzplxtj hpwh kjuvsmulj
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Enigma Setup&quot;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;============</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 
+    <span class="c1"># TODO 10</span>
     <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nb_rotors</span><span class="p">):</span>
       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;* Rotor </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
       <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;  - Type      : </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">rotors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">type_key</span><span class="p">))</span>
@@ -1816,6 +1826,7 @@ xzplxtj hpwh kjuvsmulj
         <span class="c1"># encodable character</span>
         <span class="n">ln</span> <span class="o">+=</span> <span class="mi">1</span>
 
+        <span class="c1"># TODO 11</span>
         <span class="c1"># pass through plugboard</span>
         <span class="n">num</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugboard</span><span class="o">.</span><span class="n">passthrough</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
         
