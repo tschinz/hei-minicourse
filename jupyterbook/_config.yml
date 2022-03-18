@@ -17,7 +17,7 @@ execute:
 parse:
   myst_extended_syntax      : true
   myst_url_schemes          : [mailto, http, https]
-  myst_enable_extensions    :
+  myst_enable_extensions :
     - amsmath
     - colon_fence
     - deflist
@@ -31,7 +31,7 @@ parse:
 #######################################################################################
 # HTML-specific settings
 html:
-  favicon                   : "img/hei-icon.png"  # A path to a favicon image
+  favicon                   : img/hei-icon.png
   use_edit_page_button      : false
   use_repository_button     : true
   use_issues_button         : true
