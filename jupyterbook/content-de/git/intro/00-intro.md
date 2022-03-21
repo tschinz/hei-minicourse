@@ -6,6 +6,15 @@ width: 40%
 name: Git Logo
 ---
 ```
+
+```{figure} resources/git-graph.svg
+---
+width: 70%
+name: Git graph
+---
+Git Graph angelehnt an [Atlassian](https://www.atlassian.com/de/git/tutorials/making-a-pull-request)
+```
+
 ## Was ist Versionskontrolle?
 
 Bei der Versionskontrolle wird festgehalten, wie oft Sie eine Datei bearbeiten, welche Änderungen Sie vornehmen und was Sie mit diesen Änderungen bezwecken. Dies ist eine Form der Versionskontrolle:
