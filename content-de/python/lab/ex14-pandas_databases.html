@@ -235,8 +235,8 @@
   </ul>
  </li>
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../advanced/00-intro.html">
-   Weiterführende Aufgaben
+  <a class="reference internal" href="../advanced/01-enigma-intro.html">
+   Enigma Machine
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
@@ -245,8 +245,13 @@
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/01-enigma-lab.html">
+     Aufgabenstellung
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../advanced/01-enigma-machine.html">
-     Enigma Chiffriergerät
+     Programmierung
     </a>
    </li>
   </ul>
@@ -332,7 +337,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button></br></br>Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a>
+  Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a></br></br><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
 </div>
 
 </div>
@@ -716,7 +721,7 @@
 <h3>Reading from the Web(!)<a class="headerlink" href="#reading-from-the-web" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">pandas</span></code> can also read data directly from the web, which is useful if you’re using a central database which is regularly updated.</p>
 <p>For example, the famous <a class="reference external" href="https://www.esrl.noaa.gov/gmd/ccgg/trends/full.html">Mauna Loa Atmospheric CO2 Dataset</a>, which is updated monthly.</p>
-<p>The URL for the monthly dataset is: ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt</p>
+<p>The URL for the monthly dataset is: <span class="xref myst">ftp://aftp.cmdl.noaa.gov/products/trends/co2/co2_mm_mlo.txt</span></p>
 <p><strong>➤ Look at this dataset in your browser, and read it into a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code> using the <code class="docutils literal notranslate"><span class="pre">pd.read_table</span></code> function.</strong></p>
 <p><strong>Hint 1:</strong> you’ll need to specify the delimiter between the data columns using the <code class="docutils literal notranslate"><span class="pre">delimiter</span></code> argument.</p>
 <p><strong>Hint 2:</strong> because of data formatting choices, there’s no simple way to get the column headings from this dataset, and you’ll have to assign them manually.</p>

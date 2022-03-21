@@ -58,8 +58,6 @@
     <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Enigma Chiffriergerät" href="01-enigma-machine.html" />
-    <link rel="prev" title="Objektorientierte Programmierung" href="../intro/05-object_oriented.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -196,7 +194,7 @@
   Python
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../intro/00-intro.html">
    Einführung
@@ -234,19 +232,24 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="current reference internal" href="#">
-   Weiterführende Aufgaben
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="01-enigma-intro.html">
+   Enigma Machine
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
   <label for="toctree-checkbox-4">
    <i class="fas fa-chevron-down">
    </i>
   </label>
   <ul>
    <li class="toctree-l2">
+    <a class="reference internal" href="01-enigma-lab.html">
+     Aufgabenstellung
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="01-enigma-machine.html">
-     Enigma Chiffriergerät
+     Programmierung
     </a>
    </li>
   </ul>
@@ -332,7 +335,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button></br></br>Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a>
+  Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a></br></br><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
 </div>
 
 </div>
@@ -459,13 +462,15 @@
 <h2>Aufgaben<a class="headerlink" href="#aufgaben" title="Permalink to this headline">¶</a></h2>
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p>Name</p></th>
+<tr class="row-odd"><th class="head"><p>Titel</p></th>
 <th class="head"><p>Thema</p></th>
+<th class="head"><p>Dokumente</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="01-enigma-machine.html"><span class="doc std std-doc">Enigma Maschine</span></a></p></td>
-<td><p>Verschlüsselung</p></td>
+<tr class="row-even"><td><p>Enigma</p></td>
+<td><p>Veschlüsselung</p></td>
+<td><p><a class="reference internal" href="01-enigma-intro.html"><span class="doc std std-doc">Intro</span></a></br><a class="reference internal" href="01-enigma-lab.html"><span class="doc std std-doc">Aufgabenstellung</span></a></br><a class="reference internal" href="01-enigma-machine.html"><span class="doc std std-doc">Programmierung</span></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -478,20 +483,18 @@
 </summary><div class="summary-content card-body docutils">
 <table class="colwidths-auto table">
 <thead>
-<tr class="row-odd"><th class="head"><p class="card-text">Name</p></th>
-<th class="head"><p class="card-text">Thema</p></th>
+<tr class="row-odd"><th class="head"><p class="card-text">Titel</p></th>
+<th class="head"><p class="card-text">Dokumente</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p class="card-text"><a class="reference internal" href="01-enigma-machine-solution.html"><span class="doc std std-doc">Enigma Maschine</span></a></p></td>
-<td><p class="card-text">Verschlüsselung</p></td>
+<tr class="row-even"><td><p class="card-text">Enigma</p></td>
+<td><p class="card-text"><a class="reference internal" href="01-enigma-machine-solution.html"><span class="doc std std-doc">Lösung</span></a></p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </details></div>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -518,21 +521,7 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../intro/05-object_oriented.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Objektorientierte Programmierung</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="01-enigma-machine.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Enigma Chiffriergerät</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
+<div class='prev-next-area'>
 </div>
             
         </div>
