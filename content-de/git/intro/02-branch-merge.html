@@ -437,7 +437,7 @@
 <p>Standardmässig existiert in git immer ein “master”- oder “main”-Zweig:</p>
 <div class="figure align-default" id="git-local-1">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-1.png"><img alt="../../../_images/git-local-repo-1.png" src="../../../_images/git-local-repo-1.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 18 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-1" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Git wird es uns ermöglichen, ganz einfach einen neuen Zweig zu erstellen:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch dev_branch_1
@@ -445,7 +445,7 @@
 </div>
 <div class="figure align-default" id="git-local-2">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-2.png"><img alt="../../../_images/git-local-repo-2.png" src="../../../_images/git-local-repo-2.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 19 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> und <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-2" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> und <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-2" title="Permalink to this image">¶</a></p>
 </div>
 <p>Git wird uns auch erlauben, die vorhandenen Zweige einfach in Form einer Liste aufzulisten. Ein Stern (*) vor dem Namen des Zweigs zeigt an, auf welchem Zweig du dich gerade befindest.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch
@@ -457,17 +457,17 @@
 </div>
 <div class="figure align-default" id="git-local-3">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-3.png"><img alt="../../../_images/git-local-repo-3.png" src="../../../_images/git-local-repo-3.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 20 </span><span class="caption-text">Repository mit selektierem <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Repository mit selektierem <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-3" title="Permalink to this image">¶</a></p>
 </div>
 <p>Jeder Commit auf diesem Zweig kann daher wie folgt dargestellt werden:</p>
 <div class="figure align-default" id="git-local-4">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-4.png"><img alt="../../../_images/git-local-repo-4.png" src="../../../_images/git-local-repo-4.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 21 </span><span class="caption-text">Repository einem <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> commit</span><a class="headerlink" href="#git-local-4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Repository einem <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> commit</span><a class="headerlink" href="#git-local-4" title="Permalink to this image">¶</a></p>
 </div>
 <p>Dann den nächsten Commit:</p>
 <div class="figure align-default" id="git-local-5">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-5.png"><img alt="../../../_images/git-local-repo-5.png" src="../../../_images/git-local-repo-5.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 22 </span><span class="caption-text">Repository einem weiterm <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> commit</span><a class="headerlink" href="#git-local-5" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Repository einem weiterm <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> commit</span><a class="headerlink" href="#git-local-5" title="Permalink to this image">¶</a></p>
 </div>
 <p>Git ermöglicht auch das einfache Mergen (Zusammenführen) dieses Entwicklungszweiges:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout master
@@ -478,17 +478,17 @@ git merge dev_branch_1
 <p>In dem obigen einfachen Fall, in dem keine weiteren Commits auf dem <code class="docutils literal notranslate"><span class="pre">master</span></code>-Zweig gemacht wurden, wird Git in der Lage sein, ein <code class="docutils literal notranslate"><span class="pre">fast-forward</span></code> merge durchzuführen und einfach den Zeiger auf den <code class="docutils literal notranslate"><span class="pre">master</span></code>-Zweig zu verschieben.</p>
 <div class="figure align-default" id="git-local-6">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-6.png"><img alt="../../../_images/git-local-repo-6.png" src="../../../_images/git-local-repo-6.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 23 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> merged mit <code class="docutils literal notranslate"><span class="pre">master</span></code> `branch</span><a class="headerlink" href="#git-local-6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> merged mit <code class="docutils literal notranslate"><span class="pre">master</span></code> `branch</span><a class="headerlink" href="#git-local-6" title="Permalink to this image">¶</a></p>
 </div>
 <p>Für den Fall, dass in der Zwischenzeit weitere Commits auf dem <code class="docutils literal notranslate"><span class="pre">master</span></code> branch durchgeführt wurden:</p>
 <div class="figure align-default" id="git-local-7">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-7.png"><img alt="../../../_images/git-local-repo-7.png" src="../../../_images/git-local-repo-7.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 24 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-7" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-7" title="Permalink to this image">¶</a></p>
 </div>
 <p>Git wird automatisch einen neuen Merge-Commit erstellen und einen <code class="docutils literal notranslate"><span class="pre">three</span> <span class="pre">way</span> <span class="pre">merge</span></code> durchführen:</p>
 <div class="figure align-default" id="git-local-8">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-8.png"><img alt="../../../_images/git-local-repo-8.png" src="../../../_images/git-local-repo-8.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 25 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> merged mit modifiziertem <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-8" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">dev_branch_1</span></code> merged mit modifiziertem <code class="docutils literal notranslate"><span class="pre">master</span></code> <code class="docutils literal notranslate"><span class="pre">branch</span></code></span><a class="headerlink" href="#git-local-8" title="Permalink to this image">¶</a></p>
 </div>
 <p>Git wird uns auch erlauben, Zweige zu löschen, die wir nicht brauchen:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git branch -d dev_branch_1
@@ -496,7 +496,7 @@ git merge dev_branch_1
 </div>
 <div class="figure align-default" id="git-local-9">
 <a class="reference internal image-reference" href="../../../_images/git-local-repo-9.png"><img alt="../../../_images/git-local-repo-9.png" src="../../../_images/git-local-repo-9.png" style="width: 30%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 26 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">three</span> <span class="pre">way</span> <span class="pre">merge</span></code></span><a class="headerlink" href="#git-local-9" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 27 </span><span class="caption-text">Repository mit <code class="docutils literal notranslate"><span class="pre">three</span> <span class="pre">way</span> <span class="pre">merge</span></code></span><a class="headerlink" href="#git-local-9" title="Permalink to this image">¶</a></p>
 </div>
 <p>Beachten Sie, dass keiner der Commits gelöscht wird, nur die Zweiginformationen werden gelöscht.</p>
 </div>
