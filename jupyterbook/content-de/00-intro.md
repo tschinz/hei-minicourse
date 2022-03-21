@@ -1,4 +1,4 @@
-# Ingenieurschule Sitten - Mini-Kurse
+# **Ingenieurschule Sitten** - Mini-Kurse
 
 Dieser Kurs wird präsentiert von der [Ingenieurschule HEI in Sitten](https://hevs.ch).
 

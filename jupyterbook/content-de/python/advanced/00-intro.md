@@ -1,16 +1,14 @@
 # Weiterführende Aufgaben
 
 Einige Thematische weiterführenden Aufgaben.
-
 ## Aufgaben
 
-| Name                                                                     | Thema                        |
-| ------------------------------------------------------------------------ | ---------------------------- |
-| [Enigma Maschine](./01-enigma-machine)                                   | Verschlüsselung              |
-
+| Titel                 | Thema                | Dokumente |
+| --------------------- | -------------------- | --------- |
+| Enigma                | Veschlüsselung       | [Intro](./01-enigma-intro)</br>[Aufgabenstellung](./01-enigma-lab)</br>[Programmierung](./01-enigma-machine) |
 
 ```{dropdown} **Lösungen** (Nur für Cheater)
-| Name                                                                     | Thema                        |
-| ------------------------------------------------------------------------ | ---------------------------- |
-| [Enigma Maschine](./01-enigma-machine-solution.ipynb)                    | Verschlüsselung              |
+| Titel                 | Dokumente                                             |
+| --------------------- | ----------------------------------------------------- |
+| Enigma                | [Lösung](./01-enigma-machine-solution.ipynb)          |
 ```

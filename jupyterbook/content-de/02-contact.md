@@ -25,11 +25,28 @@ align: center
        ```
      - [Cyrille Bezençon](https://people.hes-so.ch/fr/profile/cyrille.bezencon)
 
-       Office: ENP.21.N106
+       Leiter des Studienganges Systemtechnik
 
        cyrille.bezencon@hevs.ch
 
+       Office: ENP.21.N106
+
        +41 58 606 93 16
+
+   * - ```{figure} img/2021-KlausKreher.*
+       ---
+       width: 180px
+       ---
+       ```
+     - [Klaus Kreher](https://people.hes-so.ch/fr/profile/klaus.kreher)
+
+       Leiter des Studienganges Energie und Umwelttechnik
+
+       klaus.kreher@hevs.ch
+
+       Office: ENP.21.N107
+
+       +41 58 606 87 88
 
    * - ```{figure} img/2020-SilvanZahno.*
        ---
@@ -38,9 +55,11 @@ align: center
        ```
      - [Silvan Zahno](https://people.hes-so.ch/fr/profile/silvan.zahno)
 
-       Office: ENP.23.N312
+       Professor Systemtechnik, Energie und Umwelttechnik
 
        silvan.zahno@hevs.ch
+
+       Office: ENP.23.N312
 
        +41 58 606 88 07
 

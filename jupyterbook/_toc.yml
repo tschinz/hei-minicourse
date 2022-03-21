@@ -56,8 +56,10 @@ parts:
 #    - file: content-de/python/lab/ex19-differential_eqs
 #    - file: content-de/python/lab/ex20-sorting
 
-  - file: content-de/python/advanced/00-intro
+  #- file: content-de/python/advanced/00-intro
+  - file: content-de/python/advanced/01-enigma-intro
     sections:
+    - file: content-de/python/advanced/01-enigma-lab
     - file: content-de/python/advanced/01-enigma-machine
 
 - caption: Java

@@ -12,21 +12,6 @@ execute:
   allow_errors              : true # If `False`, when a code cell raises an error the execution is stopped, otherwise all cells are always run.
   timeout                   : 240
 
-#######################################################################################
-# Parse and render settings
-parse:
-  myst_extended_syntax      : true
-  myst_url_schemes          : [mailto, http, https]
-  myst_enable_extensions :
-    - amsmath
-    - colon_fence
-    - deflist
-    - dollarmath
-    - html_image
-    - linkify
-    - replacements
-    - smartquotes
-    - substitution
 
 #######################################################################################
 # HTML-specific settings
@@ -42,7 +27,7 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
-  extra_navbar              : <button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button></br></br>Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a>
+  extra_navbar              : Presented by <a href="https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051">HEI-Vs</a></br></br><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
 
 #######################################################################################
 # LaTeX-specific settings
@@ -76,5 +61,20 @@ sphinx:
   config:
     html_show_copyright     : true
     # html_extra_path: ['files']
-
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+#######################################################################################
+# Parse and render settings
+parse:
+  #myst_extended_syntax      : true
+  myst_url_schemes          : [mailto, http, https]
+  myst_enable_extensions:
+    - amsmath
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+    - linkify
+    - replacements
+    - smartquotes
+    - substitution
