@@ -8,6 +8,12 @@
 
 [![Jupyterbook online](https://img.shields.io/badge/Jupyterbook-online-orange)](https://tschinz.github.io/hei-minicourse)
 
+<div align="center">
+  Presented by<br>
+  <img src="./img/hei-en.svg" alt="HEI-VS Logo" width="300">
+</div>
+
+
 <p align="center">
   <a href="#description">Description</a> •
   <a href="#usage">Usage</a> •
@@ -81,5 +87,4 @@ Admin users also have access to the hub control panel to shut down wayward serve
 
 -->
     
-
 
