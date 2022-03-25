@@ -2,7 +2,7 @@
 # Book settings
 title                       : Mini-Kurse
 author                      : HEI-Vs - Silvan Zahno
-logo                        : img/hei-en.svg
+logo                        : img/hei-defr.svg
 exclude_patterns            : [content-de/old/*] #, content-de/python/advanced/*solution*]
 
 #######################################################################################

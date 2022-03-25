@@ -48,6 +48,21 @@ align: center
 
        +41 58 606 87 88
 
+   * - ```{figure} img/2021-PierreAndreMudry.*
+       ---
+       width: 180px
+       ---
+       ```
+     - [Pierre-André Mudry](https://people.hes-so.ch/de/profile/pierrean.mudry)
+
+       Leiter des Studienganges Infomatik und Kommunikationssysteme
+
+       pierre-andre.mudry@hevs.ch
+
+       Office: ENP.22.N312
+
+       +41 58 606 87 55
+
    * - ```{figure} img/2020-SilvanZahno.*
        ---
        width: 180px
