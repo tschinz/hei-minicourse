@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>In Betrieb nehmen &#8212; Mini-Kurse</title>
+    <title>Der Schaltplan &#8212; Mini-Kurse</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,12 +54,12 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://tschinz.github.io/hei-minicourse/content-de/arduino/attiny-console/02-commissioning.html" />
+    <link rel="canonical" href="https://tschinz.github.io/hei-minicourse/content-de/arduino/attiny-console/01-design.html" />
     <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Bibliography" href="../../01-bibliography.html" />
-    <link rel="prev" title="Löten des PCB" href="01-soldering.html" />
+    <link rel="next" title="Löten des PCB" href="02-soldering.html" />
+    <link rel="prev" title="ATtiny Console (HEI LYNX)" href="00-intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -302,13 +302,23 @@
    </i>
   </label>
   <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Der Schaltplan
+    </a>
+   </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="01-soldering.html">
+    <a class="reference internal" href="02-soldering.html">
      Löten des PCB
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="04-commissioning.html">
      In Betrieb nehmen
     </a>
    </li>
@@ -372,7 +382,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../../_sources/content-de/arduino/attiny-console/02-commissioning.md"><button type="button"
+        <a class="dropdown-buttons" href="../../../_sources/content-de/arduino/attiny-console/01-design.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -392,7 +402,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/tschinz/hei-minicourse//issues/new?title=Issue%20on%20page%20%2Fcontent-de/arduino/attiny-console/02-commissioning.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/tschinz/hei-minicourse//issues/new?title=Issue%20on%20page%20%2Fcontent-de/arduino/attiny-console/01-design.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -413,34 +423,6 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#programmierung-des-prozessors">
-   Programmierung des Prozessors
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#einlegen-der-batterie">
-   Einlegen der Batterie
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#verwendung">
-   Verwendung
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#der-schaltplan">
-   Der Schaltplan
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -448,73 +430,23 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>In Betrieb nehmen</h1>
+                <h1>Der Schaltplan</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#programmierung-des-prozessors">
-   Programmierung des Prozessors
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#einlegen-der-batterie">
-   Einlegen der Batterie
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#verwendung">
-   Verwendung
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#der-schaltplan">
-   Der Schaltplan
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="in-betrieb-nehmen">
-<h1>In Betrieb nehmen<a class="headerlink" href="#in-betrieb-nehmen" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="programmierung-des-prozessors">
-<h2>Programmierung des Prozessors<a class="headerlink" href="#programmierung-des-prozessors" title="Permalink to this headline">¶</a></h2>
-<p>Lade mithilfe eines PCs und eines Arduino UNO den Code, der für den Betrieb des Prozessors notwendig ist.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Falls interessiert könnte Ihr auch das Datasheet des Prozessors als Nachtlektüre lesen um mehr über den Prozessor zu erfahren.</p>
-<p><a class="reference external" href="https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/arduino/attiny-console/resources/microcontroller-attiny-datasheet.pdf">Datenblatt Prozessor</a></p>
-</div>
-</div>
-<div class="section" id="einlegen-der-batterie">
-<h2>Einlegen der Batterie<a class="headerlink" href="#einlegen-der-batterie" title="Permalink to this headline">¶</a></h2>
-<p>Achten Sie genau auf die Ausrichtung der Batterie und setzen Sie die Batterie in die Halterung ein.</p>
-</div>
-<div class="section" id="verwendung">
-<h2>Verwendung<a class="headerlink" href="#verwendung" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Schalten Sie den <code class="docutils literal notranslate"><span class="pre">S1</span></code>-Knopf auf On (Links).</p></li>
-<li><p>Drücken Sie den Knopf auf der rechten Seite, um die Konsole einzuschalten.</p></li>
-</ul>
-</div>
-<div class="section" id="der-schaltplan">
-<h2>Der Schaltplan<a class="headerlink" href="#der-schaltplan" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="der-schaltplan">
+<h1>Der Schaltplan<a class="headerlink" href="#der-schaltplan" title="Permalink to this headline">¶</a></h1>
+<p>Bevor wir mit der Lötarbeit beginnen ist es wichtig das man den Schaltplan sich im Detail anschaut und vesteht</p>
 <div class="figure align-default" id="pcb-schematic">
 <a class="reference internal image-reference" href="../../../_images/pcb-schematic.png"><img alt="../../../_images/pcb-schematic.png" src="../../../_images/pcb-schematic.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 81 </span><span class="caption-text">PCB ATtiny Schematic</span><a class="headerlink" href="#pcb-schematic" title="Permalink to this image">¶</a></p>
-</div>
+<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">PCB ATtiny Schematic</span><a class="headerlink" href="#pcb-schematic" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 
@@ -543,17 +475,17 @@
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="01-soldering.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="00-intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Löten des PCB</p>
+            <p class="prev-next-title">ATtiny Console (HEI LYNX)</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../01-bibliography.html" title="next page">
+    <a class='right-next' id="next-link" href="02-soldering.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bibliography</p>
+        <p class="prev-next-title">Löten des PCB</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
