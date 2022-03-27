@@ -24,13 +24,13 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.46929648"
-     inkscape:cx="1026.0039"
-     inkscape:cy="766.04027"
+     inkscape:zoom="1.6569333"
+     inkscape:cx="1301.5008"
+     inkscape:cy="365.43415"
      inkscape:window-width="1720"
-     inkscape:window-height="1359"
+     inkscape:window-height="1097"
      inkscape:window-x="0"
-     inkscape:window-y="25"
+     inkscape:window-y="44"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -150,27 +150,11 @@
     <rect
        style="fill:#ff0000;fill-opacity:0.501109;stroke:none;stroke-width:2.23036;stroke-linecap:round;stroke-linejoin:round"
        id="rect2114"
-       width="97.420822"
-       height="97.760208"
-       x="1219.8212"
-       y="-176.23433"
-       ry="3.101402"
+       width="11.161363"
+       height="38.422962"
+       x="1220.3002"
+       y="-146.69305"
+       ry="1.5045692"
        transform="rotate(90)" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0,-0.26458333,0.26458333,0,-44.769463,1646.6052)"
-       id="text3746"
-       style="font-size:40px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect3748)"><tspan
-         x="1343.4453"
-         y="541.6543"
-         id="tspan5240">Pac-Man</tspan></text>
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-231.69454,1096.2124)"
-       id="text5110"
-       style="font-size:40px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:sans-serif;text-align:end;word-spacing:0px;white-space:pre;shape-inside:url(#rect5112)"><tspan
-         x="1202.1172"
-         y="541.6543"
-         id="tspan5242">Space-Indavers</tspan></text>
   </g>
 </svg>

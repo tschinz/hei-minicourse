@@ -73,8 +73,10 @@ parts:
   chapters:
   - file: content-de/arduino/attiny-console/00-intro
     sections:
-    - file: content-de/arduino/attiny-console/01-soldering
-    - file: content-de/arduino/attiny-console/02-commissioning
+    - file: content-de/arduino/attiny-console/01-design
+    - file: content-de/arduino/attiny-console/02-soldering
+    - file: content-de/arduino/attiny-console/03-toolchain
+    - file: content-de/arduino/attiny-console/04-commissioning
 
 - caption: Anhang
   chapters:

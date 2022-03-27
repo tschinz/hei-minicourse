@@ -71,4 +71,8 @@ Final Maze Game
 Wir wünschen Ihnen viel Spass bei der Umsetzung dieses Projekts!
 ```
 
-
+```{admonition} Solution
+:class: dropdown
+Falls gewünscht kann eine Musterlösung hier heruntergeladen werden
+[maze Masterversion](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/java/maze/resources/mazegame_masterVersion.zip).
+```

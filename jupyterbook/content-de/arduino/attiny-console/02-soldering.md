@@ -57,8 +57,6 @@ $R_3 = R_6 = 82k\Omega$
 * Grau-Rot-Orange-Gold
 ```
 
-
-
 ## Löten der Drucktasten `S2` bis `S6`
 
 Dies sind die Richtungstasten und die Aktionstaste.
@@ -165,27 +163,11 @@ Installieren des Prozessors in den Sockel `U1`
 
 ## Löten Sie den Bildschirm an
 
-Sie müssen auswählen ob sie Pac-Man oder Space Invaders spielen möchten. Folgen Sie den jeweiligen Anweisungen.
+Löten Sie den Bildschirm an dem 4-poligen Anschlusspunkt an.
 
-
-````{admonition} Pac-Man
-Löten Sie den Bildschirm vertikal, um PacMan zu spielen. Anschluss `J1`
-```{figure} resources/pac-man.png
----
-width: 20%
-name: pacman
----
+```{important}
+Damit der Bildschirm plan und stabil auf dem PCB aufliegt können Sie gegenüberliegend dem Anschlusspunkt, die 3D gedruckte Stütze installieren.
 ```
-````
-
-````{admonition} Space-Invaders
-Löten Sie den Bildschirm horizontal, um Space Invaders zu spielen.
-```{figure} resources/space-invaders.png
----
-width: 20%
-name: space invaders
----
-````
 
 ```{figure} resources/pcb-positions-09.svg
 ---
