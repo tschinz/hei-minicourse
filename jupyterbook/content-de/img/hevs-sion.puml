@@ -1,0 +1,38 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+  .pink {
+    BackgroundColor #da6d9c
+  }
+  .yellow {
+    BackgroundColor #f5c400
+  }
+}
+</style>
+
+*        Hevs \n Ingenieurschule \n Sitten <<pink>>
+
+** Systemtechnik<<yellow>>
+***_ Infotronic
+***_ Power and Control
+***_ Material and Design
+
+
+** Informations und \nKommunikationssysteme<<yellow>>
+***_ Data Engineering
+
+
+
+** Energie und \nUmwelttechnik<<yellow>>
+***_ Erneuerbare Energien
+***_ Smart Grid
+
+** Life Technologies<<yellow>>
+***_ Lebensmitteltechnologie
+***_ Biotechnologie
+***_ Analytische und \nBioanalytische Chemie
+
+left side
+
+@endmindmap

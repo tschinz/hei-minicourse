@@ -11,6 +11,14 @@ name: HEI Logo
 
 Die Ingenieurschule in Sitten bietet interessante Ausbildungen an. Auf unserer [Webseite](https://www.hevs.ch/de/formations/bachelors/) könnt Ihr dazu mehr Erfahren. In Sitten werden im technischem Bereich die drei Studiengänge [Systemtechnik](https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051/), [Informations und Kommunikationstechnologie](https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/informatik-und-kommunikationssysteme/bachelorausbildung-in-informatik-und-kommunikationssysteme-201140/) sowie [Energie und Umwelttechnik](https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/energie-umwelttechnik/bachelorausbildung-in-energie-und-umwelttechnik-200052) angeboten. Jeder Studiengang besitzt verschiedene Spezialisierungen. Im Bereich der Entwicklung und Programmierung bieten sich hier zwei Spezialisierungen an. Einserseits der Studiengang [Systemtechnik](https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/systemtechnik/bachelorausbildung-in-systemtechnik-200051/) mit der Spezialisierung Infotronics sowie der Studiengang [Informations und Kommunikationstechnologie](https://www.hevs.ch/de/Hochschule/hochschule-fur-ingenieurwissenschaften/informatik-und-kommunikationssysteme/bachelorausbildung-in-informatik-und-kommunikationssysteme-201140/) mit der Spezialisierung Data Engineering.
 
+```{figure} img/hevs-sion.svg
+---
+width: 80%
+name: Hevs Sitten Orientierungen
+---
+Studiengänge und Spezialisierungen der Hochschule für Ingenieurwissenschaften in Sitten
+```
+
 Dieser Kurs ist auf [Github](https://github.com/tschinz/python-minicourse) publiziert und wurde mithilfe von verschiedenen Personen geschrieben, an allen ein dickes Dankeschön. Ein Liste der Mitwirkenden kann im der Abschnitt {ref}`section:acknowledgements` eingesehen werden.
 
 Wir werden zunächst einige Grundprinzipien von Computern, Programmierung und Versionskontrolle behandeln und diskutieren, was es überhaupt bedeutet, einen Computer zu programmieren, und dann ein Gefühl dafür bekommen, wie ein Programm aussieht, indem wir die Programmiersprache "Python" für alle unsere Beispiele verwenden. Wir werden grösstenteils online arbeiten, indem wir die Entwicklungsumgebgung Jupyter benutzten und mit dessen Hilfe Python als elektronisches *Notizbuch* verwenden.
