@@ -19,7 +19,7 @@ Installieren Sie zuerst das Entwicklungs Tool Arduino IDE welches Sie [hier](htt
 https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/package_damellis_attiny_index.json
 ```
 
-```{figure} resources/arduino-preferences.png
+```{figure} resources/arduino-preferences.svg
 ---
 width: 90%
 name: arduino preferences
@@ -81,7 +81,7 @@ Konfigurieren Sie das Program damit es den ATTiny85 Programmieren kann unter den
 * Port: Abhängig von Ihrem System USB SerialPort
 * Programmer: `Arduino as ISP`
 
-```{figure} resources/arduino-attiny85.png
+```{figure} resources/arduino-attiny85.svg
 ---
 width: 80%
 name: board settings
