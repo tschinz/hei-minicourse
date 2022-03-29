@@ -16,7 +16,7 @@ name: pacman
 PacMan Spiel
 ```
 
-[PacMan Programmcode](https://github.com/tschinz/hei-minicourse/tree/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-pacman)
+[PacMan Programmcode](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-pacman.zip)
 
 ### Space Invaders
 
@@ -28,7 +28,7 @@ name: space invaders
 Space Invaders Spiel
 ```
 
-[Space Invaders Programmcode](https://github.com/tschinz/hei-minicourse/tree/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-spaceinvaders)
+[Space Invaders Programmcode](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-spaceinvaders.zip)
 
 ## Einlegen der Batterie
 
