@@ -1,6 +1,6 @@
 ################################################################################
 # Book settings
-title                       : Mini-Kurse
+title                       : Der Weg zum Ingenieur
 author                      : HEI-Vs - Silvan Zahno
 logo                        : img/hei-defr.svg
 exclude_patterns            : [content-de/old/*] #, content-de/python/advanced/*solution*]
