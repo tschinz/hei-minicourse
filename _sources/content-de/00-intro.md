@@ -1,4 +1,4 @@
-# **Ingenieurschule Sitten** - Mini-Kurse
+# Der Weg zum Ingenieur
 
 Dieser Kurs wird präsentiert von der [Ingenieurschule HEI in Sitten](https://hevs.ch).
 
