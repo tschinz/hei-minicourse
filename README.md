@@ -6,7 +6,7 @@
   <br>
 </h1>
 
-[![Jupyterbook online](https://img.shields.io/badge/Jupyterbook-online-orange)](https://tschinz.github.io/hei-minicourse)
+[![Jupyterbook online](https://img.shields.io/badge/Jupyterbook-online-orange)](http://promotion.hevs.io/minicourse/hei-minicourse)
 
 <div align="center">
   Presented by<br>
@@ -40,7 +40,7 @@ This repository also contains the information for building a jupyterbook using t
 There is some additional configuration to make this work smoothly and you can read what needs to be done
 in [jupyterbook/README.md](jupyterbook/README.md)
 
-For this example, you can see the [online version](https://tschinz.github.io/hei-minicourses) which is automatically built by github using this repository.
+For this example, you can see the [online version](http://promotion.hevs.io/minicourse/hei-minicourse) which is automatically built by github using this repository.
 
 # Credits
 
