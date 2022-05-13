@@ -1,9 +1,9 @@
-# ATtiny Console v1 (HEI LYNX)
+# ATtiny Console v2 (HEI LYNX)
 
 ```{figure} resources/attiny-console.png
 ---
 width: 80%
-name: pcb-attiny-console-v1
+name: pcb-attiny-console
 ---
 ATtiny Console aka HEI LYNX
 ```
@@ -18,7 +18,7 @@ Der Lötdraht schmilzt bei etwa 200°C und dient dazu, die Bauteile zu fixieren 
 ```{figure} resources/pcb-solder.webp
 ---
 width: 40%
-name: pcb-solder-v1
+name: pcb-solder
 ---
 Lötdraht
 ```
@@ -28,7 +28,7 @@ Der Lötkolben bringt die Hitze zum Schmelzen des Lötzinns und wird auf etwa 38
 ```{figure} resources/pcb-solderingiron.jpg
 ---
 width: 70%
-name: pcb-soldertip-v1
+name: pcb-soldertip
 ---
 Lötkolben
 ```
@@ -44,7 +44,7 @@ Dies ist die Platine, auf die die elektronischen Komponenten gelötet werden. Di
 ```{figure} resources/pcb.png
 ---
 width: 80%
-name: pcb-v1
+name: pcb
 ---
 PCB ATtiny
 ```

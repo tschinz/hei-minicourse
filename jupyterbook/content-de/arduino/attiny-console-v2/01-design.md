@@ -5,7 +5,7 @@ Bevor wir mit der Lötarbeit beginnen ist es wichtig das man den Schaltplan sich
 ```{figure} resources/pcb-schematic.png
 ---
 width: 100%
-name: pcb schematic-v1
+name: pcb schematic
 ---
 PCB ATtiny Schematic
 ```

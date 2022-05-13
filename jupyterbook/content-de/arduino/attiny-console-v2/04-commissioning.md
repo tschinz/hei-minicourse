@@ -11,24 +11,24 @@ Den notwendigen Code finden Sie in den untenstehenden Links. Beide Programme bes
 ```{figure} resources/pac-man.png
 ---
 width: 40%
-name: pacman-v1
+name: pacman
 ---
 PacMan Spiel
 ```
 
-{download}`PacMan Programcode <./resources/tiny-pacman.zip>`
+{download}`PacMan Programcode <./resources/tiny-pacman-v2.0.zip>`
 
 ### Space Invaders
 
 ```{figure} resources/space-invaders.png
 ---
 width: 40%
-name: space invaders-v1
+name: space invaders
 ---
 Space Invaders Spiel
 ```
 
-{download}`Space Invaders Programcode <./resources/tiny-spaceinvaders.zip>`
+{download}`Space Invaders Programcode <./resources/tiny-spaceinvaders-v2.0.zip>`
 
 ## Einlegen der Batterie
 

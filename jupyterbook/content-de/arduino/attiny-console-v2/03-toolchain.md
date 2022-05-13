@@ -22,7 +22,7 @@ https://raw.githubusercontent.com/damellis/attiny/ide-1.6.x-boards-manager/packa
 ```{figure} resources/arduino-preferences.svg
 ---
 width: 90%
-name: arduino preferences-v1
+name: arduino preferences
 ---
 Einstellungen Arduino IDE
 ```
@@ -34,7 +34,7 @@ Einstellungen Arduino IDE
 ```{figure} resources/arduino-boardmanager.png
 ---
 width: 50%
-name: arduino boardmanager-v1
+name: arduino boardmanager
 ---
 Arduino Tools Boardmanager
 ```
@@ -44,7 +44,7 @@ Suchen Sie nach `attiny` und installieren Sie die letzte Version von `attiny` vo
 ```{figure} resources/arduino-boardmanager-attiny.png
 ---
 width: 80%
-name: arduino boardmanager attiny-v1
+name: arduino boardmanager attiny
 ---
 Arduino Boardmanager ATtiny Library
 ```
@@ -56,7 +56,7 @@ Arduino Boardmanager ATtiny Library
 ```{figure} resources/arduino-managelibraries.png
 ---
 width: 40%
-name: arduino manage libraries-v1
+name: arduino manage libraries
 ---
 Arduino Tools Manage Libraries
 ```
@@ -66,7 +66,7 @@ Suchen Sie nach `ssd1306xled` und installieren Sie die letzte werden der Library
 ```{figure} resources/arduino-librarymanager-ssd1306xlcd.png
 ---
 width: 80%
-name: arduino librarymanager-v1
+name: arduino librarymanager
 ---
 Arduino Librarymanager
 ```
@@ -84,7 +84,7 @@ Konfigurieren Sie das Program damit es den ATTiny85 Programmieren kann unter den
 ```{figure} resources/arduino-attiny85.svg
 ---
 width: 80%
-name: board settings-v1
+name: board settings
 ---
 Arduino Hardware Einstellungen
 ```
@@ -96,7 +96,7 @@ Die beiden Knöpfe oben rechts erlauben es den geöffneten Code zu kompilieren u
 ```{figure} resources/arduino-gui.png
 ---
 width: 80%
-name: arduino gui-v1
+name: arduino gui
 ---
 Arduino GUI
 ```
