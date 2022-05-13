@@ -11,24 +11,24 @@ Den notwendigen Code finden Sie in den untenstehenden Links. Beide Programme bes
 ```{figure} resources/pac-man.png
 ---
 width: 40%
-name: pacman
+name: pacman-v1
 ---
 PacMan Spiel
 ```
 
-[PacMan Programmcode](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-pacman.zip)
+{download}`PacMan Programcode <./resources/tiny-pacman.zip>`
 
 ### Space Invaders
 
 ```{figure} resources/space-invaders.png
 ---
 width: 40%
-name: space invaders
+name: space invaders-v1
 ---
 Space Invaders Spiel
 ```
 
-[Space Invaders Programmcode](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/arduino/attiny-console/resources/tiny-spaceinvaders.zip)
+{download}`Space Invaders Programcode <./resources/tiny-spaceinvaders.zip>`
 
 ## Einlegen der Batterie
 

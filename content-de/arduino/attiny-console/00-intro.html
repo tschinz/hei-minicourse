@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ATtiny Console (HEI LYNX) &#8212; Der Weg zum Ingenieur</title>
+    <title>ATtiny Console v1 (HEI LYNX) &#8212; Der Weg zum Ingenieur</title>
     
   <link href="../../../_static/css/theme.css" rel="stylesheet">
   <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -54,7 +54,7 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../../../_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://tschinz.github.io/hei-minicourse/content-de/arduino/attiny-console/00-intro.html" />
+    <link rel="canonical" href="http://promotion.hevs.io/minicourse/hei-minicourse/content-de/arduino/attiny-console/00-intro.html" />
     <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -294,7 +294,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="current reference internal" href="#">
-   ATtiny Console (HEI LYNX)
+   ATtiny Console v1 (HEI LYNX)
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
@@ -319,6 +319,38 @@
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="04-commissioning.html">
+     In Betrieb nehmen
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../attiny-console-v2/00-intro.html">
+   ATtiny Console v2 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../attiny-console-v2/01-design.html">
+     Der Schaltplan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../attiny-console-v2/02-soldering.html">
+     Löten des PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../attiny-console-v2/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../attiny-console-v2/04-commissioning.html">
      In Betrieb nehmen
     </a>
    </li>
@@ -460,7 +492,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>ATtiny Console (HEI LYNX)</h1>
+                <h1>ATtiny Console v1 (HEI LYNX)</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -501,11 +533,11 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="attiny-console-hei-lynx">
-<h1>ATtiny Console (HEI LYNX)<a class="headerlink" href="#attiny-console-hei-lynx" title="Permalink to this headline">¶</a></h1>
-<div class="figure align-default" id="pcb-attiny-console">
-<a class="reference internal image-reference" href="../../../_images/attiny-console.png"><img alt="../../../_images/attiny-console.png" src="../../../_images/attiny-console.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 66 </span><span class="caption-text">ATtiny Console aka HEI LYNX</span><a class="headerlink" href="#pcb-attiny-console" title="Permalink to this image">¶</a></p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="attiny-console-v1-hei-lynx">
+<h1>ATtiny Console v1 (HEI LYNX)<a class="headerlink" href="#attiny-console-v1-hei-lynx" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-default" id="pcb-attiny-console-v1">
+<a class="reference internal image-reference" href="../../../_images/attiny-console1.png"><img alt="../../../_images/attiny-console1.png" src="../../../_images/attiny-console1.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 66 </span><span class="caption-text">ATtiny Console aka HEI LYNX</span><a class="headerlink" href="#pcb-attiny-console-v1" title="Permalink to this image">¶</a></p>
 </div>
 <p>In diesem Miniprojekte werdet Ihr ein PCB Löten. Schlussendlich wird entweder ein <a class="reference external" href="https://en.wikipedia.org/wiki/Pac-Man">Pac-Man</a> oder ein <a class="reference external" href="https://en.wikipedia.org/wiki/Space_Invaders">Space Invaders</a> Spiel erstellt.</p>
 <div class="section" id="kurze-einfuhrung-in-das-loten">
@@ -513,14 +545,14 @@
 <div class="section" id="der-lotdraht-und-der-lotkolben">
 <h3>Der Lötdraht und der Lötkolben<a class="headerlink" href="#der-lotdraht-und-der-lotkolben" title="Permalink to this headline">¶</a></h3>
 <p>Der Lötdraht schmilzt bei etwa 200°C und dient dazu, die Bauteile zu fixieren und gleichzeitig einen elektrischen Kontakt herzustellen.</p>
-<div class="figure align-default" id="pcb-solder">
-<a class="reference internal image-reference" href="../../../_images/pcb-solder.webp"><img alt="../../../_images/pcb-solder.webp" src="../../../_images/pcb-solder.webp" style="width: 40%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Lötdraht</span><a class="headerlink" href="#pcb-solder" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="pcb-solder-v1">
+<a class="reference internal image-reference" href="../../../_images/pcb-solder1.webp"><img alt="../../../_images/pcb-solder1.webp" src="../../../_images/pcb-solder1.webp" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 67 </span><span class="caption-text">Lötdraht</span><a class="headerlink" href="#pcb-solder-v1" title="Permalink to this image">¶</a></p>
 </div>
 <p>Der Lötkolben bringt die Hitze zum Schmelzen des Lötzinns und wird auf etwa 380°C eingestellt.</p>
-<div class="figure align-default" id="pcb-soldertip">
-<a class="reference internal image-reference" href="../../../_images/pcb-solderingiron.jpg"><img alt="../../../_images/pcb-solderingiron.jpg" src="../../../_images/pcb-solderingiron.jpg" style="width: 70%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 68 </span><span class="caption-text">Lötkolben</span><a class="headerlink" href="#pcb-soldertip" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="pcb-soldertip-v1">
+<a class="reference internal image-reference" href="../../../_images/pcb-solderingiron1.jpg"><img alt="../../../_images/pcb-solderingiron1.jpg" src="../../../_images/pcb-solderingiron1.jpg" style="width: 70%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 68 </span><span class="caption-text">Lötkolben</span><a class="headerlink" href="#pcb-soldertip-v1" title="Permalink to this image">¶</a></p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -530,9 +562,9 @@
 <div class="section" id="pcb-printed-circuit-board">
 <h3>PCB (Printed Circuit Board)<a class="headerlink" href="#pcb-printed-circuit-board" title="Permalink to this headline">¶</a></h3>
 <p>Dies ist die Platine, auf die die elektronischen Komponenten gelötet werden. Die elektrischen Anschlüsse sind auf dieser Platine bereits hergestellt.</p>
-<div class="figure align-default" id="pcb">
-<a class="reference internal image-reference" href="../../../_images/pcb.png"><img alt="../../../_images/pcb.png" src="../../../_images/pcb.png" style="width: 80%;" /></a>
-<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">PCB ATtiny</span><a class="headerlink" href="#pcb" title="Permalink to this image">¶</a></p>
+<div class="figure align-default" id="pcb-v1">
+<a class="reference internal image-reference" href="../../../_images/pcb1.png"><img alt="../../../_images/pcb1.png" src="../../../_images/pcb1.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 69 </span><span class="caption-text">PCB ATtiny</span><a class="headerlink" href="#pcb-v1" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="die-bauteile">

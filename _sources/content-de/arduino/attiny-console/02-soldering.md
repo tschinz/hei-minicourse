@@ -5,7 +5,7 @@ Es geht darum auf dem PCB Komponenten zu verlöten.
 ```{figure} resources/pcb.png
 ---
 width: 80%
-name: pcb 2
+name: pcb 2-v1
 ---
 PCB ATtiny
 ```
@@ -17,7 +17,7 @@ Es handelt sich um das kleine gelbe Bauteil.
 ```{figure} resources/pcb-positions-01.svg
 ---
 width: 80%
-name: condensator c1
+name: condensator c1-v1
 ---
 Kondensator `C1`
 ```
@@ -29,7 +29,7 @@ Dies sind die Bauteile, in folgender Form.
 ```{figure} resources/pcb-positions-02.svg
 ---
 width: 80%
-name: resistor r1-r7
+name: resistor r1-r7-v1
 ---
 Resistor `R1` bis `R7`
 ```
@@ -41,7 +41,7 @@ Jeder Wiederstand hat Farbige Ringe mit welchem man deren Wert ablesen kann.
 ```{figure} resources/resistor-color-code.svg
 ---
 width: 50%
-name: resistor color code
+name: resistor color code-v1
 ---
 Wiederstand Farbcode
 ```
@@ -64,7 +64,7 @@ Dies sind die Richtungstasten und die Aktionstaste.
 ```{figure} resources/pcb-positions-03.svg
 ---
 width: 80%
-name: pcb button
+name: pcb button-v1
 ---
 Knopf `S2`- `S7`
 ```
@@ -80,7 +80,7 @@ Es gibt keine vorgegebene Montagerichtung.
 ```{figure} resources/pcb-positions-04.svg
 ---
 width: 80%
-name: pcb switch
+name: pcb switch-v1
 ---
 Schalter `S1`
 ```
@@ -96,7 +96,7 @@ Achten Sie auf die Einbaurichting! Die Kerbe auf der Seite des kleinen gelben Ko
 ```{figure} resources/pcb-positions-05.svg
 ---
 width: 80%
-name: pcb cpu sockel
+name: pcb cpu sockel-v1
 ---
 Prozessorsockel `U1`
 ```
@@ -108,7 +108,7 @@ Dieses Bauteil dient zur Einstellung der Lautstärke mithilfe des weissen Drehkn
 ```{figure} resources/pcb-positions-06.svg
 ---
 width: 80%
-name: pcb potentiometer
+name: pcb potentiometer-v1
 ---
 Trimmer `R8`
 ```
@@ -124,7 +124,7 @@ Achten Sie auf die Richtung! Das `+` auf der `+`-Seite
 ```{figure} resources/pcb-positions-07.svg
 ---
 width: 80%
-name: pcb buzzer
+name: pcb buzzer-v1
 ---
 Buzzer `SP1`
 ```
@@ -140,7 +140,7 @@ Der Kontakt hat auf der einen Seite Anschläge, die die Batterie festhalten, und
 ```{figure} resources/pcb-batteryholder.jpeg
 ---
 width: 30%
-name: pcb batteryholder
+name: pcb batteryholder-v1
 ---
 Batteriehalter
 ```
@@ -155,7 +155,7 @@ Bringen Sie die Kerbe des integrierten Schaltkreises ATtiny 85 in die gleiche Ri
 ```{figure} resources/pcb-positions-08.svg
 ---
 width: 80%
-name: pcb cpu sockel install
+name: pcb cpu sockel install-v1
 ---
 Installieren des Prozessors in den Sockel `U1`
 ```
@@ -172,7 +172,7 @@ Damit der Bildschirm plan und stabil auf dem PCB aufliegt können Sie gegenüber
 ```{figure} resources/pcb-positions-09.svg
 ---
 width: 80%
-name: pcb oled
+name: pcb oled-v1
 ---
 Oled Display SBC-OLED01
 ```
