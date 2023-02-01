@@ -13,7 +13,8 @@ jupyter-build:
     - jupyter-book build jupyterbook-fr
   artifacts:
     paths:
-      - jupyterbook/_build/
+      - jupyterbook-de/_build/
+      - jupyterbook-fr/_build/
 
 pages:
   stage: deploy
