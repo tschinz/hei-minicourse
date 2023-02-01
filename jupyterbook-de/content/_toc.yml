@@ -1,0 +1,89 @@
+format: jb-book
+root: 00-intro
+parts:
+- caption: Einführung
+  chapters:
+  - file: intro/00-computer
+  - file: intro/01-programming
+
+- caption: Git
+  chapters:
+  - file: git/intro/00-intro
+    sections:
+    - file: git/intro/01-commands
+    - file: git/intro/02-branch-merge
+    - file: git/intro/03-gitflow
+  - file: git/lab/00-intro
+    sections:
+    - file: git/lab/01-config
+    - file: git/lab/02-general
+    - file: git/lab/03-github
+    - file: git/lab/04-branch-merge
+    - file: git/lab/05-gitflow
+
+- caption: Python
+  chapters:
+  - file: python/intro/00-intro
+    sections:
+    - file: python/intro/01-hello_world
+    - file: python/intro/02-jupyter
+    - file: python/intro/03-ipython
+    - file: python/intro/04-datatypes
+    - file: python/intro/05-object_oriented
+
+#  - file: python/lab/00-intro
+#    sections:
+#    - file: python/lab/ex01-getting_started
+#    - file: python/lab/ex02-variables_and_functions
+#    - file: python/lab/ex03-loops_and_conditionals
+#    - file: python/lab/ex04-guessing_games
+#    - file: python/lab/ex05-lists_etc
+#    - file: python/lab/ex06-more_loops
+#    - file: python/lab/ex07-strings
+#    - file: python/lab/ex08-charles_other_methods
+#    - file: python/lab/ex08-read_write_files
+#    - file: python/lab/ex09-modules
+#    - file: python/lab/ex10-exceptions
+#    - file: python/lab/ex11-numpy
+#    - file: python/lab/ex11a-sudoku
+#    - file: python/lab/ex12-plotting
+#    - file: python/lab/ex13-radioactive_decay
+#    - file: python/lab/ex14-pandas_databases
+#    - file: python/lab/ex15-more_plotting
+#    - file: python/lab/ex16-maps
+#    - file: python/lab/ex17-fourier_analysis
+#    - file: python/lab/ex18-objects
+#    - file: python/lab/ex19-differential_eqs
+#    - file: python/lab/ex20-sorting
+
+  #- file: python/advanced/00-intro
+  - file: python/advanced/01-enigma-intro
+    sections:
+    - file: python/advanced/01-enigma-lab
+    - file: python/advanced/01-enigma-machine
+
+- caption: Java
+  chapters:
+  - file: java/maze/00-intro
+    sections:
+    - file: java/maze/01-display_solution
+    - file: java/maze/02-movement_logic
+
+- caption: Arduino
+  chapters:
+  - file: arduino/attiny-console/00-intro
+    sections:
+    - file: arduino/attiny-console/01-design
+    - file: arduino/attiny-console/02-soldering
+    - file: arduino/attiny-console/03-toolchain
+    - file: arduino/attiny-console/04-commissioning
+  - file: arduino/attiny-console-v2/00-intro
+    sections:
+    - file: arduino/attiny-console-v2/01-design
+    - file: arduino/attiny-console-v2/02-soldering
+    - file: arduino/attiny-console-v2/03-toolchain
+    - file: arduino/attiny-console-v2/04-commissioning
+- caption: Anhang
+  chapters:
+  - file: 01-bibliography
+  - file: 02-contact

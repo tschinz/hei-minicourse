@@ -1,0 +1,95 @@
+format: jb-book
+root: content/00-intro
+parts:
+- caption: Introduction
+  chapters:
+  - file: content/intro/00-computer
+  - file: content/intro/01-programming
+
+- caption: Git
+  chapters:
+  - file: content/git/intro/00-intro
+    sections:
+    - file: content/git/intro/01-commands
+    - file: content/git/intro/02-branch-merge
+    - file: content/git/intro/03-gitflow
+  - file: content/git/lab/00-intro
+    sections:
+    - file: content/git/lab/01-config
+    - file: content/git/lab/02-general
+    - file: content/git/lab/03-github
+    - file: content/git/lab/04-branch-merge
+    - file: content/git/lab/05-gitflow
+
+- caption: Python
+  chapters:
+  - file: content/python/intro/00-intro
+    sections:
+    - file: content/python/intro/01-hello_world
+    - file: content/python/intro/02-jupyter
+    - file: content/python/intro/03-ipython
+    - file: content/python/intro/04-datatypes
+    - file: content/python/intro/05-object_oriented
+
+#  - file: content/python/lab/00-intro
+#    sections:
+#    - file: content/python/lab/ex01-getting_started
+#    - file: content/python/lab/ex02-variables_and_functions
+#    - file: content/python/lab/ex03-loops_and_conditionals
+#    - file: content/python/lab/ex04-guessing_games
+#    - file: content/python/lab/ex05-lists_etc
+#    - file: content/python/lab/ex06-more_loops
+#    - file: content/python/lab/ex07-strings
+#    - file: content/python/lab/ex08-charles_other_methods
+#    - file: content/python/lab/ex08-read_write_files
+#    - file: content/python/lab/ex09-modules
+#    - file: content/python/lab/ex10-exceptions
+#    - file: content/python/lab/ex11-numpy
+#    - file: content/python/lab/ex11a-sudoku
+#    - file: content/python/lab/ex12-plotting
+#    - file: content/python/lab/ex13-radioactive_decay
+#    - file: content/python/lab/ex14-pandas_databases
+#    - file: content/python/lab/ex15-more_plotting
+#    - file: content/python/lab/ex16-maps
+#    - file: content/python/lab/ex17-fourier_analysis
+#    - file: content/python/lab/ex18-objects
+#    - file: content/python/lab/ex19-differential_eqs
+#    - file: content/python/lab/ex20-sorting
+
+  #- file: content/python/advanced/00-intro
+  - file: content/python/advanced/01-enigma-intro
+    sections:
+    - file: content/python/advanced/01-enigma-lab
+    - file: content/python/advanced/01-enigma-machine
+
+- caption: Java
+  chapters:
+  - file: content/java/maze/00-intro
+    sections:
+    - file: content/java/maze/01-display_solution
+    - file: content/java/maze/02-movement_logic
+
+- caption: ESP32
+  chapters:
+  - file: content/esp32/connected-robot/00-intro
+    sections:
+    - file: content/esp32/connected-robot/01-design
+
+- caption: Arduino
+  chapters:
+  - file: content/arduino/attiny-console/00-intro
+    sections:
+    - file: content/arduino/attiny-console/01-design
+    - file: content/arduino/attiny-console/02-soldering
+    - file: content/arduino/attiny-console/03-toolchain
+    - file: content/arduino/attiny-console/04-commissioning
+  - file: content/arduino/attiny-console-v2/00-intro
+    sections:
+    - file: content/arduino/attiny-console-v2/01-design
+    - file: content/arduino/attiny-console-v2/02-soldering
+    - file: content/arduino/attiny-console-v2/03-toolchain
+    - file: content/arduino/attiny-console-v2/04-commissioning
+- caption: Annexe
+  chapters:
+  - file: content/01-bibliography
+  - file: content/02-contact

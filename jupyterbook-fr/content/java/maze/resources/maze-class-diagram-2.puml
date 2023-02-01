@@ -1,0 +1,84 @@
+@startuml
+
+class ::maze.data::MazeContainer {
+  .. Attributes ..
++ nCellsX: int
++ nCellsY: int
++ maze: MazeElem[][]
+  .. Methods ..
+# setInitialPositions(random: boolean)
++ MazeContainer(...)
++ MazeContainer(...)
+}
+
+
+class ::maze.display::KeyboardListener {
+  .. Attributes ..
++ mc: MazeContainer
++ mg: MazeGame
++ public: @Override
++ public: @Override
++ public: @Override
+  .. Methods ..
++ KeyboardListener(...)
++ keyPressed(...)
++ keyReleased(...)
++ keyTyped(...)
+}
+
+class ::maze.display::GraphicDisplay {
+  .. Attributes ..
+- mazeContainer: MazeContainer
+- mBitmap: BufferedImage
+- msg: String
+- strokeSize: int
++ disp: Display
++ drawGrid: boolean
++ frameHeight: int
++ frameWidth: int
++ hCell: int
++ nCellsX: int
++ nCellsY: int
++ solution: int[][]
++ wCell: int
+
+  .. Methods ..
+- loadImage(...)
++ clearSolution(...)
++ GraphicDisplay(...)
++ GraphicDisplay(...)
++ main(...)
++ registerKeyListener(...)
++ setMessage(...)
++ setNewMaze(...)
++ setSolution(...)
+}
+
+class MazeGame {
+.. Attributes ..
++ gd: GameDisplay
++ height: int
++ kl: KeyboardListener
++ maze: MazeElem[][]
++ mc: MazeContainer
++ player: Player
++ width: int
+.. Methods ..
+- findPlayer(...)
++ checkWinner(...)
++ displaySolution(...)
++ generateNewMaze(...)
++ main(...)
++ MazeGame(...)
++ movePlayer(...)
++ multiShuffle(...)
++ setNewMaze(...)
+}
+
+ ::maze.data::MazeContainer <- ::maze.display::KeyboardListener
+ ::maze.data::MazeContainer <-- ::maze.display::GraphicDisplay
+ ::maze.display::KeyboardListener <--> MazeGame
+ ::maze.data::MazeContainer <-- MazeGame
+ ::maze.display::GraphicDisplay <- MazeGame
+
+@enduml

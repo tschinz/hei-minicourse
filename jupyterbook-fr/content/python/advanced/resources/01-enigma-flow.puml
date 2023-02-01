@@ -1,0 +1,23 @@
+@startuml
+actor Person as 0
+participant Lampen as 1
+participant Tastatur as 2
+participant Steckerbrett as 3
+control "Rotors Rechts" as 4
+control "Rotors Mitte" as 5
+control "Rotors Links" as 6
+participant Reflektor as 7
+
+0 -> 2 : Eintippen
+2 -> 3 : Weiterleiten
+3 -> 4 : Vermischen
+4 -> 5 : Vermischen
+5 -> 6 : Vermischen
+6 -> 7 : Vermischen
+7 -> 6 : Reflektieren
+6 -> 5 : Vermischen
+5 -> 4 : Vermischen
+4 -> 3 : Vermischen
+3 -> 1 : Anzeigen
+1 -> 0 : Ablesen
+@enduml

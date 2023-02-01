@@ -1,0 +1,19 @@
+## Exemple d'une cellule de code Python simple
+
+print("Bonjour, petit monde")
+a = 1
+
+print("Compteur {}".format(a))
+a += 1
+
+# Essayez !
+
+## Parce que b n'a pas encore été défini, mais a l'a été dans la cellule précédente.
+
+try:
+    print("Compteur {}".format(c))
+except:
+    print("Compteur")
+    c = 1
+
+c += 1

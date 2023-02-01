@@ -1,0 +1,41 @@
+## Essayer l'autocomplétion ... il fonctionne sur les fonctions qui sont dans le champ d'application
+
+print
+
+# it also works on variables
+
+long_but_helpful_variable_name = 1
+
+long_but_helpful_variable_name
+
+import math
+
+math.isinf # Try completion on this
+
+help(math.isnan)
+
+# try math.isinf() and hit <kbd>Shift</kbd>+<kbd>Tabulator</kbd> while the cursor is between the parentheses
+# you should see the same help pop up.
+
+# math.isinf()
+
+import string
+string.capwords("the quality of mercy is not strained")
+
+string.capwords()
+
+# execute les commandes simples du shell unix
+
+!ls
+
+!echo ""
+
+!pwd
+
+%%sh
+
+ls -l
+echo ""
+pwd
+
+%magic # pour voir EVERYTHING dans le système magique !

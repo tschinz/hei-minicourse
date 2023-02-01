@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 17 - Fourier analysis and Milankovitch cycles &#8212; Le chemin vers l&#39;ingénierie</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="http://promotion.hevs.io/minicourse/hei-minicourse/fr/content/python/lab/ex17-fourier_analysis.html" />
+    <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/hei-defr.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Le chemin vers l'ingénierie</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00-intro.html">
+   Le chemin vers l’ingénierie
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/00-computer.html">
+   Développement de l’ordinateur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/01-programming.html">
+   Approches modernes de la programmation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/intro/00-intro.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/01-commands.html">
+     Commandes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/02-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/03-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/lab/00-intro.html">
+   Laboratoire
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/01-config.html">
+     Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/02-general.html">
+     Opérations de base
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/04-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../intro/00-intro.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/02-jupyter.html">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/04-datatypes.html">
+     Types de données Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/05-object_oriented.html">
+     Programmation orientée objet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../advanced/01-enigma-intro.html">
+   Machine Enigma
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/01-enigma-lab.html">
+     Tâches à accomplir
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../advanced/01-enigma-machine.html">
+     Programmation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../java/maze/00-intro.html">
+   Laboratoire Maze
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/01-display_solution.html">
+     Partie 1 - Afficher et sortir du labyrinthe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/02-movement_logic.html">
+     Partie 2 - Mouvement du joueur et logique du jeu
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ESP32
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../esp32/connected-robot/00-intro.html">
+   Connected Robot
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../esp32/connected-robot/01-design.html">
+     Maze Labor
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console/00-intro.html">
+   ATtiny Console v1 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console-v2/00-intro.html">
+   ATtiny Console v2 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Annexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02-contact.html">
+   Contact
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Presented by <a href="https://www.hevs.ch/synd">HEI-Vs</a></br></br><button type="button" onclick="window.location.href = 'https:/promotion.hevs.io/minicourse/hei-minicourse/de'">Deutsch</button><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content/python/lab/ex17-fourier_analysis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/tschinz/hei-minicourse//issues/new?title=Issue%20on%20page%20%2Fcontent/python/lab/ex17-fourier_analysis.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/tschinz/hei-minicourse/main?urlpath=tree/jupyterbook-fr/content/python/lab/ex17-fourier_analysis.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../../../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/tschinz/hei-minicourse/blob/main/jupyterbook-fr/content/python/lab/ex17-fourier_analysis.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="../../../_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering">
+   Filtering
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Exercise 17 - Fourier analysis and Milankovitch cycles</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#filtering">
+   Filtering
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="exercise-17-fourier-analysis-and-milankovitch-cycles">
+<h1>Exercise 17 - Fourier analysis and Milankovitch cycles<a class="headerlink" href="#exercise-17-fourier-analysis-and-milankovitch-cycles" title="Permalink to this headline">¶</a></h1>
+<p><em>Andrew Valentine - <a class="reference external" href="mailto:andrew&#46;valentine&#37;&#52;&#48;anu&#46;edu&#46;au">andrew<span>&#46;</span>valentine<span>&#64;</span>anu<span>&#46;</span>edu<span>&#46;</span>au</a> - With thanks to Dr Katharine Grant</em></p>
+<p>The Excel spreadsheet <code class="docutils literal notranslate"><span class="pre">RSL_data.xlsx</span></code> contains information about relative sea level over the last 500,000 years.</p>
+<p><strong>➤ Use the Pandas library to read the data from this spreadsheet and plot the relative sea level over time.</strong></p>
+<p>You may wish to ‘flip’ the x-axis so that the most recent measurements are on the right-hand side, as usual. To do this, you can use the following command:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">gca</span><span class="p">()</span>    <span class="c1"># Get current axes</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">invert_xaxis</span><span class="p">()</span> <span class="c1"># Flip x</span>
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This signal appears to have strong periodicities. To understand these better, we can analyse the signal using a Fourier transform. A range of different Fourier transform functions are available within <code class="docutils literal notranslate"><span class="pre">np.fft</span></code>; since our signal is purely real (i.e., can be expressed without using complex numbers), we will use <code class="docutils literal notranslate"><span class="pre">np.fft.rfft</span></code>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">np.fft.rfft</span></code> assumes that our time samples are all equally-spaced. This is not the case for the dataset within <code class="docutils literal notranslate"><span class="pre">RSL_data.xlsx</span></code>. We therefore need to interpolate the signal onto a regular set of points.</p>
+<p>** ➤ Using the function <code class="docutils literal notranslate"><span class="pre">np.interp</span></code>, interpolate the data onto a regular set of points.** Plot your interpolated time series and verify that it looks the same as the original.</p>
+<p>** ➤ Subtract the mean from this interpolated data.**</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Given a time series in an array <code class="docutils literal notranslate"><span class="pre">timeSeries</span></code>, we can generate a spectrum by calling</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>npoints = &lt;?&gt;
+spectrum = np.fft.rfft(timeSeries,npoints,norm=&#39;ortho&#39;)
+</pre></div>
+</div>
+<p>The variable <code class="docutils literal notranslate"><span class="pre">npoints</span></code> should be set to a value equal to or greater than <code class="docutils literal notranslate"><span class="pre">len(timeSeries)</span></code>. The larger this number, the ‘cleaner’ the spectrum will appear, but the calculations will be slower. The Fast Fourier Transform is most efficient if <code class="docutils literal notranslate"><span class="pre">npoints</span></code> is a power of two. The <code class="docutils literal notranslate"><span class="pre">norm='ortho'</span></code> argument ensures that the Fourier transform is properly normalised.</p>
+<p>The ordering of the points in the spectrum is counter-intuitive, and governed by efficiency considerations. Fortunately, one can use the function</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">frequencies</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">rfftfreq</span><span class="p">(</span><span class="n">npoints</span><span class="p">,</span><span class="n">timeStep</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>to obtain an array which gives the frequency of each spectral point. Here, <code class="docutils literal notranslate"><span class="pre">npoints</span></code> is identical to the <code class="docutils literal notranslate"><span class="pre">npoints</span></code> used in <code class="docutils literal notranslate"><span class="pre">np.fft.rfft</span></code>; <code class="docutils literal notranslate"><span class="pre">timeStep</span></code> should be set to the time-spacing between each point in timeSeries.</p>
+<p>** ➤ Obtain a spectrum and corresponding array of frequencies for your interpolated dataset. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>If you print your spectrum, you will see it contains numbers like <code class="docutils literal notranslate"><span class="pre">1.323+0.25j</span></code>. This is how Python represents complex numbers. When plotting spectra, it is most common to plot the ‘power spectrum’, <span class="math notranslate nohighlight">\(P(\omega) = |f(\omega)|^2 = f^*(\omega)f(\omega)\)</span>, where the asterisk (<span class="math notranslate nohighlight">\(*\)</span>) denotes a ‘complex conjugate’. This is implemented in NumPy as the <code class="docutils literal notranslate"><span class="pre">conj()</span></code> function. Therefore, to obtain a power spectrum from the array <code class="docutils literal notranslate"><span class="pre">spectrum</span></code> produced by <code class="docutils literal notranslate"><span class="pre">np.fft.rfft</span></code>, you can use</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">power</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">(</span><span class="n">spectrum</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">*</span><span class="n">spectrum</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>** ➤ Plot the power spectrum of your signal. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hopefully you now see a number of clear peaks, which correspond to periodicities within the dataset. In particular, you should be able to see a number of peaks relating to the Milankovitch cycle - variations in Earth’s climatic conditions that arise from variations in the Earth’s orbit around the sun. This has strong components at periods of around 23,000 years, 41,000 years, and 100,000 years.</p>
+<p>** ➤ Modify your plot to reproduce this figure. **</p>
+<p>Remember that period = 1/frequency !</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">import</span> <span class="nn">sealevel</span>
+<span class="n">sealevel</span><span class="o">.</span><span class="n">plot_Milankovitch</span><span class="p">(</span><span class="s2">&quot;RSL_data.xlsx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/ex17-fourier_analysis_11_0.png" src="../../../_images/ex17-fourier_analysis_11_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="filtering">
+<h2>Filtering<a class="headerlink" href="#filtering" title="Permalink to this headline">¶</a></h2>
+<p>Most natural signals have energy across a broad range of frequencies. However, we are often interested in only a subset of this frequency band. To isolate the time series arising from this subset, we can employ a frequency-domain filter.</p>
+<p>Filtering and signal processing are complex topics, and we will not go into any significant detail in this course. However, at a basic level, filtering can be understood as a frequency-dependent rescaling of the spectrum. The simplest filter imaginable might be:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>cutoff = &lt;?&gt;
+filt = np.where(freqs &gt; cutoff,1,0)
+</pre></div>
+</div>
+<p>where freqs is the array produced by <code class="docutils literal notranslate"><span class="pre">np.fft.rfftfreqs</span></code>, as above. <code class="docutils literal notranslate"><span class="pre">filt</span></code> is now an array which contains the value 1 for frequencies <em>above</em> some cutoff frequency, and 0 below this point. This is known as a ‘high-pass’ filter, as it leaves high-frequncy signals unchanged, but stops low-frequency ones. We can then do:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">filtered_spectrum</span> <span class="o">=</span> <span class="n">spectrum</span> <span class="o">*</span> <span class="n">filt</span>
+</pre></div>
+</div>
+<p>** ➤ Make this filter and plot the spectrum. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can then use an <em>inverse</em> Fourier transform to convert our filtered spectrum back into a time series. To do this, you use the function <code class="docutils literal notranslate"><span class="pre">np.fft.irfft</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">filtered_series</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">irfft</span><span class="p">(</span><span class="n">filtered_spectrum</span><span class="p">,</span> <span class="n">npoints</span><span class="p">,</span><span class="n">norm</span><span class="o">=</span><span class="s1">&#39;ortho&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">npoints</span></code> is exactly the same variable as you used for the <em>forward</em> transform.</p>
+<p>** ➤ Plot the filtered time series. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You may notice that this doesn’t seem to give very good results. A sharp cutoff in a filter tends to create lots of ‘ringing’ - an effect known as <a class="reference external" href="https://en.wikipedia.org/wiki/Gibbs_phenomenon">Gibb’s Phenomenon</a>. We will get much better results if we allow a smooth transition between the ‘stop-band’ and the ‘pass-band’. One way to do this is to create a ‘cosine high-pass’ filter, which is described by the following formula as a function of frequency ( <span class="math notranslate nohighlight">\(f\)</span> ):
+$<span class="math notranslate nohighlight">\( F(f) =\begin{cases}0 &amp;f&lt;f_\mathrm{lo}\\\frac{1}{2}\left[1-\cos\left(\pi\cdot\frac{f-f_\mathrm{lo}}{f_\mathrm{hi}-f_\mathrm{lo}}\right)\right]&amp;f_\mathrm{lo}&lt;f&lt;f_\mathrm{hi}\\1&amp;f&gt;f_\mathrm{hi}\end{cases}\)</span><span class="math notranslate nohighlight">\(
+Here, \)</span>f_\mathrm{lo}<span class="math notranslate nohighlight">\( and \)</span>f_\mathrm{hi}$ define a range of frequencies which are attenuated, but not stopped completely.</p>
+<p>** ➤ Write a <code class="docutils literal notranslate"><span class="pre">cosineHighPass()</span></code> function and plot its output. Then apply it to your time series, and explore how it performs as you vary <span class="math notranslate nohighlight">\(f_\mathrm{lo}\)</span> and <span class="math notranslate nohighlight">\(f_\mathrm{hi}\)</span>. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>A cosine low-pass filter is very similar, except it lets <em>low</em> frequencies through unchanged, and stops high frequencies.</p>
+<p>** ➤ Create a <code class="docutils literal notranslate"><span class="pre">cosineLowPass()</span></code> function and explore its performance. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Sometimes, we want to stop both very-low and very-high frequency signals, while preserving the middle band. This can be achieved by using a ‘band-pass’ filter. One way to achieve this is to simply combine (multiply) the output from a low-pass and a high-pass filter. Clearly, the cutoff for the high-pass filter must be below the cutoff for the low-pass filter if this is to succeed.</p>
+<p>** ➤ Create a <code class="docutils literal notranslate"><span class="pre">cosineBandPass()</span></code> function and explore its performance. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Alternatively, we might choose to use a Gaussian-shaped filter:</p>
+<div class="math notranslate nohighlight">
+\[ F(f) = \exp\left[-\frac{(f-f_\mathrm{cen})^2}{2 w^2}\right] \]</div>
+<p>where <span class="math notranslate nohighlight">\(f_\mathrm{cen}\)</span> defines the central point of the pass-band, and <span class="math notranslate nohighlight">\(w\)</span> controls its width.</p>
+<p>** ➤ Create a <code class="docutils literal notranslate"><span class="pre">gaussianBandPass()</span></code> function and explore its performance. **</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Try it here!</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/python/lab"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs - Silvan Zahno<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

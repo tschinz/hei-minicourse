@@ -7,8 +7,10 @@ jupyter-build:
   image: python:slim
   script:
     - pip install -U jupyter-book
-    - jupyter-book clean jupyterbook
-    - jupyter-book build jupyterbook
+    - jupyter-book clean jupyterbook-de
+    - jupyter-book build jupyterbook-de
+    - jupyter-book clean jupyterbook-fr
+    - jupyter-book build jupyterbook-fr
   artifacts:
     paths:
       - jupyterbook/_build/
@@ -17,7 +19,9 @@ pages:
   stage: deploy
   image: busybox:latest
   script:
-    - mv jupyterbook/_build/html public
+    - mv jupyterbook-de/_build/html public/de
+    - mv jupyterbook-fr/_build/html public/fr
+
   artifacts:
     paths:
       - public

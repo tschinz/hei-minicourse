@@ -1,0 +1,29 @@
+@startuml
+class MazeContainer {
+  .. Attributes ..
++ nCellsX: int
++ nCellsY: int
++ maze: MazeElem[][]
+  .. Methods ..
++ MazeContainer(w:int, h:int)
++ setInitialPositions(random: boolean)
+}
+
+class MazeElem {
+.. Attributes ..
++ wallWest: boolean
++ wallNorth: boolean
++ wallEast: boolean
++ wallSouth: boolean
+
++ isExit(): boolean
++ p1Present(): boolean
++ p2Present(): boolean
+.. Methods ..
+
+}
+
+MazeContainer o-> MazeElem
+
+
+@enduml

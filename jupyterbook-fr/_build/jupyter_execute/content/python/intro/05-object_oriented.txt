@@ -1,0 +1,98 @@
+class Pokemon :
+  def __init__(self, name=None, type=None, health=None, attack=None, defense=None) :
+    self.__name = nom
+    self.__type = type
+    self.__health = santé
+    self.__attack = attaque
+    self.__defense = defense
+    print(self.speak())
+
+  def speak(self) :
+    print(self.__name)
+
+  def attack(self) :
+    return(self.__attack)
+
+  def dodge(self, attack) :
+    self.__health -= attaque - self.__defense
+    return((attack - self.__defense) *-1)
+
+  def evolve(self, new_ame) :
+    self.__name = new_name
+    return(self.__nom)
+
+pikachu = Pokemon("Pikachu", "Electric", 3, 4, 3)
+
+class Pokemon :
+  ...
+
+  def dodge(self, attack) :
+    self.__health -= attaque - self.__defense
+    return((attack - self.__defense) *-1)
+
+  ...
+
+pikachu = Pokemon("Pikachu", "Electric", 3, 4, 3)
+pikachu.dodge(4)
+
+class Pokemon :
+  def __init__(self, name=None, type=None, health=None, attack=None, defense=None) :
+    self.__name = nom
+    self.__type = type
+    self.__health = santé
+    self.__attack = attaque
+    self.__defense = defense
+    print(self.speak())
+
+  def dodge(self, attack) :
+    self.__health -= attaque - self.__defense
+    return((attack - self.__defense) *-1)
+
+  def evolve(self, new_ame) :
+    self.__name = new_name
+    return(self.__nom)
+
+  ...
+
+pikachu = Pokemon("Pikachu", "Electric", 3, 4, 3)
+
+class ElectricPokemon(Pokemon) :
+  def __init__(self, name=None, health=None, attack=None, defense=None, special_attack=None) :
+    super().__init__(nom, "Electric", health, attack, defense)
+    self.__attaque_spéciale = attaque_spéciale
+    print(self.speak())
+
+  def speak(self) :
+    print("Zap " + self.__name)
+
+    def special_attack(self) :
+    return(self.__special_attack)
+
+class FirePokemon(Pokemon) :
+  def __init__(self, name=None, health=None, attack=None, defense=None, special_attack=None) :
+    super().__init__(nom, "Fire", health, attack, defense)
+    self.__attaque_spéciale = attaque_spéciale
+    print(self.speak())
+
+  def speak(self) :
+    print("Siffler " + self.__nom)
+
+    def special_attack(self) :
+    return(self.__attaque_spéciale)
+
+class WaterPokemon(Pokemon) :
+  def __init__(self, name=None, health=None, attack=None, defense=None, special_attack=None) :
+    super().__init__(nom, "Water", health, attack, defense)
+    self.__attaque_spéciale = attaque_spéciale
+    print(self.speak())
+
+  def speak(self) :
+    print("Blub " + self.__name)
+
+    def special_attack(self) :
+    return(self.__attaque_spéciale)
+
+
+pikachu = ElectricPokemon("Pikachu", 3, 4, 3, 3)
+charmander = FirePokemon("Charmander", 3, 4, 3, 4)
+squirtle = WaterPokemon("Squirtle", 3, 3, 4, 3)

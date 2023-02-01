@@ -1,4 +1,4 @@
-.PHONY: info conda-course-create conda-course-export conda-create conda-export clean view html htmlfull jupyter help
+.PHONY: info conda-course-create conda-course-export conda-create conda-export clean view html-de html-fr htmlfull jupyter-de jupyter-fr help
 
 ###########################################################################
 # Detect OS                                                               #
@@ -111,24 +111,34 @@ conda-export: ## export conda environment
 	@conda env export > $(CONDA_ENV_FILE)
 	@echo ">>> Conda environment '$(CONDA_ENV_NAME)' exported."
 
-html: ## build jupyterbook html files
-	@$(CONDA_ACTIVATE) && cd jupyterbook && jupyter-book build .
-	@echo ">>> Build Jupyterbook"
+html-de: ## build jupyterbook german html files
+	@$(CONDA_ACTIVATE) && cd jupyterbook-de && jupyter-book build .
+	@echo ">>> Build german Jupyterbook"
+
+html-fr: ## build jupyterbook french html files
+	@$(CONDA_ACTIVATE) && cd jupyterbook-fr && jupyter-book build .
+	@echo ">>> Build french Jupyterbook"
 
 htmlfull: clean ## build from scratch jupyterbook html files
-	@$(CONDA_ACTIVATE) && cd jupyterbook && jupyter-book build .
-	@echo ">>> Build Jupyterbook"
+	@$(CONDA_ACTIVATE) && cd jupyterbook-de && jupyter-book build .
+	@$(CONDA_ACTIVATE) && cd jupyterbook-fr && jupyter-book build .
+	@echo ">>> Build All Jupyterbooks"
 
 view: ## view html files
-	@$(PDFVIEWER) jupyterbook/_build/html/index.html &
+	@$(PDFVIEWER) jupyterbook-de/_build/html/index.html &
 	@echo ">>> Open Jupyterbook"
 
-clean: ## clen generated file
-	@rm -R jupyterbook/_build
-	@echo ">>> Removed jupyterbook/_build/ folder"
+clean: ## clean generated file
+	@rm -R jupyterbook-de/_build
+	@rm -R jupyterbook-fr/_build
+	@echo ">>> Removed jupyterbook-de/_build/ folder"
+	@echo ">>> Removed jupyterbook-fr/_build/ folder"
 
-jupyter: ## start jupyterlab instance
-	@$(CONDA_ACTIVATE) && jupyter lab --app_dir=./jupyterbook
+jupyter-de: ## start german jupyterlab instance
+	@$(CONDA_ACTIVATE) && jupyter lab --app_dir=./jupyterbook-de
+
+jupyter-fr: ## start french jupyterlab instance
+	@$(CONDA_ACTIVATE) && jupyter lab --app_dir=./jupyterbook-fr
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; \

@@ -1,0 +1,1072 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tâches à accomplir &#8212; Le chemin vers l&#39;ingénierie</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="http://promotion.hevs.io/minicourse/hei-minicourse/fr/content/python/advanced/01-enigma-lab.html" />
+    <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Programmation" href="01-enigma-machine.html" />
+    <link rel="prev" title="Machine Enigma" href="01-enigma-intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/hei-defr.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Le chemin vers l'ingénierie</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00-intro.html">
+   Le chemin vers l’ingénierie
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/00-computer.html">
+   Développement de l’ordinateur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/01-programming.html">
+   Approches modernes de la programmation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/intro/00-intro.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/01-commands.html">
+     Commandes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/02-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/intro/03-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git/lab/00-intro.html">
+   Laboratoire
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/01-config.html">
+     Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/02-general.html">
+     Opérations de base
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/04-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git/lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../intro/00-intro.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/02-jupyter.html">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/04-datatypes.html">
+     Types de données Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../intro/05-object_oriented.html">
+     Programmation orientée objet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="01-enigma-intro.html">
+   Machine Enigma
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Tâches à accomplir
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="01-enigma-machine.html">
+     Programmation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../java/maze/00-intro.html">
+   Laboratoire Maze
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/01-display_solution.html">
+     Partie 1 - Afficher et sortir du labyrinthe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/02-movement_logic.html">
+     Partie 2 - Mouvement du joueur et logique du jeu
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ESP32
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../esp32/connected-robot/00-intro.html">
+   Connected Robot
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../esp32/connected-robot/01-design.html">
+     Maze Labor
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console/00-intro.html">
+   ATtiny Console v1 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console-v2/00-intro.html">
+   ATtiny Console v2 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Annexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02-contact.html">
+   Contact
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Presented by <a href="https://www.hevs.ch/synd">HEI-Vs</a></br></br><button type="button" onclick="window.location.href = 'https:/promotion.hevs.io/minicourse/hei-minicourse/de'">Deutsch</button><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content/python/advanced/01-enigma-lab.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/tschinz/hei-minicourse//issues/new?title=Issue%20on%20page%20%2Fcontent/python/advanced/01-enigma-lab.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chiffre-de-cesar">
+   Chiffre de César
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#taches">
+     Tâches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-enigma">
+   théorie Enigma
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#designations">
+     Désignations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algorithme">
+     Algorithme
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parametre">
+     Paramètre
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#taille-du-code">
+     Taille du code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demonstration">
+     Démonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preparation">
+     Préparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brouilleur">
+     Brouilleur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enigma-machine">
+     Enigma Machine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transmettre-des-messages-cryptes">
+   Transmettre des messages cryptés
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Tâches à accomplir</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#chiffre-de-cesar">
+   Chiffre de César
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#taches">
+     Tâches
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#theorie-enigma">
+   théorie Enigma
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#designations">
+     Désignations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#algorithme">
+     Algorithme
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#parametre">
+     Paramètre
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#taille-du-code">
+     Taille du code
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#demonstration">
+     Démonstration
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#preparation">
+     Préparation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brouilleur">
+     Brouilleur
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#enigma-machine">
+     Enigma Machine
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transmettre-des-messages-cryptes">
+   Transmettre des messages cryptés
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="taches-a-accomplir">
+<h1>Tâches à accomplir<a class="headerlink" href="#taches-a-accomplir" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chiffre-de-cesar">
+<h2>Chiffre de César<a class="headerlink" href="#chiffre-de-cesar" title="Permalink to this headline">¶</a></h2>
+<p>Le cryptage est basé sur le <a class="reference external" href="https://en.wikipedia.org/wiki/Caesar_cipher">Chiffre de César</a>.  Il s’agit de l’une des techniques de cryptage les plus simples et les plus répandues. L’alphabet est décalé de <span class="math notranslate nohighlight">\(k\)</span>, ce qui permet de relier différentes lettres entre elles. Cela signifie que pour un chiffrement donné, les lettres correspondent toujours les unes aux autres.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Le chiffrement de César n’offre aujourd’hui essentiellement plus aucune sécurité de communication.</p>
+</div>
+<div class="figure align-default" id="id1">
+<a class="reference internal image-reference" href="../../../_images/01-caesar_cipher.svg"><img alt="../../../_images/01-caesar_cipher.svg" src="../../../_images/01-caesar_cipher.svg" width="40%" /></a>
+<p class="caption"><span class="caption-number">Fig. 48 </span><span class="caption-text">Chiffre de César avec <span class="math notranslate nohighlight">\(k = 3\)</span> Source : Wikipedia</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="taches">
+<h3>Tâches<a class="headerlink" href="#taches" title="Permalink to this headline">¶</a></h3>
+<p>Tout d’abord, nous mettons en œuvre un chiffrement César à titre d’exemple. Cela se fait en plusieurs étapes :</p>
+<ol class="simple">
+<li><p>vérifier si le caractère est une lettre</p></li>
+<li><p>recherche de l’index de la lettre</p></li>
+<li><p>incrémenter ou décrémenter l’index.</p></li>
+<li><p>recherche de la nouvelle lettre</p></li>
+</ol>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 1 - Lire une chaîne de caractères</p>
+<p>Essaie de lire la lettre <code class="docutils literal notranslate"><span class="pre">&quot;H&quot;</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 1</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 2 - Vérifier si le caractère est une lettre</p>
+<p>Il faut contrôler si le <code class="docutils literal notranslate"><span class="pre">caractère</span></code> est présent dans l’<code class="docutils literal notranslate"><span class="pre">alphabet</span></code>.
+Nous allons implémenter cela dans la fonction <code class="docutils literal notranslate"><span class="pre">isLetter()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 2</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 3 - Rechercher l’index des lettres</p>
+<p>Trouver l’index des <code class="docutils literal notranslate"><span class="pre">caractères</span></code> dans la liste <code class="docutils literal notranslate"><span class="pre">alphabet</span></code>.
+Nous allons implémenter cela dans la fonction <code class="docutils literal notranslate"><span class="pre">idxOfLetter()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 3</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 4 - Incrémenter ou décrémenter l’index</p>
+<p>La valeur <code class="docutils literal notranslate"><span class="pre">k</span></code> peut être positive ou négative. Les cas spéciaux <code class="docutils literal notranslate"><span class="pre">&lt;0</span></code> et <code class="docutils literal notranslate"><span class="pre">&gt;25</span></code> doivent aussi être pris en compte.
+Nous allons l’implémenter dans la fonction <code class="docutils literal notranslate"><span class="pre">incrementIndex()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 4</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 5 - Chiffrage de César</p>
+<p>Implémenter l’encodage dans la fonction <code class="docutils literal notranslate"><span class="pre">cesarEncoding()</span></code> et la tester.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 5</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Félicitations vous venez de créer une machine de chiffrement César</p>
+</div>
+</div>
+</div>
+<div class="section" id="theorie-enigma">
+<h2>théorie Enigma<a class="headerlink" href="#theorie-enigma" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="designations">
+<h3>Désignations<a class="headerlink" href="#designations" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Panneau de connexion</strong> - le panneau de connexion devant la machine, peut relier deux lettres différentes. Il s’agit d’un niveau de confusion supplémentaire
+<strong>Rotors</strong> - entre la planche à fiches et le réflecteur, les trois rotors à gauche, au centre et à droite peuvent être placés dans une certaine position afin d’obtenir un mélange différent.</p></li>
+<li><p><strong>Réflecteur</strong> - le réflecteur reçoit les signaux du rotor gauche et les lui renvoie, le codage du réflecteur ne peut pas être modifié. Il permet à la machine d’encoder et de décoder sans modifier aucun paramètre.</p></li>
+</ul>
+</div>
+<div class="section" id="algorithme">
+<h3>Algorithme<a class="headerlink" href="#algorithme" title="Permalink to this headline">¶</a></h3>
+<p>La machine Enigma fonctionne de la même manière que l’algorithme Cesar mais avec une structure plus complexe.</p>
+<div class="figure align-default" id="diagramme-enigma-2sz">
+<a class="reference internal image-reference" href="../../../_images/01-enigma_diagram.jpg"><img alt="../../../_images/01-enigma_diagram.jpg" src="../../../_images/01-enigma_diagram.jpg" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 49 </span><span class="caption-text">Diagramme Enigma Source : Louise Dade</span><a class="headerlink" href="#diagramme-enigma-2sz" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="parametre">
+<h3>Paramètre<a class="headerlink" href="#parametre" title="Permalink to this headline">¶</a></h3>
+<p>Pour décoder ce qu’une autre machine a encodé, il faut que les conditions suivantes soient remplies :</p>
+<ul class="simple">
+<li><p>La même machine avec le même nombre et les mêmes types de rotors et de réflecteurs.</p></li>
+<li><p>Les réglages du plugboard doivent être les mêmes.</p></li>
+<li><p>Même position de départ des rotors.</p></li>
+</ul>
+<p>Toutes ces informations étaient modifiées quotidiennement, les réglages exacts se trouvaient dans une “feuille de code” publiée chaque mois.</p>
+<div class="figure align-default" id="feuille-de-code-enigma">
+<a class="reference internal image-reference" href="../../../_images/01-enigma_codesheet.jpg"><img alt="../../../_images/01-enigma_codesheet.jpg" src="../../../_images/01-enigma_codesheet.jpg" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 50 </span><span class="caption-text">Feuille de code WWII Source : Nazis</span><a class="headerlink" href="#feuille-de-code-enigma" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Types de rotor et de réflecteur</strong>.</p>
+<p>Pendant la période d’utilisation d’Enigma, il existait de nombreuses versions différentes avec des rotors et des réflecteurs différents. Sur un total de 5 rotors possibles, 3 différents devaient être utilisés chaque matin. En principe, les réflecteurs ne changeaient pas.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>clé</p></th>
+<th class="head"><p>type</p></th>
+<th class="head"><p>dispositif</p></th>
+<th class="head"><p>utilisation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">etw</span></code></p></td>
+<td><p>rotor ETW</p></td>
+<td><p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p></td>
+<td><p>Enigma I</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">i</span></code></p></td>
+<td><p>Rotor I</p></td>
+<td><p>EKMFLGDQVZNTOWYHXUSPAIBRCJ</p></td>
+<td><p>1930 Enigma I</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">ii</span></code></p></td>
+<td><p>Rotor II</p></td>
+<td><p>AJDKSIRUXBLHWTMCQGZNPYFVOE</p></td>
+<td><p>1930 Enigma I</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">iii</span></code></p></td>
+<td><p>Rotor III</p></td>
+<td><p>BDFHJLCPRTXVZNYEIWGAKMUSQO</p></td>
+<td><p>1930 Enigma I</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">iv</span></code></p></td>
+<td><p>Rotor IV</p></td>
+<td><p>ESOVPZJAYQUIRHXLNFTGKDCMWB</p></td>
+<td><p>Décembre 1938 M3 Army</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">v</span></code></p></td>
+<td><p>Rotor V</p></td>
+<td><p>VZBRGITYUPSDNHLXAWMJQOFECK</p></td>
+<td><p>Décembre 1938 M3 Army</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">vi</span></code></p></td>
+<td><p>Rotor VI</p></td>
+<td><p>JPGVOUMFYQBENHZRDKASXLICTW</p></td>
+<td><p>1939 M3 &amp; M4 Naval (FEB 1942)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">vii</span></code></p></td>
+<td><p>Rotor VII</p></td>
+<td><p>NZJHGRCXMYSWBOUFAIVLPEKQDT</p></td>
+<td><p>1939 M3 &amp; M4 Naval (FEB 1942)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">viii</span></code></p></td>
+<td><p>Rotor VIII</p></td>
+<td><p>FKQHTLXOCBJSPDZRAMEWNIUYGV</p></td>
+<td><p>1939 M3 &amp; M4 Naval (FEB 1942)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">a</span></code></p></td>
+<td><p>Reflector A</p></td>
+<td><p>EJMZALYXVBWFCRQUONTSPIKHGD</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">b</span></code></p></td>
+<td><p>Réflecteur B</p></td>
+<td><p>YRUHQSLDPXNGOKMIEBFZCWVJAT</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">c</span></code></p></td>
+<td><p>Réflecteur C</p></td>
+<td><p>FVPJIAOYEDRZXWGCTKUQSBNMHL</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">custom</span></code></p></td>
+<td><p>Personnalisé</p></td>
+<td><p>tel que donné par l’utilisateur</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="taille-du-code">
+<h3>Taille du code<a class="headerlink" href="#taille-du-code" title="Permalink to this headline">¶</a></h3>
+<p>La taille du code indique le nombre de possibilités de cryptage.</p>
+<p>La formule du nombre total de possibilités de code est la suivante :</p>
+<div class="math notranslate nohighlight">
+\[(5*4*3)*26^3*\frac{26!}{6!*10!*2^{10}} = 158 962 555 247 826 360 000\]</div>
+<p>Cette formule est décomposée et expliquée ci-dessous.</p>
+<p><strong>Sélection des rouleaux</strong>.</p>
+<p>Parmi 5 rouleaux, on en choisit 3 et on les place comme on le souhaite.</p>
+<p><span class="math notranslate nohighlight">\(5*4*3 = 60\)</span> Combinaisons de rouleaux possibles</p>
+<p><strong>Position de départ des rouleaux</strong>.</p>
+<p>3 rouleaux de 26 positions possibles chacun</p>
+<p><span class="math notranslate nohighlight">\(26^3 = 17576\)</span> positions de départ des rouleaux</p>
+<p><strong>Combinaisons de planches à fiches</strong>.</p>
+<p>Ici, 2 lettres peuvent être reliées entre elles. Au total, 10 combinaisons de connecteurs étaient possibles. 6 étaient donc inutilisées.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(26!\)</span> - Combinaisons possibles de l’alphabet</p></li>
+<li><p><span class="math notranslate nohighlight">\(6!\)</span> - 6 connexions sont restées inutilisées.</p></li>
+<li><p><span class="math notranslate nohighlight">\(10!\)</span> - Il n’y a que 10 connexions à effectuer.</p></li>
+<li><p><span class="math notranslate nohighlight">\(2^{10}\)</span> - Connecter A &lt;=&gt; Z est la même chose que Z &lt;=&gt; A</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[ \frac{26!}{6!*10!*2^{10}} = 150 738 274 937 250\]</div>
+</div>
+<div class="section" id="demonstration">
+<h3>Démonstration<a class="headerlink" href="#demonstration" title="Permalink to this headline">¶</a></h3>
+<p>Comme démonstration, vous pouvez regarder la vidéo Youtube suivante.</p>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=5Tqc71iy8jA">Démonstration Enigma</a></p>
+</div>
+<div class="section" id="preparation">
+<h3>Préparation<a class="headerlink" href="#preparation" title="Permalink to this headline">¶</a></h3>
+<p>Avant même d’écrire du code, un diagramme de classes a été créé. L’idée est de créer une classe de <code class="docutils literal notranslate"><span class="pre">EnigmaMaschine</span></code> qui possède plusieurs objets <code class="docutils literal notranslate"><span class="pre">Scrambler</span></code>. Un panneau de connexion, les rotors mais aussi le réflecteur fonctionnent en principe en reliant ou en mélangeant différentes lettres (scramble). Bien que leur structure mécanique soit différente, leur fonctionnement est le même.</p>
+<div class="figure align-default" id="enigma-flow">
+<a class="reference internal image-reference" href="../../../_images/01-enigma-flow.svg"><img alt="../../../_images/01-enigma-flow.svg" src="../../../_images/01-enigma-flow.svg" width="90%" /></a>
+<p class="caption"><span class="caption-number">Fig. 51 </span><span class="caption-text">Flux de données EnigmaMachine</span><a class="headerlink" href="#enigma-flow" title="Permalink to this image">¶</a></p>
+</div>
+<p>Le diagramme de classe de l’application :</p>
+<div class="figure align-default" id="diagramme-de-classes-enigma">
+<a class="reference internal image-reference" href="../../../_images/01-enigma_classdiagram.svg"><img alt="../../../_images/01-enigma_classdiagram.svg" src="../../../_images/01-enigma_classdiagram.svg" width="70%" /></a>
+<p class="caption"><span class="caption-number">Fig. 52 </span><span class="caption-text">Diagramme de classes Enigma</span><a class="headerlink" href="#diagramme-de-classes-enigma" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="brouilleur">
+<h3>Brouilleur<a class="headerlink" href="#brouilleur" title="Permalink to this headline">¶</a></h3>
+<p>Tout d’abord, nous allons écrire la classe Scrambler.</p>
+<div class="figure align-default" id="scrambler-classdiagram">
+<a class="reference internal image-reference" href="../../../_images/01-enigma_scrambler_classdiagram.svg"><img alt="../../../_images/01-enigma_scrambler_classdiagram.svg" src="../../../_images/01-enigma_scrambler_classdiagram.svg" width="35%" /></a>
+<p class="caption"><span class="caption-number">Fig. 53 </span><span class="caption-text">Diagramme de classe du brouilleur</span><a class="headerlink" href="#scrambler-classdiagram" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Avec l’aide de la commande <code class="docutils literal notranslate"><span class="pre">print()</span></code>, vous devez déboguer votre code vous-même.</p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 6 - Types de clés</p>
+<p>La clé de type est indiquée sous forme de chaîne de caractères. Les valeurs possibles sont : <code class="docutils literal notranslate"><span class="pre">&quot;etw&quot;,</span> <span class="pre">&quot;i&quot;,</span> <span class="pre">&quot;ii&quot;,</span> <span class="pre">&quot;iii&quot;,</span> <span class="pre">&quot;iv&quot;,</span> <span class="pre">&quot;v&quot;,</span> <span class="pre">&quot;vi&quot;,</span> <span class="pre">&quot;vii&quot;,</span> <span class="pre">&quot;viii&quot;</span></code> pour les rotors et <code class="docutils literal notranslate"><span class="pre">&quot;a&quot;,</span> <span class="pre">&quot;b&quot;,</span> <span class="pre">&quot;c&quot;</span></code> pour les réflecteurs. Le brouilleur devrait également pouvoir reconnaître les valeurs suivantes comme étant valables.</p>
+<ul class="simple">
+<li><p>Lettres majuscules - <code class="docutils literal notranslate"><span class="pre">&quot;I&quot;,</span> <span class="pre">&quot;II&quot;,</span> <span class="pre">ViIi</span></code>.</p></li>
+<li><p>Trait d’union - <code class="docutils literal notranslate"><span class="pre">&quot;v-iii&quot;,</span> <span class="pre">e-t-w</span></code>.</p></li>
+<li><p>Espaces - <code class="docutils literal notranslate"><span class="pre">&quot;v</span> <span class="pre">iii&quot;,</span> <span class="pre">&quot;e</span> <span class="pre">t</span> <span class="pre">w&quot;</span></code></p></li>
+<li><p>Soulignement - <code class="docutils literal notranslate"><span class="pre">&quot;v_iii&quot;,</span> <span class="pre">e_t_w</span></code>.</p></li>
+<li><p>Combinaisons des erreurs ci-dessus.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">self.type_key</span></code> devrait contenir une chaîne nettoyée</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 6</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 7 - Chaîne vers tableau</p>
+<p>La configuration est exprimée par une chaîne de caractères sous la forme suivante :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">str_config</span> <span class="o">=</span> <span class="s2">&quot;EKMFLGDQVZNTOWYHXUSPAIBRCJ&quot;</span>
+</pre></div>
+</div>
+<p>Cette chaîne doit être modifiée sous la forme d’un tableau.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">config</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;E&quot;</span><span class="p">,</span><span class="s2">&quot;K&quot;</span><span class="p">,</span><span class="s2">&quot;M&quot;</span><span class="p">,</span><span class="s2">&quot;F&quot;</span><span class="p">,</span><span class="s2">&quot;L&quot;</span><span class="p">,</span><span class="s2">&quot;G&quot;</span><span class="p">,</span><span class="s2">&quot;D&quot;</span><span class="p">,</span><span class="s2">&quot;Q&quot;</span><span class="p">,</span><span class="s2">&quot;V&quot;</span><span class="p">,</span><span class="s2">&quot;Z&quot;</span><span class="p">,</span><span class="s2">&quot;N&quot;</span><span class="p">,</span><span class="s2">&quot;T&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">,</span><span class="s2">&quot;W&quot;</span><span class="p">,</span><span class="s2">&quot;Y&quot;</span><span class="p">,</span><span class="s2">&quot;H&quot;</span><span class="p">,</span><span class="s2">&quot;X&quot;</span><span class="p">,</span><span class="s2">&quot;U&quot;</span><span class="p">,</span><span class="s2">&quot;S&quot;</span><span class="p">,</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;I&quot;</span><span class="p">,</span><span class="s2">&quot;B&quot;</span><span class="p">,</span><span class="s2">&quot;R&quot;</span><span class="p">,</span><span class="s2">&quot;C&quot;</span><span class="p">,</span><span class="s2">&quot;J&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 7</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 8 - Chaîne tournante</p>
+<p>A chaque étape d’un rotary, la chaîne doit être tournée vers la gauche.</p>
+<ul class="simple">
+<li><p>Le <code class="docutils literal notranslate"><span class="pre">&quot;test&quot;</span></code> devient <code class="docutils literal notranslate"><span class="pre">&quot;estT&quot;</span></code> s’il doit être déplacé de <code class="docutils literal notranslate"><span class="pre">n=1</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;Test&quot;</span></code> devient <code class="docutils literal notranslate"><span class="pre">&quot;stTe&quot;</span></code> si l’on veut déplacer de <code class="docutils literal notranslate"><span class="pre">n=2</span></code>.</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 8</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="enigma-machine">
+<h3>Enigma Machine<a class="headerlink" href="#enigma-machine" title="Permalink to this headline">¶</a></h3>
+<p>Le brouilleur de classe est maintenant écrit et testé.</p>
+<div class="figure align-default" id="enigmamachine-classdiagram">
+<a class="reference internal image-reference" href="../../../_images/01-enigma_enigmamachine_classdiagram.svg"><img alt="../../../_images/01-enigma_enigmamachine_classdiagram.svg" src="../../../_images/01-enigma_enigmamachine_classdiagram.svg" width="35%" /></a>
+<p class="caption"><span class="caption-number">Fig. 54 </span><span class="caption-text">Diagramme de classes EnigmaMachine</span><a class="headerlink" href="#enigmamachine-classdiagram" title="Permalink to this image">¶</a></p>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Exercice 9 - Planche de connecteurs</p>
+<p>La configuration du panneau de prises est donnée de la manière suivante.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">plugboard_config</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;AZ&quot;</span><span class="p">,</span> <span class="s2">&quot;BY&quot;</span><span class="p">,</span> <span class="s2">&quot;CX&quot;</span><span class="p">,</span> <span class="s2">&quot;DW&quot;</span><span class="p">,</span> <span class="s2">&quot;EV&quot;</span><span class="p">,</span> <span class="s2">&quot;FU&quot;</span><span class="p">,</span> <span class="s2">&quot;GT&quot;</span><span class="p">,</span> <span class="s2">&quot;HS&quot;</span><span class="p">,</span> <span class="s2">&quot;IR&quot;</span><span class="p">,</span> <span class="s2">&quot;JQ&quot;</span><span class="p">,</span> <span class="s2">&quot;KP&quot;</span><span class="p">,</span> <span class="s2">&quot;LO&quot;</span><span class="p">,</span> <span class="s2">&quot;MN&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Cette configuration doit être transférée sous la forme <code class="docutils literal notranslate"><span class="pre">type_key</span></code>. Dans l’exemple ci-dessus :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ZYXWVUTSRQPONMLKJIHGFEDCBA</span>
+</pre></div>
+</div>
+<p>Pour qu’à l’alphabet <code class="docutils literal notranslate"><span class="pre">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;</span></code> dans l’exemple ci-dessus corresponde <code class="docutils literal notranslate"><span class="pre">A</span> <span class="pre">&lt;-&gt;</span> <span class="pre">Z</span></code> ainsi que <code class="docutils literal notranslate"><span class="pre">B</span> <span class="pre">&lt;-&gt;</span> <span class="pre">Y</span></code> etc.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Une chaîne Python ne peut pas être modifiée, la chaîne doit être recréée.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">chaîne</span> <span class="o">=</span> <span class="s2">&quot;ABC&quot;</span>
+<span class="n">string</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;D&quot;</span> <span class="c1"># Ne fonctionne pas</span>
+<span class="n">chaîne</span> <span class="o">=</span> <span class="s2">&quot;D&quot;</span> <span class="o">+</span> <span class="n">chaîne</span><span class="p">[</span><span class="mi">1</span> <span class="p">:]</span> <span class="c1"># &quot;DBC&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 9</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 10 - Configuration d’Enigma</p>
+<p>La configuration d’Enigma doit pouvoir être affichée afin de pouvoir la partager.</p>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">printEnigmaSetup()</span></code> devrait donner le résultat suivant ou quelque chose de similaire. Il est important de mentionner que notre machine Enigma peut présenter un nombre quelconque de rotors.</p>
+<div class="highlight-texte notranslate"><div class="highlight"><pre><span></span>Configuration Enigma
+============
+
+* Rotor 0
+  - Type : i
+  - Clé : USPAIBRCJEKMFLGDQVZNTOWYHX
+  - StartPos : 17
+* Rotor 1
+  - Type : iii
+  - Clé : SQOBDFHJLCPRTXVZNYEIWGAKMU
+  - StartPos : 23
+* Rotor 2
+  - Type : iv
+  - Clé : RHXLNFTGKDCMWBESOVPZJAYQUI
+  - StartPos : 12
+* Reflector
+  - Type : a
+* Plugboard
+  - Key : [&#39;AZ&#39;, &#39;BY&#39;, &#39;CX&#39;, &#39;DW&#39;, &#39;EV&#39;, &#39;FU&#39;, &#39;GT&#39;, &#39;HS&#39;, &#39;IR&#39;, &#39;JQ&#39;, &#39;KP&#39;, &#39;LO&#39;, &#39;MN&#39;]
+</pre></div>
+</div>
+<p>Utilise pour cela les variables suivantes des objets scrambler :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="bp">self</span><span class="o">.</span><span class="n">nb_rotors</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">rotors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">type_key</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">rotors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">key</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">rotors</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">startpos</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">reflector</span><span class="o">.</span><span class="n">type_key</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">reflector</span><span class="o">.</span><span class="n">key</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">reflector</span><span class="o">.</span><span class="n">startpos</span>
+<span class="bp">self</span><span class="o">.</span><span class="n">plugboard_config</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 10</span>
+</pre></div>
+</div>
+</div>
+<div class="dropdown admonition">
+<p class="admonition-title">Tâche 11 - Encodage du caractère</p>
+<p>Chaque personnage doit passer par tous les brouilleurs. Le caractère a déjà été décodé comme position dans l’alphabet <code class="docutils literal notranslate"><span class="pre">num</span></code>. A l’aide de l’exemple existant, cette valeur doit maintenant passer par chaque brouilleur, par ex. le panneau de connexion :</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span> <span class="n">num</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">plugboard</span><span class="o">.</span><span class="n">passthrough</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Il faut noter que pour passer dans une direction, il faut utiliser la fonction <code class="docutils literal notranslate"><span class="pre">passthrough()</span></code> et dans l’autre direction <code class="docutils literal notranslate"><span class="pre">passthroughRev()</span></code>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># TODO 11</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="transmettre-des-messages-cryptes">
+<h2>Transmettre des messages cryptés<a class="headerlink" href="#transmettre-des-messages-cryptes" title="Permalink to this headline">¶</a></h2>
+<p>La dernière tâche consiste à envoyer un message crypté à vos camarades de classe. Pour cela, vous devez leur transmettre le message crypté mais aussi la configuration.</p>
+<ol class="simple">
+<li><p>préparez un message et une configuration Enigma.</p></li>
+<li><p>cryptez le message</p></li>
+<li><p>donnez à votre collègue le message et les paramètres de configuration
+Décodez le message que vous avez reçu de votre collègue.</p></li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/python/advanced"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="01-enigma-intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Machine Enigma</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="01-enigma-machine.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Programmation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs - Silvan Zahno<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

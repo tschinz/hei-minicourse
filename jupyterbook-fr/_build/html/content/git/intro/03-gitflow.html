@@ -1,0 +1,602 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitflow &#8212; Le chemin vers l&#39;ingénierie</title>
+    
+  <link href="../../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/customize.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/font_button.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="http://promotion.hevs.io/minicourse/hei-minicourse/fr/content/git/intro/03-gitflow.html" />
+    <link rel="shortcut icon" href="../../../_static/hei-icon.png"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Laboratoire" href="../lab/00-intro.html" />
+    <link rel="prev" title="Branch et Merge" href="02-branch-merge.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../../_static/hei-defr.svg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Le chemin vers l'ingénierie</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../00-intro.html">
+   Le chemin vers l’ingénierie
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Introduction
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/00-computer.html">
+   Développement de l’ordinateur
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../intro/01-programming.html">
+   Approches modernes de la programmation
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="00-intro.html">
+   Introduction
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="01-commands.html">
+     Commandes
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="02-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../lab/00-intro.html">
+   Laboratoire
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/01-config.html">
+     Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/02-general.html">
+     Opérations de base
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/03-github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/04-branch-merge.html">
+     Branch et Merge
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../lab/05-gitflow.html">
+     Gitflow
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Python
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python/intro/00-intro.html">
+   Introduction
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/01-hello_world.html">
+     Hello World
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/02-jupyter.html">
+     Jupyter Notebooks
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/03-ipython.html">
+     ipython
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/04-datatypes.html">
+     Types de données Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/intro/05-object_oriented.html">
+     Programmation orientée objet
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../python/advanced/01-enigma-intro.html">
+   Machine Enigma
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/advanced/01-enigma-lab.html">
+     Tâches à accomplir
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../python/advanced/01-enigma-machine.html">
+     Programmation
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Java
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../java/maze/00-intro.html">
+   Laboratoire Maze
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/01-display_solution.html">
+     Partie 1 - Afficher et sortir du labyrinthe
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../java/maze/02-movement_logic.html">
+     Partie 2 - Mouvement du joueur et logique du jeu
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ESP32
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../esp32/connected-robot/00-intro.html">
+   Connected Robot
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../esp32/connected-robot/01-design.html">
+     Maze Labor
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Arduino
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console/00-intro.html">
+   ATtiny Console v1 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../arduino/attiny-console-v2/00-intro.html">
+   ATtiny Console v2 (HEI LYNX)
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/01-design.html">
+     Le schéma électrique
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/02-soldering.html">
+     Souder le PCB
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/03-toolchain.html">
+     Arduino IDE
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../arduino/attiny-console-v2/04-commissioning.html">
+     Mise en service
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Annexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../01-bibliography.html">
+   Bibliography
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../02-contact.html">
+   Contact
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Presented by <a href="https://www.hevs.ch/synd">HEI-Vs</a></br></br><button type="button" onclick="window.location.href = 'https:/promotion.hevs.io/minicourse/hei-minicourse/de'">Deutsch</button><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../../_sources/content/git/intro/03-gitflow.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/tschinz/hei-minicourse/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/tschinz/hei-minicourse//issues/new?title=Issue%20on%20page%20%2Fcontent/git/intro/03-gitflow.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Gitflow</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="gitflow">
+<h1>Gitflow<a class="headerlink" href="#gitflow" title="Permalink to this headline">¶</a></h1>
+<p>Git encourage donc fortement la création de branches, tout en laissant aux développeurs une liberté totale dans leur utilisation. C’est donc un outil puissant qui peut devenir contre-productif s’il est mal utilisé. Les équipes de développement décident donc typiquement d’un plan de développement (“workflow”) avec Git, qui définit leurs directives pour la création de branches et de fusions.</p>
+<p>Cette section décrit Git-flow (<a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">A successful Git branching model</a>), un workflow composé d’un ensemble de règles utilisant le modèle de branche de Git. En voici les principes de base :</p>
+<p>La configuration du dépôt de l’équipe de développement conserve un dépôt central (par exemple chez un hébergeur web de serveurs Git comme “GitHub” “Bitbucket” ou “Gitlab”). Nous appelons ce repo central <code class="docutils literal notranslate"><span class="pre">origin</span></code>. Notez que ce repo n’est centralisé que de manière arbitraire, car Git est un système de gestion des sources décentralisé et peut se passer d’un seul repo central.</p>
+<div class="figure align-default" id="distributed-git-2">
+<a class="reference internal image-reference" href="../../../_images/gitflow-centralize-decentralize.png"><img alt="../../../_images/gitflow-centralize-decentralize.png" src="../../../_images/gitflow-centralize-decentralize.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 28 </span><span class="caption-text">Référentiel Git distribué Source : <a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">Git Branching Model</a></span><a class="headerlink" href="#distributed-git-2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Chaque projet sera basé sur deux branches principales : <code class="docutils literal notranslate"><span class="pre">master</span></code> et `develop. Ces deux branches sont strictement interdites d’écriture pour les développeurs.</p>
+<div class="figure align-default" id="branche-principale-de-git">
+<a class="reference internal image-reference" href="../../../_images/gitflow-main-branches.png"><img alt="../../../_images/gitflow-main-branches.png" src="../../../_images/gitflow-main-branches.png" style="width: 40%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 29 </span><span class="caption-text">Git Afficher <code class="docutils literal notranslate"><span class="pre">master</span></code> et <code class="docutils literal notranslate"><span class="pre">develop</span></code> Source : <a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">Git Branching Model</a></span><a class="headerlink" href="#branche-principale-de-git" title="Permalink to this image">¶</a></p>
+</div>
+<p>La branche principale est le miroir de notre production (le produit livré aux utilisateurs). Il est donc logique que nous ne puissions pas y pousser directement nos modifications. La branche <code class="docutils literal notranslate"><span class="pre">origin/master</span></code> est donc considérée comme la branche principale du code source, dans laquelle le <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> se trouve toujours dans un état prêt pour le client.</p>
+<p>Dans la branche <code class="docutils literal notranslate"><span class="pre">origin/develop</span></code> sont centralisées toutes les nouvelles fonctions qui seront incluses dans la prochaine version (parfois aussi appelée intégration). Dans cette branche, il n’est pas non plus possible de faire des modifications directement. Le <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> de <code class="docutils literal notranslate"><span class="pre">origin/develop</span></code> indique donc l’état des derniers développements terminés. Il s’agit typiquement de la branche sur laquelle des tests automatisés sont effectués chaque nuit. Dès que la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code> est considérée comme stable, elle est mergée dans <code class="docutils literal notranslate"><span class="pre">master</span></code> pour créer une version stable (un livrable) de notre logiciel.</p>
+<p>Trois autres types de branches nous permettront ensuite de travailler en équipe et en parallèle. Contrairement aux branches dont nous avons parlé précédemment, celles-ci ont une durée de vie éphémère.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">feature</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">release</span></code> (version)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hotfix</span></code>.</p></li>
+</ul>
+<p>Ces trois types de branches ont un but bien précis :</p>
+<p>Les branches de type <code class="docutils literal notranslate"><span class="pre">feature</span></code> sont utilisées pour implémenter de nouvelles fonctions. Elles sont donc formées à partir de la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code>. (par exemple <code class="docutils literal notranslate"><span class="pre">feature/new-button-on-front-screen</span></code>). Elles permettent d’isoler chaque nouvelle fonction et facilitent le travail en parallèle.
+Dès qu’une fonctionnalité est acceptée comme “done” (terminée) par l’équipe, elle est intégrée dans la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code>, comme le montre l’illustration suivante :</p>
+<div class="figure align-default" id="branche-git-feature">
+<a class="reference internal image-reference" href="../../../_images/gitflow-merge-without-ff.png"><img alt="../../../_images/gitflow-merge-without-ff.png" src="../../../_images/gitflow-merge-without-ff.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 30 </span><span class="caption-text">Git Afficher <code class="docutils literal notranslate"><span class="pre">feature</span></code> et `develop Source : <a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">Git Branching Model</a></span><a class="headerlink" href="#branche-git-feature" title="Permalink to this image">¶</a></p>
+</div>
+<p>Les branches de release sont utilisées pour préparer la sortie d’une nouvelle version. Elles sont créées à partir de <code class="docutils literal notranslate"><span class="pre">develop</span></code> (par exemple <code class="docutils literal notranslate"><span class="pre">release/january-general-update</span></code>). Ils permettent à d’autres développeurs de continuer à alimenter la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code> parallèlement à la préparation de la nouvelle version. Une fois que tous les tests ont été passés avec succès et que la release est considérée comme “done”, elle est fusionnée dans <code class="docutils literal notranslate"><span class="pre">master</span></code>. Si des corrections ont été apportées à la branche <code class="docutils literal notranslate"><span class="pre">release</span></code>, elles sont également fusionnées dans la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code>.</p>
+<p>Les branches de type <code class="docutils literal notranslate"><span class="pre">hotfix</span></code> sont utilisées pour corriger les erreurs en production. Nous allons donc créer ce type de branche directement à partir du master, car nous ne voulons pas inclure toutes les fonctions disponibles dans <code class="docutils literal notranslate"><span class="pre">develop</span></code> (par exemple <code class="docutils literal notranslate"><span class="pre">hotfix/crash-when-button2-pressed</span></code>). Typiquement, une erreur qui se produit dans un produit en production doit d’abord être reproduite par un test automatique (pour s’assurer qu’elle ne se reproduira pas à l’avenir), puis elle est corrigée sur la branche <code class="docutils literal notranslate"><span class="pre">hotfix</span></code>. Enfin, la branche <code class="docutils literal notranslate"><span class="pre">hotfix</span></code> est mélangée à la fois à la branche <code class="docutils literal notranslate"><span class="pre">master</span></code> et à la branche <code class="docutils literal notranslate"><span class="pre">develop</span></code>.</p>
+<div class="figure align-default" id="modele-de-hotfix-git">
+<a class="reference internal image-reference" href="../../../_images/gitflow-hotfix-branches.png"><img alt="../../../_images/gitflow-hotfix-branches.png" src="../../../_images/gitflow-hotfix-branches.png" style="width: 30%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 31 </span><span class="caption-text">Git hotfix merging Source : <a class="reference external" href="https://nvie.com/posts/a-successful-git-branching-model/">Git Branching Model</a></span><a class="headerlink" href="#modele-de-hotfix-git" title="Permalink to this image">¶</a></p>
+</div>
+<p>Un exemple complet d’un projet Gitflow peut être observé dans l’illustration ci-dessous.</p>
+<div class="figure align-default" id="modele-git-flow">
+<a class="reference internal image-reference" href="../../../_images/gitflow-model.png"><img alt="../../../_images/gitflow-model.png" src="../../../_images/gitflow-model.png" style="width: 60%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 32 </span><span class="caption-text">GitFlow M complet</span><a class="headerlink" href="#modele-git-flow" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./content/git/intro"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="02-branch-merge.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Branch et Merge</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../lab/00-intro.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Laboratoire</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By HEI-Vs - Silvan Zahno<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
