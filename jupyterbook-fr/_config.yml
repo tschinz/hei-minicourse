@@ -27,7 +27,7 @@ html:
   comments:
     hypothesis              : false
     utterances              : false
-  extra_navbar              : Presented by <a href="https://www.hevs.ch/synd">HEI-Vs</a></br></br><button type="button" onclick="window.location.href = 'https:/promotion.hevs.io/minicourse/hei-minicourse/de'">Deutsch</button><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
+  extra_navbar              : Presented by <a href="https://www.hevs.ch/synd">HEI-Vs</a></br></br><button type="button" onclick="window.location.href = 'https://promotion.hevs.io/minicourse/hei-minicourse/de'">Deutsch</button><button type="button" onclick="legibleFontSwitcher()">Switch Font</button>&nbsp;&nbsp;<button type="button" onclick="fontScaler(1.1)">&#10133;</button><button type="button" onclick="fontScaler(0.0)">&#9679;</button><button type="button" onclick="fontScaler(0.909)">&#10134;</button>
 
 #######################################################################################
 # LaTeX-specific settings
