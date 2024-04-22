@@ -7,12 +7,12 @@ In diesem ersten Teil werden Sie den Quellcode, den wir für Sie vorbereitet hab
 Wir haben für Sie ein Eclipse-Projekt vorbereitet, das die grundlegenden Elemente des Projekts enthält. Um es zu importieren führen Sie folgende Schritte aus:
 1. Starten Sie Eclipse und führen Sie dann _File->Import->General-> Projects from Folder or Archive_ aus.
 2. Klicken Sie auf die Option _Archive_, wählen Sie die Datei
-[maze Studentversion](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/java/maze/resources/mazegame_studentVersion.zip) aus dem USB-Key und klicken Sie auf _Finish_. Das Maze-Projekt existiert nun in Ihrer Projektliste.
+[maze Studentversion](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook-de/content/java/maze/resources/mazegame_studentVersion.zip) aus dem USB-Key und klicken Sie auf _Finish_. Das Maze-Projekt existiert nun in Ihrer Projektliste.
 
 ````{important}
 Das Zip können Sie hier heruntereladen:
 
-[maze Studentversion](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook/content-de/java/maze/resources/mazegame_studentVersion.zip)
+[maze Studentversion](https://github.com/tschinz/hei-minicourse/raw/main/jupyterbook-de/content/java/maze/resources/mazegame_studentVersion.zip)
 ````
 
 

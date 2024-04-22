@@ -3,6 +3,8 @@ notebooks/*.png
 
 # Jupyter Book build relics
 jupyterbook/_build
+jupyterbook-de/_build
+jupyterbook-fr/_build
 
 # IDE files
 /.vscode
